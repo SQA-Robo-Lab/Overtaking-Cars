@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:modelinstance="http://www.muml.org/modelinstance/1.0.0" xmlns:msgtype="http://www.muml.org/pim/msgtype/1.0.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xsi:schemaLocation="http://www.muml.org/modelinstance/1.0.0 http://www.muml.org/core/1.0.0#//modelinstance http://www.muml.org/pim/msgtype/1.0.0 http://www.muml.org/pim/1.0.0#//msgtype" xmi:id="_udb2gH58EeyKLqeH6TVEeQ" type="Message Type" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_vzYVwH58EeyKLqeH6TVEeQ" type="2008" fontName="Segoe UI" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_vzY80H58EeyKLqeH6TVEeQ" type="5017"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_vzY80X58EeyKLqeH6TVEeQ" type="7010">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_vzY80n58EeyKLqeH6TVEeQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_vzY80358EeyKLqeH6TVEeQ"/>
+    </children>
+    <element xmi:type="msgtype:MessageTypeRepository" href="../roboCar.muml#_vyVM4H58EeyKLqeH6TVEeQ"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vzYVwX58EeyKLqeH6TVEeQ" x="96" y="84"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_Gxi6oH59EeyKLqeH6TVEeQ" type="2008" fontName="Segoe UI" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_Gxi6on59EeyKLqeH6TVEeQ" type="5017"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_Gxi6o359EeyKLqeH6TVEeQ" type="7010">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_Gxi6pH59EeyKLqeH6TVEeQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_Gxi6pX59EeyKLqeH6TVEeQ"/>
+    </children>
+    <element xmi:type="msgtype:MessageTypeRepository" href="../roboCar.muml#_GxgeYH59EeyKLqeH6TVEeQ"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Gxi6oX59EeyKLqeH6TVEeQ" x="324" y="84" width="289"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_udb2gX58EeyKLqeH6TVEeQ"/>
+  <element xmi:type="modelinstance:ModelElementCategory" href="../roboCar.muml#_TClMt330Eey98LNJ4XeImg"/>
+</notation:Diagram>
