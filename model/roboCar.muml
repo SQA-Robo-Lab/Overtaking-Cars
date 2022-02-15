@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<modelinstance:RootNode xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actionlanguage="http://www.muml.org/pim/actionlanguage/1.0.0" xmlns:behavior="http://www.muml.org/pim/behavior/1.0.0" xmlns:common="http://www.muml.org/core/expressions/common/1.0.0" xmlns:component="http://www.muml.org/pim/component/1.0.0" xmlns:hwplatform="http://www.muml.org/pm/hardware/hwplatform/1.0.0" xmlns:hwresource="http://www.muml.org/pm/hardware/hwresource/1.0.0" xmlns:hwresourceinstance="http://www.muml.org/pm/hardware/hwresourceinstance/1.0.0" xmlns:instance="http://www.muml.org/pim/instance/1.0.0" xmlns:modelinstance="http://www.muml.org/modelinstance/1.0.0" xmlns:msgtype="http://www.muml.org/pim/msgtype/1.0.0" xmlns:protocol="http://www.muml.org/pim/protocol/1.0.0" xmlns:realtimestatechart="http://www.muml.org/pim/realtimestatechart/1.0.0" xmlns:types="http://www.muml.org/pim/types/1.0.0" xmi:id="_TClMsH30Eey98LNJ4XeImg">
+<modelinstance:RootNode xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actionlanguage="http://www.muml.org/pim/actionlanguage/1.0.0" xmlns:behavior="http://www.muml.org/pim/behavior/1.0.0" xmlns:common="http://www.muml.org/core/expressions/common/1.0.0" xmlns:component="http://www.muml.org/pim/component/1.0.0" xmlns:hwplatform="http://www.muml.org/pm/hardware/hwplatform/1.0.0" xmlns:hwplatforminstance="http://www.muml.org/pm/hardware/hwplatforminstance/1.0.0" xmlns:hwresource="http://www.muml.org/pm/hardware/hwresource/1.0.0" xmlns:hwresourceinstance="http://www.muml.org/pm/hardware/hwresourceinstance/1.0.0" xmlns:instance="http://www.muml.org/pim/instance/1.0.0" xmlns:modelinstance="http://www.muml.org/modelinstance/1.0.0" xmlns:msgtype="http://www.muml.org/pim/msgtype/1.0.0" xmlns:protocol="http://www.muml.org/pim/protocol/1.0.0" xmlns:realtimestatechart="http://www.muml.org/pim/realtimestatechart/1.0.0" xmlns:types="http://www.muml.org/pim/types/1.0.0" xmi:id="_TClMsH30Eey98LNJ4XeImg">
   <categories xmi:id="_TClMsX30Eey98LNJ4XeImg" key="org.muml.types.category" name="types"/>
   <categories xmi:id="_TClMsn30Eey98LNJ4XeImg" key="org.muml.pim.realtimestatechart.category" name="realtimestatechart">
     <modelElements xsi:type="realtimestatechart:RealtimeStatechart" xmi:id="_h9IFsH5-EeyKLqeH6TVEeQ" name="driveControlRole" behavioralElement="_EMVoYH58EeyKLqeH6TVEeQ">
@@ -903,8 +903,8 @@
     <modelElements xsi:type="hwplatform:HWPlatform" xmi:id="_piC7gYj5EeyYKPpICO9qfw" name="DriveControlUnit">
       <embeddedPlatformParts xsi:type="hwplatform:ResourcePart" xmi:id="_1QhU0Ij5EeyYKPpICO9qfw" name="ecu" resourceType="_EZOWIIj2EeyYKPpICO9qfw">
         <cardinality xmi:id="_2d_0kIj5EeyYKPpICO9qfw">
-          <lowerBound xmi:id="_wp8x4I5VEeyhMvv5xjA9yA"/>
-          <upperBound xmi:id="_wp8x4Y5VEeyhMvv5xjA9yA"/>
+          <lowerBound xmi:id="_P0SJII5lEeyhMvv5xjA9yA"/>
+          <upperBound xmi:id="_P0aE8I5lEeyhMvv5xjA9yA"/>
         </cardinality>
         <hwPortParts xmi:id="_1kG_MIj5EeyYKPpICO9qfw" comment="motorDriver" connectors="_i2ChEIj6EeyYKPpICO9qfw _pjAIUIj6EeyYKPpICO9qfw" hwport="_JZtNcIj2EeyYKPpICO9qfw"/>
         <hwPortParts xmi:id="_1kI0YIj5EeyYKPpICO9qfw" comment="digitalIOPoin" connectors="_U8q9EI5WEeyhMvv5xjA9yA _WmW3sI5WEeyhMvv5xjA9yA _ZQBooI5WEeyhMvv5xjA9yA _aPru0I5WEeyhMvv5xjA9yA" hwport="_JZwQwIj2EeyYKPpICO9qfw"/>
@@ -941,10 +941,10 @@
         <hwPortParts xmi:id="_EBsCoI5WEeyhMvv5xjA9yA" connectors="_ZQBooI5WEeyhMvv5xjA9yA" hwport="_e3aPsIj3EeyYKPpICO9qfw"/>
         <hwPortParts xmi:id="_EB1MkI5WEeyhMvv5xjA9yA" connectors="_aPru0I5WEeyhMvv5xjA9yA" hwport="_e3ehIIj3EeyYKPpICO9qfw"/>
       </embeddedPlatformParts>
-      <delegationPorts xmi:id="_79yvkI5TEeyhMvv5xjA9yA" connectors="_BO3AkI5UEeyhMvv5xjA9yA" name="I2C"/>
+      <delegationPorts xmi:id="_79yvkI5TEeyhMvv5xjA9yA" comment="Deleation Port for the Mega's I2C Pins." connectors="_BO3AkI5UEeyhMvv5xjA9yA" name="I2C" communicationResource="_ChVxkI5TEeyhMvv5xjA9yA"/>
       <networkConnectors xmi:id="_i2ChEIj6EeyYKPpICO9qfw" connectorEndpoints="_OMo0IIj6EeyYKPpICO9qfw _1kG_MIj5EeyYKPpICO9qfw"/>
       <networkConnectors xmi:id="_pjAIUIj6EeyYKPpICO9qfw" connectorEndpoints="_1kG_MIj5EeyYKPpICO9qfw _XJvSAIj6EeyYKPpICO9qfw"/>
-      <networkConnectors xmi:id="_BO3AkI5UEeyhMvv5xjA9yA" connectorEndpoints="_x5CtII5TEeyhMvv5xjA9yA _79yvkI5TEeyhMvv5xjA9yA"/>
+      <networkConnectors xmi:id="_BO3AkI5UEeyhMvv5xjA9yA" comment="Delegation Connector for the Mega's I2C Pins." connectorEndpoints="_x5CtII5TEeyhMvv5xjA9yA _79yvkI5TEeyhMvv5xjA9yA"/>
       <networkConnectors xmi:id="_U8q9EI5WEeyhMvv5xjA9yA" connectorEndpoints="_1kI0YIj5EeyYKPpICO9qfw _-SnnAI5VEeyhMvv5xjA9yA"/>
       <networkConnectors xmi:id="_WmW3sI5WEeyhMvv5xjA9yA" connectorEndpoints="_1kI0YIj5EeyYKPpICO9qfw _-Sww8I5VEeyhMvv5xjA9yA"/>
       <networkConnectors xmi:id="_ZQBooI5WEeyhMvv5xjA9yA" connectorEndpoints="_1kI0YIj5EeyYKPpICO9qfw _EBsCoI5WEeyhMvv5xjA9yA"/>
@@ -961,10 +961,10 @@
         <hwPortParts xmi:id="_KjW48Ij9EeyYKPpICO9qfw" hwport="_SvMmoI5bEeyhMvv5xjA9yA"/>
         <hwPortParts xmi:id="_Z8LO4I5UEeyhMvv5xjA9yA" connectors="_yeGBUI5bEeyhMvv5xjA9yA" hwport="_Up9j0I5TEeyhMvv5xjA9yA"/>
       </embeddedPlatformParts>
-      <delegationPorts xmi:id="_tKuLAIj8EeyYKPpICO9qfw" connectors="_yAdDEI5bEeyhMvv5xjA9yA" name="WiFi" communicationResource="_cuyIkIjyEeyYKPpICO9qfw"/>
-      <delegationPorts xmi:id="_dmwDMI5UEeyhMvv5xjA9yA" connectors="_yeGBUI5bEeyhMvv5xjA9yA" name="I2C"/>
-      <networkConnectors xmi:id="_yAdDEI5bEeyhMvv5xjA9yA" connectorEndpoints="_4YijwIj7EeyYKPpICO9qfw _tKuLAIj8EeyYKPpICO9qfw"/>
-      <networkConnectors xmi:id="_yeGBUI5bEeyhMvv5xjA9yA" connectorEndpoints="_Z8LO4I5UEeyhMvv5xjA9yA _dmwDMI5UEeyhMvv5xjA9yA"/>
+      <delegationPorts xmi:id="_tKuLAIj8EeyYKPpICO9qfw" comment="The delegation port for the Nano's WiFiShield." connectors="_yAdDEI5bEeyhMvv5xjA9yA" name="WiFi" communicationResource="_cuyIkIjyEeyYKPpICO9qfw"/>
+      <delegationPorts xmi:id="_dmwDMI5UEeyhMvv5xjA9yA" comment="I2C Delegation Port for the Nano." connectors="_yeGBUI5bEeyhMvv5xjA9yA" name="I2C"/>
+      <networkConnectors xmi:id="_yAdDEI5bEeyhMvv5xjA9yA" comment="Delegation of the Nano's WiFi shield." connectorEndpoints="_4YijwIj7EeyYKPpICO9qfw _tKuLAIj8EeyYKPpICO9qfw"/>
+      <networkConnectors xmi:id="_yeGBUI5bEeyhMvv5xjA9yA" comment="I2C Delegation Connector for the Nano." connectorEndpoints="_Z8LO4I5UEeyhMvv5xjA9yA _dmwDMI5UEeyhMvv5xjA9yA"/>
     </modelElements>
     <modelElements xsi:type="hwplatform:HWPlatform" xmi:id="_BM_xEIj-EeyYKPpICO9qfw" name="RoboCar">
       <embeddedPlatformParts xsi:type="hwplatform:HWPlatformPart" xmi:id="_CzfNwIj-EeyYKPpICO9qfw" name="carCoordiator" hwplatformType="_zje5UIj7EeyYKPpICO9qfw">
@@ -987,6 +987,161 @@
       <networkConnectors xmi:id="_RArFMIj-EeyYKPpICO9qfw" connectorEndpoints="_DbjTUIj-EeyYKPpICO9qfw _N85LIIj-EeyYKPpICO9qfw"/>
       <networkConnectors xmi:id="_go-2YI5aEeyhMvv5xjA9yA" connectorEndpoints="_K51e0I5ZEeyhMvv5xjA9yA _ZKz0oI5aEeyhMvv5xjA9yA"/>
       <networkConnectors xmi:id="_hTkrgI5aEeyhMvv5xjA9yA" connectorEndpoints="_K6sacI5ZEeyhMvv5xjA9yA _ZKz0oI5aEeyhMvv5xjA9yA"/>
+    </modelElements>
+    <modelElements xsi:type="hwplatforminstance:HWPlatformInstanceConfiguration" xmi:id="_Dkx1cI5cEeyhMvv5xjA9yA" comment="The hardware instance for a slow and a fast car.">
+      <hwplatformInstances xmi:id="_E6MJMI5cEeyhMvv5xjA9yA" name="slowCar" hwplatformType="_BM_xEIj-EeyYKPpICO9qfw">
+        <delegationPorts xmi:id="_GT3R4I5cEeyhMvv5xjA9yA" name="WiFi" connectorInstances="_GT2q0I5cEeyhMvv5xjA9yA _w_h-UI5rEeyhMvv5xjA9yA" type="_N85LIIj-EeyYKPpICO9qfw"/>
+        <embeddedHPIC xmi:id="_GT2DwI5cEeyhMvv5xjA9yA">
+          <hwplatformInstances xmi:id="_GT-moI5cEeyhMvv5xjA9yA" name="driver" hwplatformType="_piC7gYj5EeyYKPpICO9qfw">
+            <delegationPorts xmi:id="_GUHwkY5cEeyhMvv5xjA9yA" name="I2C" connectorInstances="_GUHwkI5cEeyhMvv5xjA9yA _GUAb0I5cEeyhMvv5xjA9yA" type="_79yvkI5TEeyhMvv5xjA9yA"/>
+            <embeddedHPIC xmi:id="_GT_NsI5cEeyhMvv5xjA9yA">
+              <resources xsi:type="hwresourceinstance:SensorInstance" xmi:id="_GUGicI5cEeyhMvv5xjA9yA" name="rearDistanceSensor.0.1.1" resourceType="_Ifr8kIjzEeyYKPpICO9qfw">
+                <hwports xsi:type="hwplatforminstance:HWPortInstance" xmi:id="_GUGicY5cEeyhMvv5xjA9yA" name="echo" connectorInstances="_GT_0xY5cEeyhMvv5xjA9yA" type="_EB1MkI5WEeyhMvv5xjA9yA" communicationResource="_TOJDUIjzEeyYKPpICO9qfw"/>
+                <hwports xsi:type="hwplatforminstance:HWPortInstance" xmi:id="_GUGico5cEeyhMvv5xjA9yA" name="signal" connectorInstances="_GT_0xI5cEeyhMvv5xjA9yA" type="_EBsCoI5WEeyhMvv5xjA9yA" communicationResource="_MdZIQIjzEeyYKPpICO9qfw"/>
+              </resources>
+              <resources xsi:type="hwresourceinstance:StructuredResourceInstance" xmi:id="_GUGic45cEeyhMvv5xjA9yA" name="ecu.0.1.1" resourceType="_ku2lQIgoEeyYKPpICO9qfw">
+                <hwports xsi:type="hwplatforminstance:HWPortInstance" xmi:id="_GUGidI5cEeyhMvv5xjA9yA" name="DigitalIOPin" comment="digitalIOPoin" connectorInstances="_GT_0wo5cEeyhMvv5xjA9yA _GT_0w45cEeyhMvv5xjA9yA _GT_0xI5cEeyhMvv5xjA9yA _GT_0xY5cEeyhMvv5xjA9yA" type="_1kI0YIj5EeyYKPpICO9qfw" communicationResource="_R0YGAIgtEeyYKPpICO9qfw"/>
+                <hwports xsi:type="hwplatforminstance:HWPortInstance" xmi:id="_GUGidY5cEeyhMvv5xjA9yA" name="MotorDriver" comment="motorDriver" connectorInstances="_GT_0wI5cEeyhMvv5xjA9yA _GT_0wY5cEeyhMvv5xjA9yA" type="_1kG_MIj5EeyYKPpICO9qfw" communicationResource="_TTsHIIjyEeyYKPpICO9qfw"/>
+                <hwports xsi:type="hwplatforminstance:HWPortInstance" xmi:id="_GUGido5cEeyhMvv5xjA9yA" name="I2C Pins" comment="i2cPins" connectorInstances="_GUAb0I5cEeyhMvv5xjA9yA" type="_x5CtII5TEeyhMvv5xjA9yA" communicationResource="_ChVxkI5TEeyhMvv5xjA9yA"/>
+                <embeddedAtomicResourceInstances xsi:type="hwresourceinstance:ProcessorInstance" xmi:id="_GUGid45cEeyhMvv5xjA9yA" name="ATmega2560" resourceType="_v3H6MIgoEeyYKPpICO9qfw" MIPS="16.0">
+                  <frequency xmi:id="_GUGieI5cEeyhMvv5xjA9yA" value="16.0" unit="MHz"/>
+                </embeddedAtomicResourceInstances>
+                <embeddedAtomicResourceInstances xsi:type="hwresourceinstance:StorageMemoryInstance" xmi:id="_GUGieY5cEeyhMvv5xjA9yA" name="Flash" resourceType="_gXcYwIgrEeyYKPpICO9qfw">
+                  <memorySize xmi:id="_GUGieo5cEeyhMvv5xjA9yA" value="256.0" unit="KByte"/>
+                </embeddedAtomicResourceInstances>
+                <embeddedAtomicResourceInstances xsi:type="hwresourceinstance:StorageMemoryInstance" xmi:id="_GUGie45cEeyhMvv5xjA9yA" name="EEPROM" resourceType="_GYUu4IgsEeyYKPpICO9qfw">
+                  <memorySize xmi:id="_GUGifI5cEeyhMvv5xjA9yA" value="4.0" unit="KByte"/>
+                </embeddedAtomicResourceInstances>
+                <embeddedAtomicResourceInstances xsi:type="hwresourceinstance:ProcessingMemoryInstance" xmi:id="_GUGifY5cEeyhMvv5xjA9yA" name="SRAM" resourceType="_UiMpEIgrEeyYKPpICO9qfw">
+                  <memorySize xmi:id="_GUGifo5cEeyhMvv5xjA9yA" value="8.0" unit="KByte"/>
+                </embeddedAtomicResourceInstances>
+              </resources>
+              <resources xsi:type="hwresourceinstance:SensorInstance" xmi:id="_GUGif45cEeyhMvv5xjA9yA" name="frontDistanceSensor.0.1.1" resourceType="_Ifr8kIjzEeyYKPpICO9qfw">
+                <hwports xsi:type="hwplatforminstance:HWPortInstance" xmi:id="_GUGigI5cEeyhMvv5xjA9yA" name="echo" connectorInstances="_GT_0w45cEeyhMvv5xjA9yA" type="_-Sww8I5VEeyhMvv5xjA9yA" communicationResource="_TOJDUIjzEeyYKPpICO9qfw"/>
+                <hwports xsi:type="hwplatforminstance:HWPortInstance" xmi:id="_GUGigY5cEeyhMvv5xjA9yA" name="signal" connectorInstances="_GT_0wo5cEeyhMvv5xjA9yA" type="_-SnnAI5VEeyhMvv5xjA9yA" communicationResource="_MdZIQIjzEeyYKPpICO9qfw"/>
+              </resources>
+              <resources xsi:type="hwresourceinstance:ActuatorInstance" xmi:id="_GUGigo5cEeyhMvv5xjA9yA" name="leftMotor.0.1.1" resourceType="_ElwxkIjbEeyYKPpICO9qfw">
+                <hwports xsi:type="hwplatforminstance:HWPortInstance" xmi:id="_GUGig45cEeyhMvv5xjA9yA" name="inputSignal" connectorInstances="_GT_0wI5cEeyhMvv5xjA9yA" type="_OMo0IIj6EeyYKPpICO9qfw" communicationResource="_-4TyoIjyEeyYKPpICO9qfw"/>
+              </resources>
+              <resources xsi:type="hwresourceinstance:ActuatorInstance" xmi:id="_GUGihI5cEeyhMvv5xjA9yA" name="rightMotor.0.1.1" resourceType="_ElwxkIjbEeyYKPpICO9qfw">
+                <hwports xsi:type="hwplatforminstance:HWPortInstance" xmi:id="_GUGihY5cEeyhMvv5xjA9yA" name="inputSignal" connectorInstances="_GT_0wY5cEeyhMvv5xjA9yA" type="_XJvSAIj6EeyYKPpICO9qfw" communicationResource="_-4TyoIjyEeyYKPpICO9qfw"/>
+              </resources>
+              <networkConnectorInstances xmi:id="_GT_0wI5cEeyhMvv5xjA9yA" type="_i2ChEIj6EeyYKPpICO9qfw" connectorEndpointInstances="_GUGidY5cEeyhMvv5xjA9yA _GUGig45cEeyhMvv5xjA9yA"/>
+              <networkConnectorInstances xmi:id="_GT_0wY5cEeyhMvv5xjA9yA" type="_pjAIUIj6EeyYKPpICO9qfw" connectorEndpointInstances="_GUGidY5cEeyhMvv5xjA9yA _GUGihY5cEeyhMvv5xjA9yA"/>
+              <networkConnectorInstances xmi:id="_GT_0wo5cEeyhMvv5xjA9yA" type="_U8q9EI5WEeyhMvv5xjA9yA" connectorEndpointInstances="_GUGidI5cEeyhMvv5xjA9yA _GUGigY5cEeyhMvv5xjA9yA"/>
+              <networkConnectorInstances xmi:id="_GT_0w45cEeyhMvv5xjA9yA" type="_WmW3sI5WEeyhMvv5xjA9yA" connectorEndpointInstances="_GUGidI5cEeyhMvv5xjA9yA _GUGigI5cEeyhMvv5xjA9yA"/>
+              <networkConnectorInstances xmi:id="_GT_0xI5cEeyhMvv5xjA9yA" type="_ZQBooI5WEeyhMvv5xjA9yA" connectorEndpointInstances="_GUGidI5cEeyhMvv5xjA9yA _GUGico5cEeyhMvv5xjA9yA"/>
+              <networkConnectorInstances xmi:id="_GT_0xY5cEeyhMvv5xjA9yA" type="_aPru0I5WEeyhMvv5xjA9yA" connectorEndpointInstances="_GUGidI5cEeyhMvv5xjA9yA _GUGicY5cEeyhMvv5xjA9yA"/>
+              <networkConnectorInstances xmi:id="_GUAb0I5cEeyhMvv5xjA9yA" type="_BO3AkI5UEeyhMvv5xjA9yA" connectorEndpointInstances="_GUGido5cEeyhMvv5xjA9yA _GUHwkY5cEeyhMvv5xjA9yA"/>
+            </embeddedHPIC>
+          </hwplatformInstances>
+          <hwplatformInstances xmi:id="_GT348I5cEeyhMvv5xjA9yA" name="carCoordiator" hwplatformType="_zje5UIj7EeyYKPpICO9qfw">
+            <delegationPorts xmi:id="_GT9YgY5cEeyhMvv5xjA9yA" name="WiFi" connectorInstances="_GT2q0I5cEeyhMvv5xjA9yA _GT4gAI5cEeyhMvv5xjA9yA" type="_tKuLAIj8EeyYKPpICO9qfw"/>
+            <delegationPorts xmi:id="_GT9Ygo5cEeyhMvv5xjA9yA" name="I2C" connectorInstances="_GT9YgI5cEeyhMvv5xjA9yA _GT4gAY5cEeyhMvv5xjA9yA" type="_dmwDMI5UEeyhMvv5xjA9yA"/>
+            <embeddedHPIC xmi:id="_GT348Y5cEeyhMvv5xjA9yA">
+              <resources xsi:type="hwresourceinstance:StructuredResourceInstance" xmi:id="_GT68QI5cEeyhMvv5xjA9yA" name="ecu.0.1.1" resourceType="_ku2lQIgoEeyYKPpICO9qfw">
+                <hwports xsi:type="hwplatforminstance:HWPortInstance" xmi:id="_GT68QY5cEeyhMvv5xjA9yA" name="WiFi Shield" connectorInstances="_GT4gAI5cEeyhMvv5xjA9yA" type="_4YijwIj7EeyYKPpICO9qfw" communicationResource="_cuyIkIjyEeyYKPpICO9qfw"/>
+                <hwports xsi:type="hwplatforminstance:HWPortInstance" xmi:id="_GT68Qo5cEeyhMvv5xjA9yA" name="I2C Pins" connectorInstances="_GT4gAY5cEeyhMvv5xjA9yA" type="_Z8LO4I5UEeyhMvv5xjA9yA" communicationResource="_ChVxkI5TEeyhMvv5xjA9yA"/>
+                <embeddedAtomicResourceInstances xsi:type="hwresourceinstance:ProcessingMemoryInstance" xmi:id="_GT68Q45cEeyhMvv5xjA9yA" name="SRAM" resourceType="_UiMpEIgrEeyYKPpICO9qfw">
+                  <memorySize xmi:id="_GT68RI5cEeyhMvv5xjA9yA" value="2.0" unit="KByte"/>
+                </embeddedAtomicResourceInstances>
+                <embeddedAtomicResourceInstances xsi:type="hwresourceinstance:StorageMemoryInstance" xmi:id="_GT68RY5cEeyhMvv5xjA9yA" name="Flash" resourceType="_gXcYwIgrEeyYKPpICO9qfw">
+                  <memorySize xmi:id="_GT68Ro5cEeyhMvv5xjA9yA" value="32.0" unit="KByte"/>
+                </embeddedAtomicResourceInstances>
+                <embeddedAtomicResourceInstances xsi:type="hwresourceinstance:StorageMemoryInstance" xmi:id="_GT68R45cEeyhMvv5xjA9yA" name="EEPROM" resourceType="_GYUu4IgsEeyYKPpICO9qfw">
+                  <memorySize xmi:id="_GT68SI5cEeyhMvv5xjA9yA" value="1.0" unit="KByte"/>
+                </embeddedAtomicResourceInstances>
+                <embeddedAtomicResourceInstances xsi:type="hwresourceinstance:ProcessorInstance" xmi:id="_GT68SY5cEeyhMvv5xjA9yA" name="ATmega328" resourceType="_v3H6MIgoEeyYKPpICO9qfw" MIPS="16.0">
+                  <frequency xmi:id="_GT68So5cEeyhMvv5xjA9yA" value="16.0" unit="MHz"/>
+                </embeddedAtomicResourceInstances>
+              </resources>
+              <networkConnectorInstances xmi:id="_GT4gAI5cEeyhMvv5xjA9yA" type="_yAdDEI5bEeyhMvv5xjA9yA" connectorEndpointInstances="_GT68QY5cEeyhMvv5xjA9yA _GT9YgY5cEeyhMvv5xjA9yA"/>
+              <networkConnectorInstances xmi:id="_GT4gAY5cEeyhMvv5xjA9yA" type="_yeGBUI5bEeyhMvv5xjA9yA" connectorEndpointInstances="_GT68Qo5cEeyhMvv5xjA9yA _GT9Ygo5cEeyhMvv5xjA9yA"/>
+            </embeddedHPIC>
+          </hwplatformInstances>
+          <networkingHardwareInstances xsi:type="hwplatforminstance:BusInstance" xmi:id="_GUI-sI5cEeyhMvv5xjA9yA" name="Bus" comment="&quot;no comment provided&quot;.0" connectorInstances="_GT9YgI5cEeyhMvv5xjA9yA _GUHwkI5cEeyhMvv5xjA9yA" type="_ZKz0oI5aEeyhMvv5xjA9yA"/>
+          <networkConnectorInstances xmi:id="_GT2q0I5cEeyhMvv5xjA9yA" comment="WiFi Delegation for the overall RoboCar." type="_RArFMIj-EeyYKPpICO9qfw" connectorEndpointInstances="_GT3R4I5cEeyhMvv5xjA9yA _GT9YgY5cEeyhMvv5xjA9yA"/>
+          <networkConnectorInstances xmi:id="_GT9YgI5cEeyhMvv5xjA9yA" type="_go-2YI5aEeyhMvv5xjA9yA" connectorEndpointInstances="_GT9Ygo5cEeyhMvv5xjA9yA _GUI-sI5cEeyhMvv5xjA9yA"/>
+          <networkConnectorInstances xmi:id="_GUHwkI5cEeyhMvv5xjA9yA" type="_hTkrgI5aEeyhMvv5xjA9yA" connectorEndpointInstances="_GUHwkY5cEeyhMvv5xjA9yA _GUI-sI5cEeyhMvv5xjA9yA"/>
+        </embeddedHPIC>
+      </hwplatformInstances>
+      <hwplatformInstances xmi:id="_d_Y1kI5oEeyhMvv5xjA9yA" name="fastCar" hwplatformType="_BM_xEIj-EeyYKPpICO9qfw">
+        <delegationPorts xmi:id="_e_xUgI5oEeyhMvv5xjA9yA" name="WiFi" connectorInstances="_e_wtcI5oEeyhMvv5xjA9yA _w_h-UI5rEeyhMvv5xjA9yA" type="_N85LIIj-EeyYKPpICO9qfw"/>
+        <embeddedHPIC xmi:id="_e_vfUI5oEeyhMvv5xjA9yA">
+          <hwplatformInstances xmi:id="_e_x7kI5oEeyhMvv5xjA9yA" name="carCoordiator" hwplatformType="_zje5UIj7EeyYKPpICO9qfw">
+            <delegationPorts xmi:id="_e_1l8Y5oEeyhMvv5xjA9yA" name="WiFi" connectorInstances="_e_wtcI5oEeyhMvv5xjA9yA _e_yioI5oEeyhMvv5xjA9yA" type="_DbjTUIj-EeyYKPpICO9qfw"/>
+            <delegationPorts xmi:id="_e_1l8o5oEeyhMvv5xjA9yA" name="I2C" connectorInstances="_e_1l8I5oEeyhMvv5xjA9yA _e_zJsI5oEeyhMvv5xjA9yA" type="_K51e0I5ZEeyhMvv5xjA9yA"/>
+            <embeddedHPIC xmi:id="_e_x7kY5oEeyhMvv5xjA9yA">
+              <resources xsi:type="hwresourceinstance:StructuredResourceInstance" xmi:id="_e_zJsY5oEeyhMvv5xjA9yA" name="ecu.0.1.1" resourceType="_ku2lQIgoEeyYKPpICO9qfw">
+                <hwports xsi:type="hwplatforminstance:HWPortInstance" xmi:id="_e_zJso5oEeyhMvv5xjA9yA" name="I2C Pins" connectorInstances="_e_zJsI5oEeyhMvv5xjA9yA" type="_Z8LO4I5UEeyhMvv5xjA9yA" communicationResource="_ChVxkI5TEeyhMvv5xjA9yA"/>
+                <hwports xsi:type="hwplatforminstance:HWPortInstance" xmi:id="_e_zJs45oEeyhMvv5xjA9yA" name="WiFi Shield" connectorInstances="_e_yioI5oEeyhMvv5xjA9yA" type="_4YijwIj7EeyYKPpICO9qfw" communicationResource="_cuyIkIjyEeyYKPpICO9qfw"/>
+                <embeddedAtomicResourceInstances xsi:type="hwresourceinstance:ProcessingMemoryInstance" xmi:id="_e_zJtI5oEeyhMvv5xjA9yA" name="SRAM" resourceType="_UiMpEIgrEeyYKPpICO9qfw">
+                  <memorySize xmi:id="_e_zJtY5oEeyhMvv5xjA9yA" value="2.0" unit="KByte"/>
+                </embeddedAtomicResourceInstances>
+                <embeddedAtomicResourceInstances xsi:type="hwresourceinstance:StorageMemoryInstance" xmi:id="_e_zJto5oEeyhMvv5xjA9yA" name="Flash" resourceType="_gXcYwIgrEeyYKPpICO9qfw">
+                  <memorySize xmi:id="_e_zJt45oEeyhMvv5xjA9yA" value="32.0" unit="KByte"/>
+                </embeddedAtomicResourceInstances>
+                <embeddedAtomicResourceInstances xsi:type="hwresourceinstance:StorageMemoryInstance" xmi:id="_e_zJuI5oEeyhMvv5xjA9yA" name="EEPROM" resourceType="_GYUu4IgsEeyYKPpICO9qfw">
+                  <memorySize xmi:id="_e_zJuY5oEeyhMvv5xjA9yA" value="1.0" unit="KByte"/>
+                </embeddedAtomicResourceInstances>
+                <embeddedAtomicResourceInstances xsi:type="hwresourceinstance:ProcessorInstance" xmi:id="_e_zJuo5oEeyhMvv5xjA9yA" name="ATmega328" resourceType="_v3H6MIgoEeyYKPpICO9qfw" MIPS="16.0">
+                  <frequency xmi:id="_e_zJu45oEeyhMvv5xjA9yA" value="16.0" unit="MHz"/>
+                </embeddedAtomicResourceInstances>
+              </resources>
+              <networkConnectorInstances xmi:id="_e_yioI5oEeyhMvv5xjA9yA" comment="Delegation of the Nano's WiFi shield." type="_yAdDEI5bEeyhMvv5xjA9yA" connectorEndpointInstances="_e_zJs45oEeyhMvv5xjA9yA _e_1l8Y5oEeyhMvv5xjA9yA"/>
+              <networkConnectorInstances xmi:id="_e_zJsI5oEeyhMvv5xjA9yA" comment="I2C Delegation Connector for the Nano." type="_yeGBUI5bEeyhMvv5xjA9yA" connectorEndpointInstances="_e_zJso5oEeyhMvv5xjA9yA _e_1l8o5oEeyhMvv5xjA9yA"/>
+            </embeddedHPIC>
+          </hwplatformInstances>
+          <hwplatformInstances xmi:id="_e_2NAI5oEeyhMvv5xjA9yA" name="driver" hwplatformType="_piC7gYj5EeyYKPpICO9qfw">
+            <delegationPorts xmi:id="_e_6ecY5oEeyhMvv5xjA9yA" name="I2C" connectorInstances="_e_6ecI5oEeyhMvv5xjA9yA _e_3bII5oEeyhMvv5xjA9yA" type="_K6sacI5ZEeyhMvv5xjA9yA"/>
+            <embeddedHPIC xmi:id="_e_2NAY5oEeyhMvv5xjA9yA">
+              <resources xsi:type="hwresourceinstance:StructuredResourceInstance" xmi:id="_e_53YI5oEeyhMvv5xjA9yA" name="ecu.0.1.1" resourceType="_ku2lQIgoEeyYKPpICO9qfw">
+                <hwports xsi:type="hwplatforminstance:HWPortInstance" xmi:id="_e_53YY5oEeyhMvv5xjA9yA" name="I2C Pins" comment="i2cPins" connectorInstances="_e_3bII5oEeyhMvv5xjA9yA" type="_x5CtII5TEeyhMvv5xjA9yA" communicationResource="_ChVxkI5TEeyhMvv5xjA9yA"/>
+                <hwports xsi:type="hwplatforminstance:HWPortInstance" xmi:id="_e_53Yo5oEeyhMvv5xjA9yA" name="MotorDriver" comment="motorDriver" connectorInstances="_e_2NAo5oEeyhMvv5xjA9yA _e_2NA45oEeyhMvv5xjA9yA" type="_1kG_MIj5EeyYKPpICO9qfw" communicationResource="_TTsHIIjyEeyYKPpICO9qfw"/>
+                <hwports xsi:type="hwplatforminstance:HWPortInstance" xmi:id="_e_53Y45oEeyhMvv5xjA9yA" name="DigitalIOPin" comment="digitalIOPoin" connectorInstances="_e_20EI5oEeyhMvv5xjA9yA _e_20EY5oEeyhMvv5xjA9yA _e_20Eo5oEeyhMvv5xjA9yA _e_20E45oEeyhMvv5xjA9yA" type="_1kI0YIj5EeyYKPpICO9qfw" communicationResource="_R0YGAIgtEeyYKPpICO9qfw"/>
+                <embeddedAtomicResourceInstances xsi:type="hwresourceinstance:ProcessorInstance" xmi:id="_e_53ZI5oEeyhMvv5xjA9yA" name="ATmega2560" resourceType="_v3H6MIgoEeyYKPpICO9qfw" MIPS="16.0">
+                  <frequency xmi:id="_e_53ZY5oEeyhMvv5xjA9yA" value="16.0" unit="MHz"/>
+                </embeddedAtomicResourceInstances>
+                <embeddedAtomicResourceInstances xsi:type="hwresourceinstance:StorageMemoryInstance" xmi:id="_e_53Zo5oEeyhMvv5xjA9yA" name="Flash" resourceType="_gXcYwIgrEeyYKPpICO9qfw">
+                  <memorySize xmi:id="_e_53Z45oEeyhMvv5xjA9yA" value="256.0" unit="KByte"/>
+                </embeddedAtomicResourceInstances>
+                <embeddedAtomicResourceInstances xsi:type="hwresourceinstance:StorageMemoryInstance" xmi:id="_e_53aI5oEeyhMvv5xjA9yA" name="EEPROM" resourceType="_GYUu4IgsEeyYKPpICO9qfw">
+                  <memorySize xmi:id="_e_53aY5oEeyhMvv5xjA9yA" value="4.0" unit="KByte"/>
+                </embeddedAtomicResourceInstances>
+                <embeddedAtomicResourceInstances xsi:type="hwresourceinstance:ProcessingMemoryInstance" xmi:id="_e_53ao5oEeyhMvv5xjA9yA" name="SRAM" resourceType="_UiMpEIgrEeyYKPpICO9qfw">
+                  <memorySize xmi:id="_e_53a45oEeyhMvv5xjA9yA" value="8.0" unit="KByte"/>
+                </embeddedAtomicResourceInstances>
+              </resources>
+              <resources xsi:type="hwresourceinstance:ActuatorInstance" xmi:id="_e_53bI5oEeyhMvv5xjA9yA" name="leftMotor.0.1.1" resourceType="_ElwxkIjbEeyYKPpICO9qfw">
+                <hwports xsi:type="hwplatforminstance:HWPortInstance" xmi:id="_e_53bY5oEeyhMvv5xjA9yA" name="inputSignal" connectorInstances="_e_2NAo5oEeyhMvv5xjA9yA" type="_OMo0IIj6EeyYKPpICO9qfw" communicationResource="_-4TyoIjyEeyYKPpICO9qfw"/>
+              </resources>
+              <resources xsi:type="hwresourceinstance:SensorInstance" xmi:id="_e_53bo5oEeyhMvv5xjA9yA" name="rearDistanceSensor.0.1.1" resourceType="_Ifr8kIjzEeyYKPpICO9qfw">
+                <hwports xsi:type="hwplatforminstance:HWPortInstance" xmi:id="_e_53b45oEeyhMvv5xjA9yA" name="signal" connectorInstances="_e_20Eo5oEeyhMvv5xjA9yA" type="_EBsCoI5WEeyhMvv5xjA9yA" communicationResource="_MdZIQIjzEeyYKPpICO9qfw"/>
+                <hwports xsi:type="hwplatforminstance:HWPortInstance" xmi:id="_e_53cI5oEeyhMvv5xjA9yA" name="echo" connectorInstances="_e_20E45oEeyhMvv5xjA9yA" type="_EB1MkI5WEeyhMvv5xjA9yA" communicationResource="_TOJDUIjzEeyYKPpICO9qfw"/>
+              </resources>
+              <resources xsi:type="hwresourceinstance:ActuatorInstance" xmi:id="_e_53cY5oEeyhMvv5xjA9yA" name="rightMotor.0.1.1" resourceType="_ElwxkIjbEeyYKPpICO9qfw">
+                <hwports xsi:type="hwplatforminstance:HWPortInstance" xmi:id="_e_53co5oEeyhMvv5xjA9yA" name="inputSignal" connectorInstances="_e_2NA45oEeyhMvv5xjA9yA" type="_XJvSAIj6EeyYKPpICO9qfw" communicationResource="_-4TyoIjyEeyYKPpICO9qfw"/>
+              </resources>
+              <resources xsi:type="hwresourceinstance:SensorInstance" xmi:id="_e_53c45oEeyhMvv5xjA9yA" name="frontDistanceSensor.0.1.1" resourceType="_Ifr8kIjzEeyYKPpICO9qfw">
+                <hwports xsi:type="hwplatforminstance:HWPortInstance" xmi:id="_e_53dI5oEeyhMvv5xjA9yA" name="signal" connectorInstances="_e_20EI5oEeyhMvv5xjA9yA" type="_-SnnAI5VEeyhMvv5xjA9yA" communicationResource="_MdZIQIjzEeyYKPpICO9qfw"/>
+                <hwports xsi:type="hwplatforminstance:HWPortInstance" xmi:id="_e_53dY5oEeyhMvv5xjA9yA" name="echo" connectorInstances="_e_20EY5oEeyhMvv5xjA9yA" type="_-Sww8I5VEeyhMvv5xjA9yA" communicationResource="_TOJDUIjzEeyYKPpICO9qfw"/>
+              </resources>
+              <networkConnectorInstances xmi:id="_e_2NAo5oEeyhMvv5xjA9yA" type="_i2ChEIj6EeyYKPpICO9qfw" connectorEndpointInstances="_e_53Yo5oEeyhMvv5xjA9yA _e_53bY5oEeyhMvv5xjA9yA"/>
+              <networkConnectorInstances xmi:id="_e_2NA45oEeyhMvv5xjA9yA" type="_pjAIUIj6EeyYKPpICO9qfw" connectorEndpointInstances="_e_53Yo5oEeyhMvv5xjA9yA _e_53co5oEeyhMvv5xjA9yA"/>
+              <networkConnectorInstances xmi:id="_e_20EI5oEeyhMvv5xjA9yA" type="_U8q9EI5WEeyhMvv5xjA9yA" connectorEndpointInstances="_e_53Y45oEeyhMvv5xjA9yA _e_53dI5oEeyhMvv5xjA9yA"/>
+              <networkConnectorInstances xmi:id="_e_20EY5oEeyhMvv5xjA9yA" type="_WmW3sI5WEeyhMvv5xjA9yA" connectorEndpointInstances="_e_53Y45oEeyhMvv5xjA9yA _e_53dY5oEeyhMvv5xjA9yA"/>
+              <networkConnectorInstances xmi:id="_e_20Eo5oEeyhMvv5xjA9yA" type="_ZQBooI5WEeyhMvv5xjA9yA" connectorEndpointInstances="_e_53Y45oEeyhMvv5xjA9yA _e_53b45oEeyhMvv5xjA9yA"/>
+              <networkConnectorInstances xmi:id="_e_20E45oEeyhMvv5xjA9yA" type="_aPru0I5WEeyhMvv5xjA9yA" connectorEndpointInstances="_e_53Y45oEeyhMvv5xjA9yA _e_53cI5oEeyhMvv5xjA9yA"/>
+              <networkConnectorInstances xmi:id="_e_3bII5oEeyhMvv5xjA9yA" comment="Delegation Connector for the Mega's I2C Pins." type="_BO3AkI5UEeyhMvv5xjA9yA" connectorEndpointInstances="_e_53YY5oEeyhMvv5xjA9yA _e_6ecY5oEeyhMvv5xjA9yA"/>
+            </embeddedHPIC>
+          </hwplatformInstances>
+          <networkingHardwareInstances xsi:type="hwplatforminstance:BusInstance" xmi:id="_e_7FgI5oEeyhMvv5xjA9yA" name="Bus" comment="&quot;no comment provided&quot;.0" connectorInstances="_e_1l8I5oEeyhMvv5xjA9yA _e_6ecI5oEeyhMvv5xjA9yA" type="_ZKz0oI5aEeyhMvv5xjA9yA"/>
+          <networkConnectorInstances xmi:id="_e_wtcI5oEeyhMvv5xjA9yA" type="_RArFMIj-EeyYKPpICO9qfw" connectorEndpointInstances="_e_xUgI5oEeyhMvv5xjA9yA _e_1l8Y5oEeyhMvv5xjA9yA"/>
+          <networkConnectorInstances xmi:id="_e_1l8I5oEeyhMvv5xjA9yA" type="_go-2YI5aEeyhMvv5xjA9yA" connectorEndpointInstances="_e_1l8o5oEeyhMvv5xjA9yA _e_7FgI5oEeyhMvv5xjA9yA"/>
+          <networkConnectorInstances xmi:id="_e_6ecI5oEeyhMvv5xjA9yA" type="_hTkrgI5aEeyhMvv5xjA9yA" connectorEndpointInstances="_e_6ecY5oEeyhMvv5xjA9yA _e_7FgI5oEeyhMvv5xjA9yA"/>
+        </embeddedHPIC>
+      </hwplatformInstances>
+      <networkConnectorInstances xmi:id="_w_h-UI5rEeyhMvv5xjA9yA" comment="WiFi Network" connectorEndpointInstances="_GT3R4I5cEeyhMvv5xjA9yA _e_xUgI5oEeyhMvv5xjA9yA"/>
     </modelElements>
   </categories>
 </modelinstance:RootNode>

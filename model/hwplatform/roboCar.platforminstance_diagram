@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hwplatforminstance="http://www.muml.org/pm/hardware/hwplatforminstance/1.0.0" xmlns:hwresourceinstance="http://www.muml.org/pm/hardware/hwresourceinstance/1.0.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xsi:schemaLocation="http://www.muml.org/pm/hardware/hwplatforminstance/1.0.0 http://www.muml.org/pm/hardware/1.0.0#//hwplatforminstance http://www.muml.org/pm/hardware/hwresourceinstance/1.0.0 http://www.muml.org/pm/hardware/1.0.0#//hwresourceinstance" xmi:id="_DkzDkI5cEeyhMvv5xjA9yA" type="PlatformInstance" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_GUrxQI5cEeyhMvv5xjA9yA" type="2005" fontName="Segoe UI" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_GUsYUI5cEeyhMvv5xjA9yA" type="5118"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_GUsYUY5cEeyhMvv5xjA9yA" type="7012">
+      <children xmi:type="notation:Shape" xmi:id="_GUuNgI5cEeyhMvv5xjA9yA" type="3039" fontName="Segoe UI" lineColor="0">
+        <children xmi:type="notation:DecorationNode" xmi:id="_GUuNgo5cEeyhMvv5xjA9yA" type="7013">
+          <children xmi:type="notation:Shape" xmi:id="_GUwCsI5cEeyhMvv5xjA9yA" type="3040" fontName="Segoe UI" lineColor="0">
+            <children xmi:type="notation:DecorationNode" xmi:id="_GUwCso5cEeyhMvv5xjA9yA" type="5117"/>
+            <children xmi:type="notation:DecorationNode" xmi:id="_GUwCs45cEeyhMvv5xjA9yA" type="7014">
+              <children xmi:type="notation:Shape" xmi:id="_GUye8I5cEeyhMvv5xjA9yA" type="3039" fontName="Segoe UI" lineColor="0">
+                <children xmi:type="notation:DecorationNode" xmi:id="_GUye8o5cEeyhMvv5xjA9yA" type="7013">
+                  <children xmi:type="notation:Shape" xmi:id="_GU0UII5cEeyhMvv5xjA9yA" type="3045" fontName="Segoe UI" lineColor="0">
+                    <children xmi:type="notation:DecorationNode" xmi:id="_GU0UIo5cEeyhMvv5xjA9yA" type="5111"/>
+                    <children xmi:type="notation:DecorationNode" xmi:id="_GU0UI45cEeyhMvv5xjA9yA" type="5112"/>
+                    <children xmi:type="notation:DecorationNode" xmi:id="_GU0UJI5cEeyhMvv5xjA9yA" type="5113"/>
+                    <children xmi:type="notation:Shape" xmi:id="_GWehAI5cEeyhMvv5xjA9yA" type="3043" fontName="Segoe UI" lineColor="0">
+                      <children xmi:type="notation:DecorationNode" xmi:id="_GWehAo5cEeyhMvv5xjA9yA" type="5102">
+                        <layoutConstraint xmi:type="notation:Location" xmi:id="_GWehA45cEeyhMvv5xjA9yA" x="-48" y="-19"/>
+                      </children>
+                      <element xmi:type="hwplatforminstance:HWPortInstance" href="../roboCar.muml#_GUGicY5cEeyhMvv5xjA9yA"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GWehAY5cEeyhMvv5xjA9yA" x="94" y="79"/>
+                    </children>
+                    <children xmi:type="notation:Shape" xmi:id="_GWfIEI5cEeyhMvv5xjA9yA" type="3043" fontName="Segoe UI" lineColor="0">
+                      <children xmi:type="notation:DecorationNode" xmi:id="_GWfIEo5cEeyhMvv5xjA9yA" type="5102">
+                        <layoutConstraint xmi:type="notation:Location" xmi:id="_GWfIE45cEeyhMvv5xjA9yA" x="24" y="-19"/>
+                      </children>
+                      <element xmi:type="hwplatforminstance:HWPortInstance" href="../roboCar.muml#_GUGico5cEeyhMvv5xjA9yA"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GWfIEY5cEeyhMvv5xjA9yA" x="154" y="79"/>
+                    </children>
+                    <element xmi:type="hwresourceinstance:SensorInstance" href="../roboCar.muml#_GUGicI5cEeyhMvv5xjA9yA"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GU0UIY5cEeyhMvv5xjA9yA" x="8" y="24"/>
+                  </children>
+                  <children xmi:type="notation:Shape" xmi:id="_GU07MI5cEeyhMvv5xjA9yA" type="3042" fontName="Segoe UI" lineColor="0">
+                    <children xmi:type="notation:DecorationNode" xmi:id="_GU07Mo5cEeyhMvv5xjA9yA" type="5103"/>
+                    <children xmi:type="notation:DecorationNode" xmi:id="_GU07M45cEeyhMvv5xjA9yA" type="5104"/>
+                    <children xmi:type="notation:DecorationNode" xmi:id="_GU07NI5cEeyhMvv5xjA9yA" type="5105"/>
+                    <children xmi:type="notation:DecorationNode" xmi:id="_GU07NY5cEeyhMvv5xjA9yA" type="5106"/>
+                    <children xmi:type="notation:DecorationNode" xmi:id="_GU07No5cEeyhMvv5xjA9yA" type="5107"/>
+                    <children xmi:type="notation:Shape" xmi:id="_GbKzwI5cEeyhMvv5xjA9yA" type="3043" fontName="Segoe UI" lineColor="0">
+                      <children xmi:type="notation:DecorationNode" xmi:id="_GbKzwo5cEeyhMvv5xjA9yA" type="5102">
+                        <layoutConstraint xmi:type="notation:Location" xmi:id="_GbKzw45cEeyhMvv5xjA9yA" x="-22" y="-40"/>
+                      </children>
+                      <element xmi:type="hwplatforminstance:HWPortInstance" href="../roboCar.muml#_GUGidI5cEeyhMvv5xjA9yA"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GbKzwY5cEeyhMvv5xjA9yA" x="407" y="-12"/>
+                    </children>
+                    <children xmi:type="notation:Shape" xmi:id="_GbKzxI5cEeyhMvv5xjA9yA" type="3043" fontName="Segoe UI" lineColor="0">
+                      <children xmi:type="notation:DecorationNode" xmi:id="_GbKzxo5cEeyhMvv5xjA9yA" type="5102">
+                        <layoutConstraint xmi:type="notation:Location" xmi:id="_GbKzx45cEeyhMvv5xjA9yA" y="5"/>
+                      </children>
+                      <element xmi:type="hwplatforminstance:HWPortInstance" href="../roboCar.muml#_GUGidY5cEeyhMvv5xjA9yA"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GbKzxY5cEeyhMvv5xjA9yA" x="1177" y="-12"/>
+                    </children>
+                    <children xmi:type="notation:Shape" xmi:id="_GbKzyI5cEeyhMvv5xjA9yA" type="3043" fontName="Segoe UI" lineColor="0">
+                      <children xmi:type="notation:DecorationNode" xmi:id="_GbKzyo5cEeyhMvv5xjA9yA" type="5102">
+                        <layoutConstraint xmi:type="notation:Location" xmi:id="_GbKzy45cEeyhMvv5xjA9yA" y="5"/>
+                      </children>
+                      <element xmi:type="hwplatforminstance:HWPortInstance" href="../roboCar.muml#_GUGido5cEeyhMvv5xjA9yA"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GbKzyY5cEeyhMvv5xjA9yA" x="1468" y="56"/>
+                    </children>
+                    <element xmi:type="hwresourceinstance:StructuredResourceInstance" href="../roboCar.muml#_GUGic45cEeyhMvv5xjA9yA"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GU07MY5cEeyhMvv5xjA9yA" x="7" y="172"/>
+                  </children>
+                  <children xmi:type="notation:Shape" xmi:id="_GU07N45cEeyhMvv5xjA9yA" type="3045" fontName="Segoe UI" lineColor="0">
+                    <children xmi:type="notation:DecorationNode" xmi:id="_GU07OY5cEeyhMvv5xjA9yA" type="5111"/>
+                    <children xmi:type="notation:DecorationNode" xmi:id="_GU07Oo5cEeyhMvv5xjA9yA" type="5112"/>
+                    <children xmi:type="notation:DecorationNode" xmi:id="_GU07O45cEeyhMvv5xjA9yA" type="5113"/>
+                    <children xmi:type="notation:Shape" xmi:id="_Gf-bQI5cEeyhMvv5xjA9yA" type="3043" fontName="Segoe UI" lineColor="0">
+                      <children xmi:type="notation:DecorationNode" xmi:id="_Gf-bQo5cEeyhMvv5xjA9yA" type="5102">
+                        <layoutConstraint xmi:type="notation:Location" xmi:id="_Gf-bQ45cEeyhMvv5xjA9yA" x="24" y="-19"/>
+                      </children>
+                      <element xmi:type="hwplatforminstance:HWPortInstance" href="../roboCar.muml#_GUGigI5cEeyhMvv5xjA9yA"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Gf-bQY5cEeyhMvv5xjA9yA" x="216" y="79"/>
+                    </children>
+                    <children xmi:type="notation:Shape" xmi:id="_Gf_CUI5cEeyhMvv5xjA9yA" type="3043" fontName="Segoe UI" lineColor="0">
+                      <children xmi:type="notation:DecorationNode" xmi:id="_Gf_CUo5cEeyhMvv5xjA9yA" type="5102">
+                        <layoutConstraint xmi:type="notation:Location" xmi:id="_Gf_CU45cEeyhMvv5xjA9yA" x="-48" y="-19"/>
+                      </children>
+                      <element xmi:type="hwplatforminstance:HWPortInstance" href="../roboCar.muml#_GUGigY5cEeyhMvv5xjA9yA"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Gf_CUY5cEeyhMvv5xjA9yA" x="108" y="79"/>
+                    </children>
+                    <element xmi:type="hwresourceinstance:SensorInstance" href="../roboCar.muml#_GUGif45cEeyhMvv5xjA9yA"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GU07OI5cEeyhMvv5xjA9yA" x="438" y="24"/>
+                  </children>
+                  <children xmi:type="notation:Shape" xmi:id="_GU07PI5cEeyhMvv5xjA9yA" type="3044" fontName="Segoe UI" lineColor="0">
+                    <children xmi:type="notation:DecorationNode" xmi:id="_GU07Po5cEeyhMvv5xjA9yA" type="5108"/>
+                    <children xmi:type="notation:DecorationNode" xmi:id="_GU07P45cEeyhMvv5xjA9yA" type="5109"/>
+                    <children xmi:type="notation:DecorationNode" xmi:id="_GU07QI5cEeyhMvv5xjA9yA" type="5110"/>
+                    <children xmi:type="notation:Shape" xmi:id="_GjJrEI5cEeyhMvv5xjA9yA" type="3043" fontName="Segoe UI" lineColor="0">
+                      <children xmi:type="notation:DecorationNode" xmi:id="_GjJrEo5cEeyhMvv5xjA9yA" type="5102">
+                        <layoutConstraint xmi:type="notation:Location" xmi:id="_GjJrE45cEeyhMvv5xjA9yA" y="5"/>
+                      </children>
+                      <element xmi:type="hwplatforminstance:HWPortInstance" href="../roboCar.muml#_GUGig45cEeyhMvv5xjA9yA"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GjJrEY5cEeyhMvv5xjA9yA" x="120" y="79"/>
+                    </children>
+                    <element xmi:type="hwresourceinstance:ActuatorInstance" href="../roboCar.muml#_GUGigo5cEeyhMvv5xjA9yA"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GU07PY5cEeyhMvv5xjA9yA" x="884" y="24"/>
+                  </children>
+                  <children xmi:type="notation:Shape" xmi:id="_GU07QY5cEeyhMvv5xjA9yA" type="3044" fontName="Segoe UI" lineColor="0">
+                    <children xmi:type="notation:DecorationNode" xmi:id="_GU07Q45cEeyhMvv5xjA9yA" type="5108"/>
+                    <children xmi:type="notation:DecorationNode" xmi:id="_GU07RI5cEeyhMvv5xjA9yA" type="5109"/>
+                    <children xmi:type="notation:DecorationNode" xmi:id="_GU07RY5cEeyhMvv5xjA9yA" type="5110"/>
+                    <children xmi:type="notation:Shape" xmi:id="_GlX4oI5cEeyhMvv5xjA9yA" type="3043" fontName="Segoe UI" lineColor="0">
+                      <children xmi:type="notation:DecorationNode" xmi:id="_GlX4oo5cEeyhMvv5xjA9yA" type="5102">
+                        <layoutConstraint xmi:type="notation:Location" xmi:id="_GlX4o45cEeyhMvv5xjA9yA" y="5"/>
+                      </children>
+                      <element xmi:type="hwplatforminstance:HWPortInstance" href="../roboCar.muml#_GUGihY5cEeyhMvv5xjA9yA"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GlX4oY5cEeyhMvv5xjA9yA" x="120" y="79"/>
+                    </children>
+                    <element xmi:type="hwresourceinstance:ActuatorInstance" href="../roboCar.muml#_GUGihI5cEeyhMvv5xjA9yA"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GU07Qo5cEeyhMvv5xjA9yA" x="1244" y="24"/>
+                  </children>
+                </children>
+                <element xmi:type="hwplatforminstance:HWPlatformInstanceConfiguration" href="../roboCar.muml#_GT_NsI5cEeyhMvv5xjA9yA"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GUye8Y5cEeyhMvv5xjA9yA"/>
+              </children>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_GUwCtI5cEeyhMvv5xjA9yA"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_GUwCtY5cEeyhMvv5xjA9yA"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_GmR3kI5cEeyhMvv5xjA9yA" type="3041" fontName="Segoe UI" lineColor="0">
+              <children xmi:type="notation:DecorationNode" xmi:id="_GmR3ko5cEeyhMvv5xjA9yA" type="5100">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_GmR3k45cEeyhMvv5xjA9yA" y="5"/>
+              </children>
+              <element xmi:type="hwplatforminstance:DelegationHWPortInstance" href="../roboCar.muml#_GUHwkY5cEeyhMvv5xjA9yA"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GmR3kY5cEeyhMvv5xjA9yA" x="1660" y="428"/>
+            </children>
+            <element xmi:type="hwplatforminstance:HWPlatformInstance" href="../roboCar.muml#_GT-moI5cEeyhMvv5xjA9yA"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GUwCsY5cEeyhMvv5xjA9yA" y="6" width="1672" height="396"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_GUwCto5cEeyhMvv5xjA9yA" type="3040" fontName="Segoe UI" lineColor="0">
+            <children xmi:type="notation:DecorationNode" xmi:id="_GUwCuI5cEeyhMvv5xjA9yA" type="5117"/>
+            <children xmi:type="notation:DecorationNode" xmi:id="_GUwCuY5cEeyhMvv5xjA9yA" type="7014">
+              <children xmi:type="notation:Shape" xmi:id="_rqNdQI5cEeyhMvv5xjA9yA" type="3039" fontName="Segoe UI" lineColor="0">
+                <children xmi:type="notation:DecorationNode" xmi:id="_rqNdQo5cEeyhMvv5xjA9yA" type="7013">
+                  <children xmi:type="notation:Shape" xmi:id="_rqOEUI5cEeyhMvv5xjA9yA" type="3042" fontName="Segoe UI" lineColor="0">
+                    <children xmi:type="notation:DecorationNode" xmi:id="_rqOrYI5cEeyhMvv5xjA9yA" type="5103"/>
+                    <children xmi:type="notation:DecorationNode" xmi:id="_rqOrYY5cEeyhMvv5xjA9yA" type="5104"/>
+                    <children xmi:type="notation:DecorationNode" xmi:id="_rqOrYo5cEeyhMvv5xjA9yA" type="5105"/>
+                    <children xmi:type="notation:DecorationNode" xmi:id="_rqOrY45cEeyhMvv5xjA9yA" type="5106"/>
+                    <children xmi:type="notation:DecorationNode" xmi:id="_rqOrZI5cEeyhMvv5xjA9yA" type="5107"/>
+                    <children xmi:type="notation:Shape" xmi:id="_rtVpwI5cEeyhMvv5xjA9yA" type="3043" fontName="Segoe UI" lineColor="0">
+                      <children xmi:type="notation:DecorationNode" xmi:id="_rtWQ0I5cEeyhMvv5xjA9yA" type="5102">
+                        <layoutConstraint xmi:type="notation:Location" xmi:id="_rtWQ0Y5cEeyhMvv5xjA9yA" x="-60" y="5"/>
+                      </children>
+                      <element xmi:type="hwplatforminstance:HWPortInstance" href="../roboCar.muml#_GT68QY5cEeyhMvv5xjA9yA"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rtVpwY5cEeyhMvv5xjA9yA" x="1432" y="90"/>
+                    </children>
+                    <children xmi:type="notation:Shape" xmi:id="_rtWQ0o5cEeyhMvv5xjA9yA" type="3043" fontName="Segoe UI" lineColor="0">
+                      <children xmi:type="notation:DecorationNode" xmi:id="_rtW34I5cEeyhMvv5xjA9yA" type="5102">
+                        <layoutConstraint xmi:type="notation:Location" xmi:id="_rtW34Y5cEeyhMvv5xjA9yA" x="-56" y="1"/>
+                      </children>
+                      <element xmi:type="hwplatforminstance:HWPortInstance" href="../roboCar.muml#_GT68Qo5cEeyhMvv5xjA9yA"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rtWQ045cEeyhMvv5xjA9yA" x="1472" y="21"/>
+                    </children>
+                    <element xmi:type="hwresourceinstance:StructuredResourceInstance" href="../roboCar.muml#_GT68QI5cEeyhMvv5xjA9yA"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rqOEUY5cEeyhMvv5xjA9yA" width="1483"/>
+                  </children>
+                </children>
+                <element xmi:type="hwplatforminstance:HWPlatformInstanceConfiguration" href="../roboCar.muml#_GT348Y5cEeyhMvv5xjA9yA"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rqNdQY5cEeyhMvv5xjA9yA"/>
+              </children>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_GUwCuo5cEeyhMvv5xjA9yA"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_GUwCu45cEeyhMvv5xjA9yA"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_GtFqMI5cEeyhMvv5xjA9yA" type="3041" fontName="Segoe UI" lineColor="0">
+              <children xmi:type="notation:DecorationNode" xmi:id="_GtFqMo5cEeyhMvv5xjA9yA" type="5100">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_GtFqM45cEeyhMvv5xjA9yA" y="5"/>
+              </children>
+              <element xmi:type="hwplatforminstance:DelegationHWPortInstance" href="../roboCar.muml#_GT9YgY5cEeyhMvv5xjA9yA"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GtFqMY5cEeyhMvv5xjA9yA" x="1514" y="144"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_GtFqNI5cEeyhMvv5xjA9yA" type="3041" fontName="Segoe UI" lineColor="0">
+              <children xmi:type="notation:DecorationNode" xmi:id="_GtGRQI5cEeyhMvv5xjA9yA" type="5100">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_GtGRQY5cEeyhMvv5xjA9yA" y="5"/>
+              </children>
+              <element xmi:type="hwplatforminstance:DelegationHWPortInstance" href="../roboCar.muml#_GT9Ygo5cEeyhMvv5xjA9yA"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GtFqNY5cEeyhMvv5xjA9yA" x="1514" y="66"/>
+            </children>
+            <element xmi:type="hwplatforminstance:HWPlatformInstance" href="../roboCar.muml#_GT348I5cEeyhMvv5xjA9yA"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GUwCt45cEeyhMvv5xjA9yA" x="3" y="411" width="1550" height="237"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_GUwCvI5cEeyhMvv5xjA9yA" type="3046" fontName="Segoe UI" lineColor="0">
+            <children xmi:type="notation:DecorationNode" xmi:id="_GUwCvo5cEeyhMvv5xjA9yA" type="5114"/>
+            <children xmi:type="notation:DecorationNode" xmi:id="_GUwCv45cEeyhMvv5xjA9yA" type="5115"/>
+            <element xmi:type="hwplatforminstance:BusInstance" href="../roboCar.muml#_GUI-sI5cEeyhMvv5xjA9yA"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GUwCvY5cEeyhMvv5xjA9yA" x="1576" y="456" width="130" height="55"/>
+          </children>
+        </children>
+        <element xmi:type="hwplatforminstance:HWPlatformInstanceConfiguration" href="../roboCar.muml#_GT2DwI5cEeyhMvv5xjA9yA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GUuNgY5cEeyhMvv5xjA9yA"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_GUsYUo5cEeyhMvv5xjA9yA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_GUsYU45cEeyhMvv5xjA9yA"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_GxlvsI5cEeyhMvv5xjA9yA" type="3041" fontName="Segoe UI" lineColor="0">
+      <children xmi:type="notation:DecorationNode" xmi:id="_Gxlvso5cEeyhMvv5xjA9yA" type="5100">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Gxlvs45cEeyhMvv5xjA9yA" x="24" y="-24"/>
+      </children>
+      <element xmi:type="hwplatforminstance:DelegationHWPortInstance" href="../roboCar.muml#_GT3R4I5cEeyhMvv5xjA9yA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GxlvsY5cEeyhMvv5xjA9yA" x="1644" y="732"/>
+    </children>
+    <element xmi:type="hwplatforminstance:HWPlatformInstance" href="../roboCar.muml#_E6MJMI5cEeyhMvv5xjA9yA"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GUrxQY5cEeyhMvv5xjA9yA" y="-144" width="1791" height="752"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_fAefII5oEeyhMvv5xjA9yA" type="2005" fontName="Segoe UI" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_fAefIo5oEeyhMvv5xjA9yA" type="5118"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_fAefI45oEeyhMvv5xjA9yA" type="7012">
+      <children xmi:type="notation:Shape" xmi:id="_fAftQI5oEeyhMvv5xjA9yA" type="3039" fontName="Segoe UI" lineColor="0">
+        <children xmi:type="notation:DecorationNode" xmi:id="_fAftQo5oEeyhMvv5xjA9yA" type="7013">
+          <children xmi:type="notation:Shape" xmi:id="_fAgUUI5oEeyhMvv5xjA9yA" type="3040" fontName="Segoe UI" lineColor="0">
+            <children xmi:type="notation:DecorationNode" xmi:id="_fAgUUo5oEeyhMvv5xjA9yA" type="5117"/>
+            <children xmi:type="notation:DecorationNode" xmi:id="_fAgUU45oEeyhMvv5xjA9yA" type="7014">
+              <children xmi:type="notation:Shape" xmi:id="_fAiwkI5oEeyhMvv5xjA9yA" type="3039" fontName="Segoe UI" lineColor="0">
+                <children xmi:type="notation:DecorationNode" xmi:id="_fAiwko5oEeyhMvv5xjA9yA" type="7013">
+                  <children xmi:type="notation:Shape" xmi:id="_fAj-sI5oEeyhMvv5xjA9yA" type="3042" fontName="Segoe UI" lineColor="0">
+                    <children xmi:type="notation:DecorationNode" xmi:id="_fAj-so5oEeyhMvv5xjA9yA" type="5103"/>
+                    <children xmi:type="notation:DecorationNode" xmi:id="_fAj-s45oEeyhMvv5xjA9yA" type="5104"/>
+                    <children xmi:type="notation:DecorationNode" xmi:id="_fAj-tI5oEeyhMvv5xjA9yA" type="5105"/>
+                    <children xmi:type="notation:DecorationNode" xmi:id="_fAj-tY5oEeyhMvv5xjA9yA" type="5106"/>
+                    <children xmi:type="notation:DecorationNode" xmi:id="_fAj-to5oEeyhMvv5xjA9yA" type="5107"/>
+                    <children xmi:type="notation:Shape" xmi:id="_fEA7UI5oEeyhMvv5xjA9yA" type="3043" fontName="Segoe UI" lineColor="0">
+                      <children xmi:type="notation:DecorationNode" xmi:id="_fEA7Uo5oEeyhMvv5xjA9yA" type="5102">
+                        <layoutConstraint xmi:type="notation:Location" xmi:id="_fEA7U45oEeyhMvv5xjA9yA" x="-60" y="4"/>
+                      </children>
+                      <element xmi:type="hwplatforminstance:HWPortInstance" href="../roboCar.muml#_e_zJso5oEeyhMvv5xjA9yA"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fEA7UY5oEeyhMvv5xjA9yA" x="1462" y="96"/>
+                    </children>
+                    <children xmi:type="notation:Shape" xmi:id="_fEA7VI5oEeyhMvv5xjA9yA" type="3043" fontName="Segoe UI" lineColor="0">
+                      <children xmi:type="notation:DecorationNode" xmi:id="_fEA7Vo5oEeyhMvv5xjA9yA" type="5102">
+                        <layoutConstraint xmi:type="notation:Location" xmi:id="_fEA7V45oEeyhMvv5xjA9yA" x="-72" y="-8"/>
+                      </children>
+                      <element xmi:type="hwplatforminstance:HWPortInstance" href="../roboCar.muml#_e_zJs45oEeyhMvv5xjA9yA"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fEA7VY5oEeyhMvv5xjA9yA" x="1462" y="24"/>
+                    </children>
+                    <element xmi:type="hwresourceinstance:StructuredResourceInstance" href="../roboCar.muml#_e_zJsY5oEeyhMvv5xjA9yA"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fAj-sY5oEeyhMvv5xjA9yA" width="1484"/>
+                  </children>
+                </children>
+                <element xmi:type="hwplatforminstance:HWPlatformInstanceConfiguration" href="../roboCar.muml#_e_x7kY5oEeyhMvv5xjA9yA"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fAiwkY5oEeyhMvv5xjA9yA"/>
+              </children>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_fAgUVI5oEeyhMvv5xjA9yA"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_fAgUVY5oEeyhMvv5xjA9yA"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_fFpTAI5oEeyhMvv5xjA9yA" type="3041" fontName="Segoe UI" lineColor="0">
+              <children xmi:type="notation:DecorationNode" xmi:id="_fFp6EI5oEeyhMvv5xjA9yA" type="5100">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_fFp6EY5oEeyhMvv5xjA9yA" y="5"/>
+              </children>
+              <element xmi:type="hwplatforminstance:DelegationHWPortInstance" href="../roboCar.muml#_e_1l8Y5oEeyhMvv5xjA9yA"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fFpTAY5oEeyhMvv5xjA9yA" x="1568" y="72"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_fFp6Eo5oEeyhMvv5xjA9yA" type="3041" fontName="Segoe UI" lineColor="0">
+              <children xmi:type="notation:DecorationNode" xmi:id="_fFp6FI5oEeyhMvv5xjA9yA" type="5100">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_fFp6FY5oEeyhMvv5xjA9yA" y="5"/>
+              </children>
+              <element xmi:type="hwplatforminstance:DelegationHWPortInstance" href="../roboCar.muml#_e_1l8o5oEeyhMvv5xjA9yA"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fFp6E45oEeyhMvv5xjA9yA" x="1568" y="144"/>
+            </children>
+            <element xmi:type="hwplatforminstance:HWPlatformInstance" href="../roboCar.muml#_e_x7kI5oEeyhMvv5xjA9yA"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fAgUUY5oEeyhMvv5xjA9yA" x="2" width="1554" height="228"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_fAgUVo5oEeyhMvv5xjA9yA" type="3040" fontName="Segoe UI" lineColor="0">
+            <children xmi:type="notation:DecorationNode" xmi:id="_fAgUWI5oEeyhMvv5xjA9yA" type="5117"/>
+            <children xmi:type="notation:DecorationNode" xmi:id="_fAgUWY5oEeyhMvv5xjA9yA" type="7014">
+              <children xmi:type="notation:Shape" xmi:id="_fHS40I5oEeyhMvv5xjA9yA" type="3039" fontName="Segoe UI" lineColor="0">
+                <children xmi:type="notation:DecorationNode" xmi:id="_fHS40o5oEeyhMvv5xjA9yA" type="7013">
+                  <children xmi:type="notation:Shape" xmi:id="_fHTf4I5oEeyhMvv5xjA9yA" type="3042" fontName="Segoe UI" lineColor="0">
+                    <children xmi:type="notation:DecorationNode" xmi:id="_fHTf4o5oEeyhMvv5xjA9yA" type="5103"/>
+                    <children xmi:type="notation:DecorationNode" xmi:id="_fHTf445oEeyhMvv5xjA9yA" type="5104"/>
+                    <children xmi:type="notation:DecorationNode" xmi:id="_fHTf5I5oEeyhMvv5xjA9yA" type="5105"/>
+                    <children xmi:type="notation:DecorationNode" xmi:id="_fHTf5Y5oEeyhMvv5xjA9yA" type="5106"/>
+                    <children xmi:type="notation:DecorationNode" xmi:id="_fHTf5o5oEeyhMvv5xjA9yA" type="5107"/>
+                    <children xmi:type="notation:Shape" xmi:id="_fKXa8I5oEeyhMvv5xjA9yA" type="3043" fontName="Segoe UI" lineColor="0">
+                      <children xmi:type="notation:DecorationNode" xmi:id="_fKXa8o5oEeyhMvv5xjA9yA" type="5102">
+                        <layoutConstraint xmi:type="notation:Location" xmi:id="_fKXa845oEeyhMvv5xjA9yA" y="5"/>
+                      </children>
+                      <element xmi:type="hwplatforminstance:HWPortInstance" href="../roboCar.muml#_e_53YY5oEeyhMvv5xjA9yA"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fKXa8Y5oEeyhMvv5xjA9yA" x="1468" y="48"/>
+                    </children>
+                    <children xmi:type="notation:Shape" xmi:id="_fKXa9I5oEeyhMvv5xjA9yA" type="3043" fontName="Segoe UI" lineColor="0">
+                      <children xmi:type="notation:DecorationNode" xmi:id="_fKXa9o5oEeyhMvv5xjA9yA" type="5102">
+                        <layoutConstraint xmi:type="notation:Location" xmi:id="_fKXa945oEeyhMvv5xjA9yA" x="-32" y="27"/>
+                      </children>
+                      <element xmi:type="hwplatforminstance:HWPortInstance" href="../roboCar.muml#_e_53Yo5oEeyhMvv5xjA9yA"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fKXa9Y5oEeyhMvv5xjA9yA" x="1152" y="129"/>
+                    </children>
+                    <children xmi:type="notation:Shape" xmi:id="_fKXa-I5oEeyhMvv5xjA9yA" type="3043" fontName="Segoe UI" lineColor="0">
+                      <children xmi:type="notation:DecorationNode" xmi:id="_fKXa-o5oEeyhMvv5xjA9yA" type="5102">
+                        <layoutConstraint xmi:type="notation:Location" xmi:id="_fKXa-45oEeyhMvv5xjA9yA" x="-20" y="27"/>
+                      </children>
+                      <element xmi:type="hwplatforminstance:HWPortInstance" href="../roboCar.muml#_e_53Y45oEeyhMvv5xjA9yA"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fKXa-Y5oEeyhMvv5xjA9yA" x="408" y="129"/>
+                    </children>
+                    <element xmi:type="hwresourceinstance:StructuredResourceInstance" href="../roboCar.muml#_e_53YI5oEeyhMvv5xjA9yA"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fHTf4Y5oEeyhMvv5xjA9yA" x="4" y="12"/>
+                  </children>
+                  <children xmi:type="notation:Shape" xmi:id="_fHUG8I5oEeyhMvv5xjA9yA" type="3044" fontName="Segoe UI" lineColor="0">
+                    <children xmi:type="notation:DecorationNode" xmi:id="_fHUG8o5oEeyhMvv5xjA9yA" type="5108"/>
+                    <children xmi:type="notation:DecorationNode" xmi:id="_fHUG845oEeyhMvv5xjA9yA" type="5109"/>
+                    <children xmi:type="notation:DecorationNode" xmi:id="_fHUG9I5oEeyhMvv5xjA9yA" type="5110"/>
+                    <children xmi:type="notation:Shape" xmi:id="_fOXKII5oEeyhMvv5xjA9yA" type="3043" fontName="Segoe UI" lineColor="0">
+                      <children xmi:type="notation:DecorationNode" xmi:id="_fOXKIo5oEeyhMvv5xjA9yA" type="5102">
+                        <layoutConstraint xmi:type="notation:Location" xmi:id="_fOXKI45oEeyhMvv5xjA9yA" x="-78" y="-19"/>
+                      </children>
+                      <element xmi:type="hwplatforminstance:HWPortInstance" href="../roboCar.muml#_e_53bY5oEeyhMvv5xjA9yA"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fOXKIY5oEeyhMvv5xjA9yA" x="117" y="-12"/>
+                    </children>
+                    <element xmi:type="hwresourceinstance:ActuatorInstance" href="../roboCar.muml#_e_53bI5oEeyhMvv5xjA9yA"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fHUG8Y5oEeyhMvv5xjA9yA" x="881" y="199"/>
+                  </children>
+                  <children xmi:type="notation:Shape" xmi:id="_fHUG9Y5oEeyhMvv5xjA9yA" type="3045" fontName="Segoe UI" lineColor="0">
+                    <children xmi:type="notation:DecorationNode" xmi:id="_fHUG945oEeyhMvv5xjA9yA" type="5111"/>
+                    <children xmi:type="notation:DecorationNode" xmi:id="_fHUG-I5oEeyhMvv5xjA9yA" type="5112"/>
+                    <children xmi:type="notation:DecorationNode" xmi:id="_fHUG-Y5oEeyhMvv5xjA9yA" type="5113"/>
+                    <children xmi:type="notation:Shape" xmi:id="_fQsFYI5oEeyhMvv5xjA9yA" type="3043" fontName="Segoe UI" lineColor="0">
+                      <children xmi:type="notation:DecorationNode" xmi:id="_fQsscY5oEeyhMvv5xjA9yA" type="5102">
+                        <layoutConstraint xmi:type="notation:Location" xmi:id="_fQssco5oEeyhMvv5xjA9yA" x="-47" y="11"/>
+                      </children>
+                      <element xmi:type="hwplatforminstance:HWPortInstance" href="../roboCar.muml#_e_53b45oEeyhMvv5xjA9yA"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fQsscI5oEeyhMvv5xjA9yA" x="238" y="-12"/>
+                    </children>
+                    <children xmi:type="notation:Shape" xmi:id="_fQssc45oEeyhMvv5xjA9yA" type="3043" fontName="Segoe UI" lineColor="0">
+                      <children xmi:type="notation:DecorationNode" xmi:id="_fQssdY5oEeyhMvv5xjA9yA" type="5102">
+                        <layoutConstraint xmi:type="notation:Location" xmi:id="_fQssdo5oEeyhMvv5xjA9yA" x="-47" y="11"/>
+                      </children>
+                      <element xmi:type="hwplatforminstance:HWPortInstance" href="../roboCar.muml#_e_53cI5oEeyhMvv5xjA9yA"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fQssdI5oEeyhMvv5xjA9yA" x="94" y="-12"/>
+                    </children>
+                    <element xmi:type="hwresourceinstance:SensorInstance" href="../roboCar.muml#_e_53bo5oEeyhMvv5xjA9yA"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fHUG9o5oEeyhMvv5xjA9yA" x="4" y="198"/>
+                  </children>
+                  <children xmi:type="notation:Shape" xmi:id="_fHUG-o5oEeyhMvv5xjA9yA" type="3044" fontName="Segoe UI" lineColor="0">
+                    <children xmi:type="notation:DecorationNode" xmi:id="_fHUG_I5oEeyhMvv5xjA9yA" type="5108"/>
+                    <children xmi:type="notation:DecorationNode" xmi:id="_fHUG_Y5oEeyhMvv5xjA9yA" type="5109"/>
+                    <children xmi:type="notation:DecorationNode" xmi:id="_fHUG_o5oEeyhMvv5xjA9yA" type="5110"/>
+                    <children xmi:type="notation:Shape" xmi:id="_fTycsI5oEeyhMvv5xjA9yA" type="3043" fontName="Segoe UI" lineColor="0">
+                      <children xmi:type="notation:DecorationNode" xmi:id="_fTycso5oEeyhMvv5xjA9yA" type="5102">
+                        <layoutConstraint xmi:type="notation:Location" xmi:id="_fTycs45oEeyhMvv5xjA9yA" x="32" y="-20"/>
+                      </children>
+                      <element xmi:type="hwplatforminstance:HWPortInstance" href="../roboCar.muml#_e_53co5oEeyhMvv5xjA9yA"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fTycsY5oEeyhMvv5xjA9yA" x="126" y="-12"/>
+                    </children>
+                    <element xmi:type="hwresourceinstance:ActuatorInstance" href="../roboCar.muml#_e_53cY5oEeyhMvv5xjA9yA"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fHUG-45oEeyhMvv5xjA9yA" x="1182" y="200"/>
+                  </children>
+                  <children xmi:type="notation:Shape" xmi:id="_fHUG_45oEeyhMvv5xjA9yA" type="3045" fontName="Segoe UI" lineColor="0">
+                    <children xmi:type="notation:DecorationNode" xmi:id="_fHUHAY5oEeyhMvv5xjA9yA" type="5111"/>
+                    <children xmi:type="notation:DecorationNode" xmi:id="_fHUHAo5oEeyhMvv5xjA9yA" type="5112"/>
+                    <children xmi:type="notation:DecorationNode" xmi:id="_fHUHA45oEeyhMvv5xjA9yA" type="5113"/>
+                    <children xmi:type="notation:Shape" xmi:id="_fXoa4I5oEeyhMvv5xjA9yA" type="3043" fontName="Segoe UI" lineColor="0">
+                      <children xmi:type="notation:DecorationNode" xmi:id="_fXpB8I5oEeyhMvv5xjA9yA" type="5102">
+                        <layoutConstraint xmi:type="notation:Location" xmi:id="_fXpB8Y5oEeyhMvv5xjA9yA" x="27" y="13"/>
+                      </children>
+                      <element xmi:type="hwplatforminstance:HWPortInstance" href="../roboCar.muml#_e_53dI5oEeyhMvv5xjA9yA"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fXoa4Y5oEeyhMvv5xjA9yA" x="250" y="-12"/>
+                    </children>
+                    <children xmi:type="notation:Shape" xmi:id="_fXpB8o5oEeyhMvv5xjA9yA" type="3043" fontName="Segoe UI" lineColor="0">
+                      <children xmi:type="notation:DecorationNode" xmi:id="_fXpB9I5oEeyhMvv5xjA9yA" type="5102">
+                        <layoutConstraint xmi:type="notation:Location" xmi:id="_fXpB9Y5oEeyhMvv5xjA9yA" x="27" y="13"/>
+                      </children>
+                      <element xmi:type="hwplatforminstance:HWPortInstance" href="../roboCar.muml#_e_53dY5oEeyhMvv5xjA9yA"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fXpB845oEeyhMvv5xjA9yA" x="106" y="-12"/>
+                    </children>
+                    <element xmi:type="hwresourceinstance:SensorInstance" href="../roboCar.muml#_e_53c45oEeyhMvv5xjA9yA"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fHUHAI5oEeyhMvv5xjA9yA" x="436" y="198"/>
+                  </children>
+                </children>
+                <element xmi:type="hwplatforminstance:HWPlatformInstanceConfiguration" href="../roboCar.muml#_e_2NAY5oEeyhMvv5xjA9yA"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fHS40Y5oEeyhMvv5xjA9yA"/>
+              </children>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_fAgUWo5oEeyhMvv5xjA9yA"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_fAgUW45oEeyhMvv5xjA9yA"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_fZpNEI5oEeyhMvv5xjA9yA" type="3041" fontName="Segoe UI" lineColor="0">
+              <children xmi:type="notation:DecorationNode" xmi:id="_fZpNEo5oEeyhMvv5xjA9yA" type="5100">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_fZpNE45oEeyhMvv5xjA9yA" x="12" y="24"/>
+              </children>
+              <element xmi:type="hwplatforminstance:DelegationHWPortInstance" href="../roboCar.muml#_e_6ecY5oEeyhMvv5xjA9yA"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fZpNEY5oEeyhMvv5xjA9yA" x="1620" y="-12"/>
+            </children>
+            <element xmi:type="hwplatforminstance:HWPlatformInstance" href="../roboCar.muml#_e_2NAI5oEeyhMvv5xjA9yA"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fAgUV45oEeyhMvv5xjA9yA" x="2" y="240" width="1669" height="360"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_fAgUXI5oEeyhMvv5xjA9yA" type="3046" fontName="Segoe UI" lineColor="0">
+            <children xmi:type="notation:DecorationNode" xmi:id="_fAgUXo5oEeyhMvv5xjA9yA" type="5114"/>
+            <children xmi:type="notation:DecorationNode" xmi:id="_fAgUX45oEeyhMvv5xjA9yA" type="5115"/>
+            <element xmi:type="hwplatforminstance:BusInstance" href="../roboCar.muml#_e_7FgI5oEeyhMvv5xjA9yA"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fAgUXY5oEeyhMvv5xjA9yA" x="1571" y="120"/>
+          </children>
+        </children>
+        <element xmi:type="hwplatforminstance:HWPlatformInstanceConfiguration" href="../roboCar.muml#_e_vfUI5oEeyhMvv5xjA9yA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fAftQY5oEeyhMvv5xjA9yA" x="14" y="701" width="1760" height="837"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_fAefJI5oEeyhMvv5xjA9yA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_fAefJY5oEeyhMvv5xjA9yA"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_fcCZwI5oEeyhMvv5xjA9yA" type="3041" fontName="Segoe UI" lineColor="0">
+      <children xmi:type="notation:DecorationNode" xmi:id="_fcCZwo5oEeyhMvv5xjA9yA" type="5100">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_fcCZw45oEeyhMvv5xjA9yA" x="24" y="24"/>
+      </children>
+      <element xmi:type="hwplatforminstance:DelegationHWPortInstance" href="../roboCar.muml#_e_xUgI5oEeyhMvv5xjA9yA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fcCZwY5oEeyhMvv5xjA9yA" x="1644" y="-12"/>
+    </children>
+    <element xmi:type="hwplatforminstance:HWPlatformInstance" href="../roboCar.muml#_d_Y1kI5oEeyhMvv5xjA9yA"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fAefIY5oEeyhMvv5xjA9yA" y="660" width="1788" height="684"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_DkzDkY5cEeyhMvv5xjA9yA"/>
+  <element xmi:type="hwplatforminstance:HWPlatformInstanceConfiguration" href="../roboCar.muml#_Dkx1cI5cEeyhMvv5xjA9yA"/>
+  <edges xmi:type="notation:Connector" xmi:id="_GyZA8I5cEeyhMvv5xjA9yA" type="4012" source="_GxlvsI5cEeyhMvv5xjA9yA" target="_GtFqMI5cEeyhMvv5xjA9yA" lineColor="0">
+    <styles xmi:type="notation:FontStyle" xmi:id="_GyZA8Y5cEeyhMvv5xjA9yA" fontName="Segoe UI"/>
+    <element xmi:type="hwplatforminstance:NetworkConnectorInstance" href="../roboCar.muml#_GT2q0I5cEeyhMvv5xjA9yA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_GyZA8o5cEeyhMvv5xjA9yA" points="[12, 1, -1566, -215]$[1566, 214, -12, -2]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_GyZoAI5cEeyhMvv5xjA9yA" type="4012" source="_GtFqNI5cEeyhMvv5xjA9yA" target="_GUwCvI5cEeyhMvv5xjA9yA" lineColor="0">
+    <styles xmi:type="notation:FontStyle" xmi:id="_GyZoAY5cEeyhMvv5xjA9yA" fontName="Segoe UI"/>
+    <element xmi:type="hwplatforminstance:NetworkConnectorInstance" href="../roboCar.muml#_GT9YgI5cEeyhMvv5xjA9yA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_GyZoAo5cEeyhMvv5xjA9yA" points="[-12, -2, 1493, 141]$[-1440, -137, 65, 6]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_GyZoA45cEeyhMvv5xjA9yA" type="4012" source="_GmR3kI5cEeyhMvv5xjA9yA" target="_GUwCvI5cEeyhMvv5xjA9yA" lineColor="0">
+    <styles xmi:type="notation:FontStyle" xmi:id="_GyZoBI5cEeyhMvv5xjA9yA" fontName="Segoe UI"/>
+    <element xmi:type="hwplatforminstance:NetworkConnectorInstance" href="../roboCar.muml#_GUHwkI5cEeyhMvv5xjA9yA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_GyZoBY5cEeyhMvv5xjA9yA" points="[-12, -2, 1507, 163]$[-1454, -158, 65, 7]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_GyaPEI5cEeyhMvv5xjA9yA" type="4012" source="_GbKzxI5cEeyhMvv5xjA9yA" target="_GjJrEI5cEeyhMvv5xjA9yA" lineColor="0">
+    <styles xmi:type="notation:FontStyle" xmi:id="_GyaPEY5cEeyhMvv5xjA9yA" fontName="Segoe UI"/>
+    <element xmi:type="hwplatforminstance:NetworkConnectorInstance" href="../roboCar.muml#_GT_0wI5cEeyhMvv5xjA9yA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_GyaPEo5cEeyhMvv5xjA9yA" points="[-12, 0, 1183, -27]$[-1183, 26, 12, -1]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_GyaPE45cEeyhMvv5xjA9yA" type="4012" source="_GbKzxI5cEeyhMvv5xjA9yA" target="_GlX4oI5cEeyhMvv5xjA9yA" lineColor="0">
+    <styles xmi:type="notation:FontStyle" xmi:id="_GyaPFI5cEeyhMvv5xjA9yA" fontName="Segoe UI"/>
+    <element xmi:type="hwplatforminstance:NetworkConnectorInstance" href="../roboCar.muml#_GT_0wY5cEeyhMvv5xjA9yA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Gya2II5cEeyhMvv5xjA9yA" points="[-12, 0, 1166, -37]$[-1166, 36, 12, -1]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_Gya2IY5cEeyhMvv5xjA9yA" type="4012" source="_GbKzwI5cEeyhMvv5xjA9yA" target="_Gf_CUI5cEeyhMvv5xjA9yA" lineColor="0">
+    <styles xmi:type="notation:FontStyle" xmi:id="_Gya2Io5cEeyhMvv5xjA9yA" fontName="Segoe UI"/>
+    <element xmi:type="hwplatforminstance:NetworkConnectorInstance" href="../roboCar.muml#_GT_0wo5cEeyhMvv5xjA9yA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Gya2I45cEeyhMvv5xjA9yA" points="[-12, -1, 1042, 46]$[-1042, -47, 12, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_Gya2JI5cEeyhMvv5xjA9yA" type="4012" source="_GbKzwI5cEeyhMvv5xjA9yA" target="_Gf-bQI5cEeyhMvv5xjA9yA" lineColor="0">
+    <styles xmi:type="notation:FontStyle" xmi:id="_Gya2JY5cEeyhMvv5xjA9yA" fontName="Segoe UI"/>
+    <element xmi:type="hwplatforminstance:NetworkConnectorInstance" href="../roboCar.muml#_GT_0w45cEeyhMvv5xjA9yA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Gya2Jo5cEeyhMvv5xjA9yA" points="[-12, -1, 1042, 14]$[-1042, -15, 12, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_GybdMI5cEeyhMvv5xjA9yA" type="4012" source="_GbKzwI5cEeyhMvv5xjA9yA" target="_GWfIEI5cEeyhMvv5xjA9yA" lineColor="0">
+    <styles xmi:type="notation:FontStyle" xmi:id="_GybdMY5cEeyhMvv5xjA9yA" fontName="Segoe UI"/>
+    <element xmi:type="hwplatforminstance:NetworkConnectorInstance" href="../roboCar.muml#_GT_0xI5cEeyhMvv5xjA9yA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_GybdMo5cEeyhMvv5xjA9yA" points="[-12, -1, 1068, 66]$[-1068, -67, 12, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_GybdM45cEeyhMvv5xjA9yA" type="4012" source="_GbKzwI5cEeyhMvv5xjA9yA" target="_GWehAI5cEeyhMvv5xjA9yA" lineColor="0">
+    <styles xmi:type="notation:FontStyle" xmi:id="_GybdNI5cEeyhMvv5xjA9yA" fontName="Segoe UI"/>
+    <element xmi:type="hwplatforminstance:NetworkConnectorInstance" href="../roboCar.muml#_GT_0xY5cEeyhMvv5xjA9yA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_GybdNY5cEeyhMvv5xjA9yA" points="[-12, -1, 1068, 34]$[-1068, -35, 12, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_GycEQI5cEeyhMvv5xjA9yA" type="4012" source="_GbKzyI5cEeyhMvv5xjA9yA" target="_GmR3kI5cEeyhMvv5xjA9yA" lineColor="0">
+    <styles xmi:type="notation:FontStyle" xmi:id="_GycEQY5cEeyhMvv5xjA9yA" fontName="Segoe UI"/>
+    <element xmi:type="hwplatforminstance:NetworkConnectorInstance" href="../roboCar.muml#_GUAb0I5cEeyhMvv5xjA9yA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_GycEQo5cEeyhMvv5xjA9yA" points="[8, 12, -86, -124]$[85, 124, -9, -12]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_jJ8WQI5lEeyhMvv5xjA9yA" type="4012" source="_rtVpwI5cEeyhMvv5xjA9yA" target="_GtFqMI5cEeyhMvv5xjA9yA" lineColor="0">
+    <styles xmi:type="notation:FontStyle" xmi:id="_jJ8WQY5lEeyhMvv5xjA9yA" fontName="Segoe UI"/>
+    <element xmi:type="hwplatforminstance:NetworkConnectorInstance" href="../roboCar.muml#_GT4gAI5cEeyhMvv5xjA9yA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_jJ8WQo5lEeyhMvv5xjA9yA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_jJ-LcI5lEeyhMvv5xjA9yA" type="4012" source="_rtWQ0o5cEeyhMvv5xjA9yA" target="_GtFqNI5cEeyhMvv5xjA9yA" lineColor="0">
+    <styles xmi:type="notation:FontStyle" xmi:id="_jJ-LcY5lEeyhMvv5xjA9yA" fontName="Segoe UI"/>
+    <element xmi:type="hwplatforminstance:NetworkConnectorInstance" href="../roboCar.muml#_GT4gAY5cEeyhMvv5xjA9yA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_jJ-Lco5lEeyhMvv5xjA9yA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_fcynsI5oEeyhMvv5xjA9yA" type="4012" source="_fcCZwI5oEeyhMvv5xjA9yA" target="_fFpTAI5oEeyhMvv5xjA9yA" lineColor="0">
+    <styles xmi:type="notation:FontStyle" xmi:id="_fcynsY5oEeyhMvv5xjA9yA" fontName="Segoe UI"/>
+    <element xmi:type="hwplatforminstance:NetworkConnectorInstance" href="../roboCar.muml#_e_wtcI5oEeyhMvv5xjA9yA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fcynso5oEeyhMvv5xjA9yA" points="[3, 0, -389, -51]$[389, 51, -3, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_fcz10I5oEeyhMvv5xjA9yA" type="4012" source="_fFp6Eo5oEeyhMvv5xjA9yA" target="_fAgUXI5oEeyhMvv5xjA9yA" lineColor="0">
+    <styles xmi:type="notation:FontStyle" xmi:id="_fcz10Y5oEeyhMvv5xjA9yA" fontName="Segoe UI"/>
+    <element xmi:type="hwplatforminstance:NetworkConnectorInstance" href="../roboCar.muml#_e_1l8I5oEeyhMvv5xjA9yA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fcz10o5oEeyhMvv5xjA9yA" points="[-3, 0, 371, 33]$[-358, -32, 16, 1]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_fcz1045oEeyhMvv5xjA9yA" type="4012" source="_fZpNEI5oEeyhMvv5xjA9yA" target="_fAgUXI5oEeyhMvv5xjA9yA" lineColor="0">
+    <styles xmi:type="notation:FontStyle" xmi:id="_fcz11I5oEeyhMvv5xjA9yA" fontName="Segoe UI"/>
+    <element xmi:type="hwplatforminstance:NetworkConnectorInstance" href="../roboCar.muml#_e_6ecI5oEeyhMvv5xjA9yA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fcz11Y5oEeyhMvv5xjA9yA" points="[-3, -1, 377, 43]$[-364, -42, 16, 2]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_fcz11o5oEeyhMvv5xjA9yA" type="4012" source="_fEA7VI5oEeyhMvv5xjA9yA" target="_fFpTAI5oEeyhMvv5xjA9yA" lineColor="0">
+    <styles xmi:type="notation:FontStyle" xmi:id="_fcz1145oEeyhMvv5xjA9yA" fontName="Segoe UI"/>
+    <element xmi:type="hwplatforminstance:NetworkConnectorInstance" href="../roboCar.muml#_e_yioI5oEeyhMvv5xjA9yA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fcz12I5oEeyhMvv5xjA9yA" points="[2, 3, -20, -25]$[19, 25, -3, -3]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_fcz12Y5oEeyhMvv5xjA9yA" type="4012" source="_fEA7UI5oEeyhMvv5xjA9yA" target="_fFp6Eo5oEeyhMvv5xjA9yA" lineColor="0">
+    <styles xmi:type="notation:FontStyle" xmi:id="_fcz12o5oEeyhMvv5xjA9yA" fontName="Segoe UI"/>
+    <element xmi:type="hwplatforminstance:NetworkConnectorInstance" href="../roboCar.muml#_e_zJsI5oEeyhMvv5xjA9yA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fcz1245oEeyhMvv5xjA9yA" points="[3, 1, -19, -11]$[19, 10, -3, -2]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_fc0c4I5oEeyhMvv5xjA9yA" type="4012" source="_fKXa9I5oEeyhMvv5xjA9yA" target="_fOXKII5oEeyhMvv5xjA9yA" lineColor="0">
+    <styles xmi:type="notation:FontStyle" xmi:id="_fc0c4Y5oEeyhMvv5xjA9yA" fontName="Segoe UI"/>
+    <element xmi:type="hwplatforminstance:NetworkConnectorInstance" href="../roboCar.muml#_e_2NAo5oEeyhMvv5xjA9yA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fc0c4o5oEeyhMvv5xjA9yA" points="[-3, 0, 298, -4]$[-298, 4, 3, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_fc0c445oEeyhMvv5xjA9yA" type="4012" source="_fKXa9I5oEeyhMvv5xjA9yA" target="_fTycsI5oEeyhMvv5xjA9yA" lineColor="0">
+    <styles xmi:type="notation:FontStyle" xmi:id="_fc0c5I5oEeyhMvv5xjA9yA" fontName="Segoe UI"/>
+    <element xmi:type="hwplatforminstance:NetworkConnectorInstance" href="../roboCar.muml#_e_2NA45oEeyhMvv5xjA9yA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fc0c5Y5oEeyhMvv5xjA9yA" points="[-3, 0, 291, -9]$[-291, 9, 3, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_fc1D8I5oEeyhMvv5xjA9yA" type="4012" source="_fKXa-I5oEeyhMvv5xjA9yA" target="_fXoa4I5oEeyhMvv5xjA9yA" lineColor="0">
+    <styles xmi:type="notation:FontStyle" xmi:id="_fc1D8Y5oEeyhMvv5xjA9yA" fontName="Segoe UI"/>
+    <element xmi:type="hwplatforminstance:NetworkConnectorInstance" href="../roboCar.muml#_e_20EI5oEeyhMvv5xjA9yA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fc1D8o5oEeyhMvv5xjA9yA" points="[-3, 0, 253, -20]$[-253, 20, 3, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_fc1D845oEeyhMvv5xjA9yA" type="4012" source="_fKXa-I5oEeyhMvv5xjA9yA" target="_fXpB8o5oEeyhMvv5xjA9yA" lineColor="0">
+    <styles xmi:type="notation:FontStyle" xmi:id="_fc1D9I5oEeyhMvv5xjA9yA" fontName="Segoe UI"/>
+    <element xmi:type="hwplatforminstance:NetworkConnectorInstance" href="../roboCar.muml#_e_20EY5oEeyhMvv5xjA9yA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fc1D9Y5oEeyhMvv5xjA9yA" points="[-3, 0, 253, -12]$[-253, 12, 3, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_fc1D9o5oEeyhMvv5xjA9yA" type="4012" source="_fKXa-I5oEeyhMvv5xjA9yA" target="_fQsFYI5oEeyhMvv5xjA9yA" lineColor="0">
+    <styles xmi:type="notation:FontStyle" xmi:id="_fc1D945oEeyhMvv5xjA9yA" fontName="Segoe UI"/>
+    <element xmi:type="hwplatforminstance:NetworkConnectorInstance" href="../roboCar.muml#_e_20Eo5oEeyhMvv5xjA9yA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fc1D-I5oEeyhMvv5xjA9yA" points="[-3, 0, 259, -15]$[-259, 15, 3, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_fc1rAI5oEeyhMvv5xjA9yA" type="4012" source="_fKXa-I5oEeyhMvv5xjA9yA" target="_fQssc45oEeyhMvv5xjA9yA" lineColor="0">
+    <styles xmi:type="notation:FontStyle" xmi:id="_fc1rAY5oEeyhMvv5xjA9yA" fontName="Segoe UI"/>
+    <element xmi:type="hwplatforminstance:NetworkConnectorInstance" href="../roboCar.muml#_e_20E45oEeyhMvv5xjA9yA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fc1rAo5oEeyhMvv5xjA9yA" points="[-3, 0, 259, -7]$[-259, 7, 3, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_fc1rA45oEeyhMvv5xjA9yA" type="4012" source="_fKXa8I5oEeyhMvv5xjA9yA" target="_fZpNEI5oEeyhMvv5xjA9yA" lineColor="0">
+    <styles xmi:type="notation:FontStyle" xmi:id="_fc1rBI5oEeyhMvv5xjA9yA" fontName="Segoe UI"/>
+    <element xmi:type="hwplatforminstance:NetworkConnectorInstance" href="../roboCar.muml#_e_3bII5oEeyhMvv5xjA9yA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fc1rBY5oEeyhMvv5xjA9yA" points="[3, 3, -21, -18]$[20, 18, -4, -3]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_w_kakI5rEeyhMvv5xjA9yA" type="4012" source="_GxlvsI5cEeyhMvv5xjA9yA" target="_fcCZwI5oEeyhMvv5xjA9yA" lineColor="0">
+    <styles xmi:type="notation:FontStyle" xmi:id="_w_kakY5rEeyhMvv5xjA9yA" fontName="Segoe UI"/>
+    <element xmi:type="hwplatforminstance:NetworkConnectorInstance" href="../roboCar.muml#_w_h-UI5rEeyhMvv5xjA9yA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_w_kako5rEeyhMvv5xjA9yA" points="[0, 12, 0, -40]$[0, 40, 0, -12]"/>
+  </edges>
+</notation:Diagram>
