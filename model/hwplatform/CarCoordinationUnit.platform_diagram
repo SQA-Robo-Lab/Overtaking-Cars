@@ -18,69 +18,51 @@
         </children>
         <children xmi:type="notation:Shape" xmi:id="_64fYBIj7EeyYKPpICO9qfw" type="3028" fontName="Segoe UI" lineColor="0">
           <children xmi:type="notation:DecorationNode" xmi:id="_64fYBoj7EeyYKPpICO9qfw" type="5060">
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_64fYB4j7EeyYKPpICO9qfw" y="5"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_64fYB4j7EeyYKPpICO9qfw" x="24" y="15"/>
           </children>
           <element xmi:type="hwplatform:HWPortPart" href="../roboCar.muml#_4Yti4Ij7EeyYKPpICO9qfw"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_64fYBYj7EeyYKPpICO9qfw" x="399" y="129"/>
         </children>
         <children xmi:type="notation:Shape" xmi:id="_KjYuIIj9EeyYKPpICO9qfw" type="3028" fontName="Segoe UI" lineColor="0">
           <children xmi:type="notation:DecorationNode" xmi:id="_KjYuIoj9EeyYKPpICO9qfw" type="5060">
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_KjYuI4j9EeyYKPpICO9qfw" y="5"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_KjYuI4j9EeyYKPpICO9qfw" x="24" y="15"/>
           </children>
           <element xmi:type="hwplatform:HWPortPart" href="../roboCar.muml#_KjW48Ij9EeyYKPpICO9qfw"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KjYuIYj9EeyYKPpICO9qfw" x="687" y="129"/>
         </children>
+        <children xmi:type="notation:Shape" xmi:id="_Z8NrII5UEeyhMvv5xjA9yA" type="3028" fontName="Segoe UI" lineColor="0">
+          <children xmi:type="notation:DecorationNode" xmi:id="_Z8NrIo5UEeyhMvv5xjA9yA" type="5060">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Z8NrI45UEeyhMvv5xjA9yA" x="24" y="15"/>
+          </children>
+          <element xmi:type="hwplatform:HWPortPart" href="../roboCar.muml#_Z8LO4I5UEeyhMvv5xjA9yA"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Z8NrIY5UEeyhMvv5xjA9yA" x="879" y="129"/>
+        </children>
         <element xmi:type="hwplatform:ResourcePart" href="../roboCar.muml#_4BtYIIj7EeyYKPpICO9qfw"/>
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4Fr5MYj7EeyYKPpICO9qfw" x="6" y="2"/>
-      </children>
-      <children xmi:type="notation:Shape" xmi:id="_bkgiQIj8EeyYKPpICO9qfw" type="3030" fontName="Segoe UI" lineColor="0">
-        <children xmi:type="notation:DecorationNode" xmi:id="_bkgiQoj8EeyYKPpICO9qfw" type="5064"/>
-        <children xmi:type="notation:DecorationNode" xmi:id="_bkgiQ4j8EeyYKPpICO9qfw" type="5065"/>
-        <children xmi:type="notation:DecorationNode" xmi:id="_bkgiRIj8EeyYKPpICO9qfw" type="5066"/>
-        <children xmi:type="notation:DecorationNode" xmi:id="_bkgiRYj8EeyYKPpICO9qfw" type="5067"/>
-        <children xmi:type="notation:DecorationNode" xmi:id="_bkgiRoj8EeyYKPpICO9qfw" type="5068"/>
-        <children xmi:type="notation:Shape" xmi:id="_eVZVgIj8EeyYKPpICO9qfw" type="3028" fontName="Segoe UI" lineColor="0">
-          <children xmi:type="notation:DecorationNode" xmi:id="_eVZVgoj8EeyYKPpICO9qfw" type="5060">
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_eVZVg4j8EeyYKPpICO9qfw" x="-4" y="-40"/>
-          </children>
-          <element xmi:type="hwplatform:HWPortPart" href="../roboCar.muml#_cL4EQIj8EeyYKPpICO9qfw"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eVZVgYj8EeyYKPpICO9qfw" x="268" y="12"/>
-        </children>
-        <children xmi:type="notation:Shape" xmi:id="_eVZ8kIj8EeyYKPpICO9qfw" type="3028" fontName="Segoe UI" lineColor="0">
-          <children xmi:type="notation:DecorationNode" xmi:id="_eVZ8koj8EeyYKPpICO9qfw" type="5060">
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_eVZ8k4j8EeyYKPpICO9qfw" x="20" y="24"/>
-          </children>
-          <element xmi:type="hwplatform:HWPortPart" href="../roboCar.muml#_cL-x8Ij8EeyYKPpICO9qfw"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eVZ8kYj8EeyYKPpICO9qfw" x="268" y="84"/>
-        </children>
-        <element xmi:type="hwplatform:ResourcePart" href="../roboCar.muml#_bgngwIj8EeyYKPpICO9qfw"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bkgiQYj8EeyYKPpICO9qfw" x="21" y="182"/>
       </children>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_tLfnEIj8EeyYKPpICO9qfw" type="3029" fontName="Segoe UI" lineColor="0">
       <element xmi:type="hwplatform:DelegationHWPort" href="../roboCar.muml#_tKuLAIj8EeyYKPpICO9qfw"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tLfnEYj8EeyYKPpICO9qfw" x="552" y="388"/>
     </children>
+    <children xmi:type="notation:Shape" xmi:id="_ds8KwI5UEeyhMvv5xjA9yA" type="3029" fontName="Segoe UI" lineColor="0">
+      <element xmi:type="hwplatform:DelegationHWPort" href="../roboCar.muml#_dmwDMI5UEeyhMvv5xjA9yA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ds8KwY5UEeyhMvv5xjA9yA" x="900" y="388"/>
+    </children>
     <element xmi:type="hwplatform:HWPlatform" href="../roboCar.muml#_zje5UIj7EeyYKPpICO9qfw"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2gh5QYj7EeyYKPpICO9qfw" width="1525" height="400"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_zje5Uoj7EeyYKPpICO9qfw"/>
   <element xmi:type="hwplatform:HWPlatform" href="../roboCar.muml#_zje5UIj7EeyYKPpICO9qfw"/>
-  <edges xmi:type="notation:Connector" xmi:id="_hqaJgIj8EeyYKPpICO9qfw" type="4032" source="_eVZVgIj8EeyYKPpICO9qfw" target="_64fYBIj7EeyYKPpICO9qfw" lineColor="0">
-    <styles xmi:type="notation:FontStyle" xmi:id="_hqaJgYj8EeyYKPpICO9qfw" fontName="Segoe UI"/>
-    <element xmi:type="hwplatform:NetworkConnector" href="../roboCar.muml#_hqZicIj8EeyYKPpICO9qfw"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_hqaJgoj8EeyYKPpICO9qfw" points="[0, 0, -104, 51]$[92, -51, -12, 0]"/>
+  <edges xmi:type="notation:Connector" xmi:id="_yArFgI5bEeyhMvv5xjA9yA" type="4032" source="_64fYAIj7EeyYKPpICO9qfw" target="_tLfnEIj8EeyYKPpICO9qfw" lineColor="0">
+    <styles xmi:type="notation:FontStyle" xmi:id="_yArFgY5bEeyhMvv5xjA9yA" fontName="Segoe UI"/>
+    <element xmi:type="hwplatform:NetworkConnector" href="../roboCar.muml#_yAdDEI5bEeyhMvv5xjA9yA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_yArFgo5bEeyhMvv5xjA9yA" points="[2, 12, 2, -199]$[2, 199, 2, -12]"/>
   </edges>
-  <edges xmi:type="notation:Connector" xmi:id="_iQPacIj8EeyYKPpICO9qfw" type="4032" source="_eVZ8kIj8EeyYKPpICO9qfw" target="_64fYBIj7EeyYKPpICO9qfw" lineColor="0">
-    <styles xmi:type="notation:FontStyle" xmi:id="_iQPacYj8EeyYKPpICO9qfw" fontName="Segoe UI"/>
-    <element xmi:type="hwplatform:NetworkConnector" href="../roboCar.muml#_iQOzYIj8EeyYKPpICO9qfw"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_iQPacoj8EeyYKPpICO9qfw" points="[0, 0, -104, 147]$[108, -159, 4, -12]"/>
-  </edges>
-  <edges xmi:type="notation:Connector" xmi:id="_xLDz8Ij8EeyYKPpICO9qfw" type="4032" source="_64fYAIj7EeyYKPpICO9qfw" target="_tLfnEIj8EeyYKPpICO9qfw" lineColor="0">
-    <styles xmi:type="notation:FontStyle" xmi:id="_xLDz8Yj8EeyYKPpICO9qfw" fontName="Segoe UI"/>
-    <element xmi:type="hwplatform:NetworkConnector" href="../roboCar.muml#_xLCl0Ij8EeyYKPpICO9qfw"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_xLDz8oj8EeyYKPpICO9qfw" points="[-1, -4, -2, -211]$[12, 207, 11, 0]"/>
-    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_xLEbAIj8EeyYKPpICO9qfw" id="(0.4583333333333333,0.16666666666666666)"/>
-    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_xLEbAYj8EeyYKPpICO9qfw" id="(0.0,0.0)"/>
+  <edges xmi:type="notation:Connector" xmi:id="_yeHPcI5bEeyhMvv5xjA9yA" type="4032" source="_Z8NrII5UEeyhMvv5xjA9yA" target="_ds8KwI5UEeyhMvv5xjA9yA" lineColor="0">
+    <styles xmi:type="notation:FontStyle" xmi:id="_yeHPcY5bEeyhMvv5xjA9yA" fontName="Segoe UI"/>
+    <element xmi:type="hwplatform:NetworkConnector" href="../roboCar.muml#_yeGBUI5bEeyhMvv5xjA9yA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_yeHPco5bEeyhMvv5xjA9yA" points="[1, 12, 0, -188]$[1, 199, 0, -1]"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yeIdkI5bEeyhMvv5xjA9yA" id="(0.5416666666666666,0.041666666666666664)"/>
   </edges>
 </notation:Diagram>

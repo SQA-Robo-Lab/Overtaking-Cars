@@ -47,21 +47,28 @@
         <layoutConstraint xmi:type="notation:Location" xmi:id="_OBLZw4j0EeyYKPpICO9qfw" x="23" y="12"/>
       </children>
       <element xmi:type="hwresourceinstance:HWPort" href="../roboCar.muml#_N3t7wIj0EeyYKPpICO9qfw"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OBLZwYj0EeyYKPpICO9qfw" x="756" y="348"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OBLZwYj0EeyYKPpICO9qfw" x="733" y="324"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_OBLZxIj0EeyYKPpICO9qfw" type="3017" fontName="Segoe UI" lineColor="0">
       <children xmi:type="notation:DecorationNode" xmi:id="_OBLZxoj0EeyYKPpICO9qfw" type="5071">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_OBLZx4j0EeyYKPpICO9qfw" x="23" y="12"/>
       </children>
       <element xmi:type="hwresourceinstance:HWPort" href="../roboCar.muml#_N3yNMIj0EeyYKPpICO9qfw"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OBLZxYj0EeyYKPpICO9qfw" x="756" y="444"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OBLZxYj0EeyYKPpICO9qfw" x="733" y="396"/>
     </children>
-    <children xmi:type="notation:Shape" xmi:id="_OBLZyIj0EeyYKPpICO9qfw" type="3017" fontName="Segoe UI" lineColor="0">
-      <children xmi:type="notation:DecorationNode" xmi:id="_OBLZyoj0EeyYKPpICO9qfw" type="5071">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_OBLZy4j0EeyYKPpICO9qfw" x="23" y="12"/>
+    <children xmi:type="notation:Shape" xmi:id="_Up-x8I5TEeyhMvv5xjA9yA" type="3017" fontName="Segoe UI" lineColor="0">
+      <children xmi:type="notation:DecorationNode" xmi:id="_Up-x8o5TEeyhMvv5xjA9yA" type="5071">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Up-x845TEeyhMvv5xjA9yA" x="23" y="12"/>
       </children>
-      <element xmi:type="hwresourceinstance:HWPort" href="../roboCar.muml#_N30pcIj0EeyYKPpICO9qfw"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OBLZyYj0EeyYKPpICO9qfw" x="756" y="252"/>
+      <element xmi:type="hwresourceinstance:HWPort" href="../roboCar.muml#_Up9j0I5TEeyhMvv5xjA9yA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Up-x8Y5TEeyhMvv5xjA9yA" x="733" y="456"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_Sv_Q0I5bEeyhMvv5xjA9yA" type="3017" fontName="Segoe UI" lineColor="0">
+      <children xmi:type="notation:DecorationNode" xmi:id="_Sv_Q0o5bEeyhMvv5xjA9yA" type="5071">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Sv_Q045bEeyhMvv5xjA9yA" x="23" y="12"/>
+      </children>
+      <element xmi:type="hwresourceinstance:HWPort" href="../roboCar.muml#_SvMmoI5bEeyhMvv5xjA9yA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Sv_Q0Y5bEeyhMvv5xjA9yA" x="733" y="252"/>
     </children>
     <element xmi:type="hwresourceinstance:StructuredResourceInstance" href="../roboCar.muml#_L-JLAIj0EeyYKPpICO9qfw"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L-UxMYj0EeyYKPpICO9qfw" x="-276" y="24" width="745" height="553"/>
@@ -113,7 +120,7 @@
         <layoutConstraint xmi:type="notation:Location" xmi:id="_JisxYYj2EeyYKPpICO9qfw" x="23" y="12"/>
       </children>
       <element xmi:type="hwresourceinstance:HWPort" href="../roboCar.muml#_JZoU8Ij2EeyYKPpICO9qfw"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JisKUYj2EeyYKPpICO9qfw" x="725" y="344"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JisKUYj2EeyYKPpICO9qfw" x="737" y="320"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_JisxYoj2EeyYKPpICO9qfw" type="3017" fontName="Segoe UI" lineColor="0">
       <children xmi:type="notation:DecorationNode" xmi:id="_JisxZIj2EeyYKPpICO9qfw" type="5071">
@@ -127,10 +134,17 @@
         <layoutConstraint xmi:type="notation:Location" xmi:id="_JisxaYj2EeyYKPpICO9qfw" x="23" y="12"/>
       </children>
       <element xmi:type="hwresourceinstance:HWPort" href="../roboCar.muml#_JZwQwIj2EeyYKPpICO9qfw"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JisxZ4j2EeyYKPpICO9qfw" x="725" y="452"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JisxZ4j2EeyYKPpICO9qfw" x="737" y="392"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_XnkkcI5TEeyhMvv5xjA9yA" type="3017" fontName="Segoe UI" lineColor="0">
+      <children xmi:type="notation:DecorationNode" xmi:id="_Xnkkco5TEeyhMvv5xjA9yA" type="5071">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Xnkkc45TEeyhMvv5xjA9yA" x="23" y="12"/>
+      </children>
+      <element xmi:type="hwresourceinstance:HWPort" href="../roboCar.muml#_UqqucI5TEeyhMvv5xjA9yA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XnkkcY5TEeyhMvv5xjA9yA" x="737" y="464"/>
     </children>
     <element xmi:type="hwresourceinstance:StructuredResourceInstance" href="../roboCar.muml#_EZOWIIj2EeyYKPpICO9qfw"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EZVD0Ij2EeyYKPpICO9qfw" x="584" y="28" width="749" height="549"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EZVD0Ij2EeyYKPpICO9qfw" x="584" y="24" width="749" height="549"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="_SzoUwIj3EeyYKPpICO9qfw" type="2008" fontName="Segoe UI" lineColor="0">
     <children xmi:type="notation:DecorationNode" xmi:id="_SzoUwoj3EeyYKPpICO9qfw" type="5075"/>
@@ -144,7 +158,7 @@
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TxMJMYj3EeyYKPpICO9qfw"/>
     </children>
     <element xmi:type="hwresourceinstance:ActuatorInstance" href="../roboCar.muml#_Sy1qkIj3EeyYKPpICO9qfw"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SzoUwYj3EeyYKPpICO9qfw" x="-276" y="612"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SzoUwYj3EeyYKPpICO9qfw" x="-276" y="636"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="_Y62xsIj3EeyYKPpICO9qfw" type="2007" fontName="Segoe UI" lineColor="0">
     <children xmi:type="notation:DecorationNode" xmi:id="_Y63YwIj3EeyYKPpICO9qfw" type="5072"/>
@@ -165,7 +179,7 @@
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_e4KdoYj3EeyYKPpICO9qfw" x="274" y="48"/>
     </children>
     <element xmi:type="hwresourceinstance:SensorInstance" href="../roboCar.muml#_Y6FVoIj3EeyYKPpICO9qfw"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Y62xsYj3EeyYKPpICO9qfw" x="144" y="612"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Y62xsYj3EeyYKPpICO9qfw" x="144" y="636"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_D7KTcYgtEeyYKPpICO9qfw"/>
   <element xmi:type="hwresourceinstance:ResourceInstanceRepository" href="../roboCar.muml#_D7JsYIgtEeyYKPpICO9qfw"/>
