@@ -120,7 +120,7 @@
                       <styles xmi:type="notation:FilteringStyle" xmi:id="_0BAmfn7BEey3f4SxFS2GPA"/>
                     </children>
                     <element xmi:type="realtimestatechart:State" href="../roboCar.muml#_hJpw0H6_Eey3f4SxFS2GPA"/>
-                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0BAmcX7BEey3f4SxFS2GPA" width="151" height="66"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0BAmcX7BEey3f4SxFS2GPA" y="-15" width="151" height="97"/>
                   </children>
                   <children xmi:type="notation:Shape" xmi:id="_99xxkH7BEey3f4SxFS2GPA" type="3032" fontName="Segoe UI" lineColor="0">
                     <children xmi:type="notation:DecorationNode" xmi:id="_99xxkn7BEey3f4SxFS2GPA" type="5060"/>
@@ -141,7 +141,7 @@
                       <styles xmi:type="notation:FilteringStyle" xmi:id="_99xxnn7BEey3f4SxFS2GPA"/>
                     </children>
                     <element xmi:type="realtimestatechart:State" href="../roboCar.muml#_986O4H7BEey3f4SxFS2GPA"/>
-                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_99xxkX7BEey3f4SxFS2GPA" x="666" y="17"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_99xxkX7BEey3f4SxFS2GPA" x="606" y="-8" height="87"/>
                   </children>
                 </children>
                 <element xmi:type="realtimestatechart:RealtimeStatechart" href="../roboCar.muml#_dw_L4H6_Eey3f4SxFS2GPA"/>
@@ -168,11 +168,11 @@
           <styles xmi:type="notation:FilteringStyle" xmi:id="_nCvgnH6-Eey3f4SxFS2GPA"/>
         </children>
         <element xmi:type="realtimestatechart:State" href="../roboCar.muml#_pvqhMX67EeyKLqeH6TVEeQ"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nCu5gX6-Eey3f4SxFS2GPA" x="2" y="22" width="877" height="503"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nCu5gX6-Eey3f4SxFS2GPA" x="2" y="22" width="877" height="488"/>
       </children>
     </children>
     <element xmi:type="realtimestatechart:RealtimeStatechart" href="../roboCar.muml#_pvqhMH67EeyKLqeH6TVEeQ"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nBzscX6-Eey3f4SxFS2GPA" width="901" height="601"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nBzscX6-Eey3f4SxFS2GPA" width="901" height="577"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_nBCQYX6-Eey3f4SxFS2GPA"/>
   <element xmi:type="realtimestatechart:RealtimeStatechart" href="../roboCar.muml#_pvqhMH67EeyKLqeH6TVEeQ"/>
@@ -236,11 +236,12 @@
     <styles xmi:type="notation:FontStyle" xmi:id="_HrfNAX7CEey3f4SxFS2GPA" fontName="Segoe UI"/>
     <element xmi:type="realtimestatechart:Transition" href="../roboCar.muml#_Hqo4cH7CEey3f4SxFS2GPA"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_HrfNAn7CEey3f4SxFS2GPA" points="[0, 0, -615, 17]$[554, -16, -61, 1]"/>
-    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_HtG9oH7CEey3f4SxFS2GPA" id="(0.9821428571428571,0.5)"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_HtG9oH7CEey3f4SxFS2GPA" id="(0.9867549668874173,0.31958762886597936)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Q16kEI5LEeyhMvv5xjA9yA" id="(0.01744186046511628,0.21839080459770116)"/>
   </edges>
   <edges xmi:type="notation:Connector" xmi:id="_5UYvIH7CEey3f4SxFS2GPA" type="4003" source="_99xxkH7BEey3f4SxFS2GPA" target="_0BAmcH7BEey3f4SxFS2GPA" lineColor="0">
     <children xmi:type="notation:DecorationNode" xmi:id="_5UYvI37CEey3f4SxFS2GPA" type="6005">
-      <layoutConstraint xmi:type="notation:Location" xmi:id="_5UYvJH7CEey3f4SxFS2GPA" y="-20"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_5UYvJH7CEey3f4SxFS2GPA" x="-1" y="-12"/>
     </children>
     <children xmi:type="notation:DecorationNode" xmi:id="_5UYvJX7CEey3f4SxFS2GPA" type="6006">
       <layoutConstraint xmi:type="notation:Location" xmi:id="_5UYvJn7CEey3f4SxFS2GPA" x="-10" y="20"/>
@@ -249,6 +250,6 @@
     <element xmi:type="realtimestatechart:Transition" href="../roboCar.muml#_5UKFoH7CEey3f4SxFS2GPA"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_5UYvIn7CEey3f4SxFS2GPA" points="[-54, 3, 637, 0]$[-700, 8, -9, 5]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5WC8AH7CEey3f4SxFS2GPA" id="(0.43902439024390244,0.8723404255319149)"/>
-    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5WC8AX7CEey3f4SxFS2GPA" id="(0.19205298013245034,0.9242424242424242)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5WC8AX7CEey3f4SxFS2GPA" id="(0.9801324503311258,0.7628865979381443)"/>
   </edges>
 </notation:Diagram>
