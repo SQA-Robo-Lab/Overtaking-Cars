@@ -112,6 +112,9 @@
       <variables xmi:id="_rMHfkH9UEeyNotDDFTg5Hg" name="slowVelocity">
         <dataType xsi:type="types:PrimitiveDataType" href="platform:/plugin/org.muml.pim.types/model/predefined.mumltypes#double"/>
       </variables>
+      <variables xmi:id="_n05dYJo1Eey4-O1claivDQ" name="laneDistance">
+        <dataType xsi:type="types:PrimitiveDataType" href="platform:/plugin/org.muml.pim.types/model/predefined.mumltypes#int32"/>
+      </variables>
       <states xmi:id="_pvqhMX67EeyKLqeH6TVEeQ" name="DriveControl_main" initial="true">
         <embeddedRegions xmi:id="_pvqhMn67EeyKLqeH6TVEeQ" priority="1">
           <embeddedStatechart xmi:id="_pvqhM367EeyKLqeH6TVEeQ" name="driveControlPort" behavioralElement="_hSi14H31Eey98LNJ4XeImg">
@@ -176,7 +179,7 @@
                 </expressions>
               </action>
             </transitions>
-            <transitions xmi:id="_5UKFoH7CEey3f4SxFS2GPA" priority="1" target="_hJpw0H6_Eey3f4SxFS2GPA" source="_986O4H7BEey3f4SxFS2GPA">
+            <transitions xmi:id="_5UKFoH7CEey3f4SxFS2GPA" priority="1" target="_hJpw0H6_Eey3f4SxFS2GPA" source="_Pc2UcJo1Eey4-O1claivDQ">
               <synchronization xmi:id="_0upBIH7EEeyYs5kpsSDhJQ" syncChannel="_eAw_MH69Eey3f4SxFS2GPA"/>
               <guard xsi:type="common:ComparisonExpression" xmi:id="_7YadgI5GEeyhMvv5xjA9yA" operator="GREATER">
                 <leftExpression xsi:type="actionlanguage:TypedNamedElementExpression" xmi:id="_7YadgY5GEeyhMvv5xjA9yA" typedNamedElement="_Yc-OUI5GEeyhMvv5xjA9yA"/>
@@ -195,6 +198,12 @@
                 </expressions>
               </action>
             </transitions>
+            <transitions xmi:id="_fDB_IJo1Eey4-O1claivDQ" priority="1" target="_Pc2UcJo1Eey4-O1claivDQ" source="_986O4H7BEey3f4SxFS2GPA">
+              <guard xsi:type="common:ComparisonExpression" xmi:id="_0fvYUJo1Eey4-O1claivDQ">
+                <leftExpression xsi:type="actionlanguage:TypedNamedElementExpression" xmi:id="_0fvYUZo1Eey4-O1claivDQ" typedNamedElement="_Yc-OUI5GEeyhMvv5xjA9yA"/>
+                <rightExpression xsi:type="actionlanguage:TypedNamedElementExpression" xmi:id="_0fvYUpo1Eey4-O1claivDQ" typedNamedElement="_n05dYJo1Eey4-O1claivDQ"/>
+              </guard>
+            </transitions>
             <states xmi:id="_hJpw0H6_Eey3f4SxFS2GPA" name="FollowMainLane" outgoingTransitions="_Hqo4cH7CEey3f4SxFS2GPA" incomingTransitions="_5UKFoH7CEey3f4SxFS2GPA" initial="true">
               <doEvent xmi:id="_mEIDsI5KEeyhMvv5xjA9yA">
                 <action xmi:id="_nP5TQI5KEeyhMvv5xjA9yA" name="followMainLane">
@@ -211,19 +220,35 @@
                 </period>
               </doEvent>
             </states>
-            <states xmi:id="_986O4H7BEey3f4SxFS2GPA" name="PassSlowerVehicle" outgoingTransitions="_5UKFoH7CEey3f4SxFS2GPA" incomingTransitions="_Hqo4cH7CEey3f4SxFS2GPA">
+            <states xmi:id="_986O4H7BEey3f4SxFS2GPA" name="PassSlowerVehicle" outgoingTransitions="_fDB_IJo1Eey4-O1claivDQ" incomingTransitions="_Hqo4cH7CEey3f4SxFS2GPA">
               <doEvent xmi:id="__cAR8I5KEeyhMvv5xjA9yA">
                 <action xmi:id="_AKw1YI5LEeyhMvv5xjA9yA" name="followFastLane">
-                  <expressions xsi:type="actionlanguage:Block" xmi:id="_Y_MYUI5LEeyhMvv5xjA9yA">
-                    <expressions xsi:type="actionlanguage:OperationCall" xmi:id="_Y_MYUY5LEeyhMvv5xjA9yA" operation="_WC3mkI5KEeyhMvv5xjA9yA">
-                      <parameterBinding xmi:id="_Y_MYUo5LEeyhMvv5xjA9yA" parameter="_YxlPkI5KEeyhMvv5xjA9yA">
-                        <value xsi:type="actionlanguage:TypedNamedElementExpression" xmi:id="_Y_MYU45LEeyhMvv5xjA9yA" typedNamedElement="_kDjucH7FEeyYs5kpsSDhJQ"/>
+                  <expressions xsi:type="actionlanguage:Block" xmi:id="_9LvfIJo1Eey4-O1claivDQ">
+                    <expressions xsi:type="actionlanguage:OperationCall" xmi:id="_9LvfIZo1Eey4-O1claivDQ" operation="_WC3mkI5KEeyhMvv5xjA9yA">
+                      <parameterBinding xmi:id="_9LvfIpo1Eey4-O1claivDQ" parameter="_YxlPkI5KEeyhMvv5xjA9yA">
+                        <value xsi:type="actionlanguage:TypedNamedElementExpression" xmi:id="_9LvfI5o1Eey4-O1claivDQ" typedNamedElement="_kDjucH7FEeyYs5kpsSDhJQ"/>
                       </parameterBinding>
                     </expressions>
                   </expressions>
                 </action>
                 <period xmi:id="_RmCZcI5LEeyhMvv5xjA9yA">
                   <value xsi:type="common:LiteralExpression" xmi:id="_S3rAcI5LEeyhMvv5xjA9yA" value="1"/>
+                </period>
+              </doEvent>
+            </states>
+            <states xmi:id="_Pc2UcJo1Eey4-O1claivDQ" name="CompleteOvertaking" outgoingTransitions="_5UKFoH7CEey3f4SxFS2GPA" incomingTransitions="_fDB_IJo1Eey4-O1claivDQ">
+              <doEvent xmi:id="_2-boUJo1Eey4-O1claivDQ">
+                <action xmi:id="_3jv74Jo1Eey4-O1claivDQ" name="followFastLane">
+                  <expressions xsi:type="actionlanguage:Block" xmi:id="_-lT6IJo1Eey4-O1claivDQ">
+                    <expressions xsi:type="actionlanguage:OperationCall" xmi:id="_-lT6IZo1Eey4-O1claivDQ" operation="_WC3mkI5KEeyhMvv5xjA9yA">
+                      <parameterBinding xmi:id="_-lT6Ipo1Eey4-O1claivDQ" parameter="_YxlPkI5KEeyhMvv5xjA9yA">
+                        <value xsi:type="actionlanguage:TypedNamedElementExpression" xmi:id="_-lT6I5o1Eey4-O1claivDQ" typedNamedElement="_kDjucH7FEeyYs5kpsSDhJQ"/>
+                      </parameterBinding>
+                    </expressions>
+                  </expressions>
+                </action>
+                <period xmi:id="_5wAYEJo1Eey4-O1claivDQ">
+                  <value xsi:type="common:LiteralExpression" xmi:id="_70le8Jo1Eey4-O1claivDQ" value="1"/>
                 </period>
               </doEvent>
             </states>
