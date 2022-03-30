@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <muml_container:DeploymentConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:component="http://www.muml.org/pim/component/1.0.0" xmlns:instance="http://www.muml.org/pim/instance/1.0.0" xmlns:muml_container="http://www.muml.org/psm/muml_container/0.5.0">
-  <systemAllocation href="../model/roboCar.muml#_fPDnwLAUEey2qJKe6uXU6A"/>
+  <systemAllocation href="../model/roboCar.muml#_Ll4kwLBAEeybm_LW6at8TA"/>
   <ecuConfigurations name="fastCarCoordinatorECU_config">
     <structuredResourceInstance href="../model/roboCar.muml#_e_zJsY5oEeyhMvv5xjA9yA"/>
     <componentContainers name="MCC_CoordinatorComponent">
@@ -14,6 +14,10 @@
         <portInstanceConfigurations xsi:type="muml_container:PortInstanceConfiguration_MQTT" WiFi_ssid="Section Control" WiFi_pass="********" MQTT_serverAddress="192.168.0.100" MQTT_serverPort="1883" publishingTopic="fastCarCoordinatorECU/communicator.F/overtakingInitiator1/" subscriptionTopic="slowCarCoordinatorECU/communicator.S/overtakingAffiliate1/">
           <portInstance xsi:type="instance:DiscreteSinglePortInstance" href="../model/roboCar.muml#_hGWCeo5HEeyhMvv5xjA9yA"/>
           <hwportInstance href="../model/roboCar.muml#_e_zJs45oEeyhMvv5xjA9yA"/>
+        </portInstanceConfigurations>
+        <portInstanceConfigurations xsi:type="muml_container:PortInstanceConfiguration_I2C" ownI2cAddress="1" otherI2cAddress="9">
+          <portInstance xsi:type="instance:DiscreteSinglePortInstance" href="../model/roboCar.muml#_hGWCe45HEeyhMvv5xjA9yA"/>
+          <hwportInstance href="../model/roboCar.muml#_e_zJso5oEeyhMvv5xjA9yA"/>
         </portInstanceConfigurations>
       </componentInstanceConfigurations>
       <componentInstances xsi:type="instance:AtomicComponentInstance" href="../model/roboCar.muml#_hGWCeI5HEeyhMvv5xjA9yA"/>
@@ -33,6 +37,10 @@
           <portInstance xsi:type="instance:DiscreteSinglePortInstance" href="../model/roboCar.muml#_83pwyo5IEeyhMvv5xjA9yA"/>
           <hwportInstance href="../model/roboCar.muml#_GT68QY5cEeyhMvv5xjA9yA"/>
         </portInstanceConfigurations>
+        <portInstanceConfigurations xsi:type="muml_container:PortInstanceConfiguration_I2C" ownI2cAddress="2" otherI2cAddress="10">
+          <portInstance xsi:type="instance:DiscreteSinglePortInstance" href="../model/roboCar.muml#_83pwy45IEeyhMvv5xjA9yA"/>
+          <hwportInstance href="../model/roboCar.muml#_GT68Qo5cEeyhMvv5xjA9yA"/>
+        </portInstanceConfigurations>
       </componentInstanceConfigurations>
       <componentInstances xsi:type="instance:AtomicComponentInstance" href="../model/roboCar.muml#_83pwyI5IEeyhMvv5xjA9yA"/>
     </componentContainers>
@@ -48,6 +56,10 @@
         </portInstanceConfigurations>
         <portInstanceConfigurations xsi:type="muml_container:PortInstanceConfiguration_Local" ownID="2631" writersID="-9629">
           <portInstance xsi:type="instance:HybridPortInstance" href="../model/roboCar.muml#_hGWCdY5HEeyhMvv5xjA9yA"/>
+        </portInstanceConfigurations>
+        <portInstanceConfigurations xsi:type="muml_container:PortInstanceConfiguration_I2C" ownI2cAddress="9" otherI2cAddress="1">
+          <portInstance xsi:type="instance:DiscreteSinglePortInstance" href="../model/roboCar.muml#_hGWCdo5HEeyhMvv5xjA9yA"/>
+          <hwportInstance href="../model/roboCar.muml#_e_53YY5oEeyhMvv5xjA9yA"/>
         </portInstanceConfigurations>
         <portInstanceConfigurations xsi:type="muml_container:PortInstanceConfiguration_Local" ownID="-25132" writersID="-26371">
           <portInstance xsi:type="instance:HybridPortInstance" href="../model/roboCar.muml#_hGWCd45HEeyhMvv5xjA9yA"/>
@@ -69,8 +81,8 @@
           <portInstance xsi:type="instance:ContinuousPortInstance" href="../model/roboCar.muml#_hGWCf45HEeyhMvv5xjA9yA"/>
         </portInstanceConfigurations>
       </componentInstanceConfigurations>
-      <componentInstances xsi:type="instance:AtomicComponentInstance" href="../model/roboCar.muml#_hGWCfo5HEeyhMvv5xjA9yA"/>
       <componentInstances xsi:type="instance:AtomicComponentInstance" href="../model/roboCar.muml#_hGWCcY5HEeyhMvv5xjA9yA"/>
+      <componentInstances xsi:type="instance:AtomicComponentInstance" href="../model/roboCar.muml#_hGWCfo5HEeyhMvv5xjA9yA"/>
     </componentContainers>
     <componentContainers name="MCC_PowerTrainComponent">
       <componentType xsi:type="component:StaticAtomicComponent" href="../model/roboCar.muml#_wHY_sH30Eey98LNJ4XeImg"/>
@@ -89,6 +101,10 @@
       <componentType xsi:type="component:StaticAtomicComponent" href="../model/roboCar.muml#_3lfwAH30Eey98LNJ4XeImg"/>
       <componentInstanceConfigurations>
         <componentInstance xsi:type="instance:AtomicComponentInstance" href="../model/roboCar.muml#_83pww45IEeyhMvv5xjA9yA"/>
+        <portInstanceConfigurations xsi:type="muml_container:PortInstanceConfiguration_I2C" ownI2cAddress="10" otherI2cAddress="2">
+          <portInstance xsi:type="instance:DiscreteSinglePortInstance" href="../model/roboCar.muml#_83pwxI5IEeyhMvv5xjA9yA"/>
+          <hwportInstance href="../model/roboCar.muml#_GUGido5cEeyhMvv5xjA9yA"/>
+        </portInstanceConfigurations>
         <portInstanceConfigurations xsi:type="muml_container:PortInstanceConfiguration_Local" ownID="12012" writersID="3192">
           <portInstance xsi:type="instance:HybridPortInstance" href="../model/roboCar.muml#_83pwxY5IEeyhMvv5xjA9yA"/>
         </portInstanceConfigurations>
