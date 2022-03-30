@@ -1,0 +1,11 @@
+roboCar1 {
+	include 'platform:/plugin/org.muml.psm.allocation.language.xtext/operations/OCLContext.ocl'
+	
+	constraint requiredLocation fastCarCommunicator
+	{
+		descriptors(first, second);
+		ocl Tuple{first=self.getSWInstance('communicator.F'), second=getECU('fastCarCoordinatorECU')}.
+			oclAsSet();
+	}
+	
+}

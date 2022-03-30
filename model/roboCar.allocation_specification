@@ -1,0 +1,77 @@
+roboCar {
+	include 'platform:/plugin/org.muml.psm.allocation.language.xtext/operations/OCLContext.ocl'
+
+	constraint requiredLocation fastCarCommunicator
+	{
+		descriptors(first, second);
+		ocl self.getSWInstance('communicator.F')->union(self.getSWInstance('communicator.F').
+			getAllEmbeddedInstances())->asSet()->product(self.getECU('fastCarCoordinatorECU').
+			resolveToStructuredResourceInstances())->asSet();
+	}
+	
+	constraint requiredLocation slowCarCommunicator
+	{
+		descriptors(first, second);
+		ocl self.getSWInstance('communicator.S')->union(self.getSWInstance('communicator.S').
+			getAllEmbeddedInstances())->asSet()->product(self.getECU('slowCarCoordinatorECU').
+			resolveToStructuredResourceInstances())->asSet();
+	}
+	
+	constraint requiredLocation fastCarDriver
+	{
+		descriptors(first, second);
+		ocl self.getSWInstance('driveControl.F')->union(self.getSWInstance('driveControl.F').
+			getAllEmbeddedInstances())->asSet()->product(self.getECU('fastCarDriverECU').
+			resolveToStructuredResourceInstances())->asSet(); 
+	}
+	
+	constraint requiredLocation slowCarDriver
+	{
+		descriptors(first, second);
+		ocl self.getSWInstance('driveControl.S')->union(self.getSWInstance('driveControl.S').
+			getAllEmbeddedInstances())->asSet()->product(self.getECU('slowCarDriverECU').
+			resolveToStructuredResourceInstances())->asSet(); 
+	}
+	
+	constraint collocation fastCarPowerTrain
+	{
+		descriptors(first, second);
+		ocl self.getSWInstance('powerTrain.F')->asSet()->product(self.getSWInstance('driveControl.F')->asSet())
+			->asSet();
+	}
+	
+	constraint collocation slowCarPowerTrain
+	{
+		descriptors(first, second);
+		ocl self.getSWInstance('powerTrain.S')->asSet()->product(self.getSWInstance('driveControl.S')->asSet())
+			->asSet();
+	}
+	
+	constraint collocation fastCarFrontDistance
+	{
+		descriptors(first, second);
+		ocl self.getSWInstance('frontDistanceSensor.F')->asSet()->product(self.getSWInstance('driveControl.F')->asSet())
+			->asSet();
+	}
+	
+	constraint collocation fastCarRearDistance
+	{
+		descriptors(first, second);
+		ocl self.getSWInstance('rearDistanceSensor.F')->asSet()->product(self.getSWInstance('driveControl.F')->asSet())
+			->asSet();
+	}
+	
+	constraint collocation slowCarFrontDistance
+	{
+		descriptors(first, second);
+		ocl self.getSWInstance('frontDistanceSensor.S')->asSet()->product(self.getSWInstance('driveControl.S')->asSet())
+			->asSet();
+	}
+	
+	constraint collocation slowCarRearDistance
+	{
+		descriptors(first, second);
+		ocl self.getSWInstance('rearDistanceSensor.S')->asSet()->product(self.getSWInstance('driveControl.S')->asSet())
+			->asSet();
+	}
+}

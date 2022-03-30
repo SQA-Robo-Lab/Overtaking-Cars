@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="ASCII"?>
+<muml_container:DeploymentConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:component="http://www.muml.org/pim/component/1.0.0" xmlns:instance="http://www.muml.org/pim/instance/1.0.0" xmlns:muml_container="http://www.muml.org/psm/muml_container/0.5.0">
+  <systemAllocation href="../model/roboCar.muml#_fPDnwLAUEey2qJKe6uXU6A"/>
+  <ecuConfigurations name="fastCarCoordinatorECU_config">
+    <structuredResourceInstance href="../model/roboCar.muml#_e_zJsY5oEeyhMvv5xjA9yA"/>
+    <componentContainers name="MCC_CoordinatorComponent">
+      <componentType xsi:type="component:StaticAtomicComponent" href="../model/roboCar.muml#_Gb4gAH32Eey98LNJ4XeImg"/>
+      <componentInstanceConfigurations>
+        <componentInstance xsi:type="instance:AtomicComponentInstance" href="../model/roboCar.muml#_hGWCeI5HEeyhMvv5xjA9yA"/>
+        <portInstanceConfigurations xsi:type="muml_container:PortInstanceConfiguration_MQTT" WiFi_ssid="Section Control" WiFi_pass="********" MQTT_serverAddress="192.168.0.100" MQTT_serverPort="1883" publishingTopic="fastCarCoordinatorECU/communicator.F/overtakingAffiliate1/" subscriptionTopic="slowCarCoordinatorECU/communicator.S/overtakingInitiator1/">
+          <portInstance xsi:type="instance:DiscreteSinglePortInstance" href="../model/roboCar.muml#_hGWCeY5HEeyhMvv5xjA9yA"/>
+          <hwportInstance href="../model/roboCar.muml#_e_zJs45oEeyhMvv5xjA9yA"/>
+        </portInstanceConfigurations>
+        <portInstanceConfigurations xsi:type="muml_container:PortInstanceConfiguration_MQTT" WiFi_ssid="Section Control" WiFi_pass="********" MQTT_serverAddress="192.168.0.100" MQTT_serverPort="1883" publishingTopic="fastCarCoordinatorECU/communicator.F/overtakingInitiator1/" subscriptionTopic="slowCarCoordinatorECU/communicator.S/overtakingAffiliate1/">
+          <portInstance xsi:type="instance:DiscreteSinglePortInstance" href="../model/roboCar.muml#_hGWCeo5HEeyhMvv5xjA9yA"/>
+          <hwportInstance href="../model/roboCar.muml#_e_zJs45oEeyhMvv5xjA9yA"/>
+        </portInstanceConfigurations>
+      </componentInstanceConfigurations>
+      <componentInstances xsi:type="instance:AtomicComponentInstance" href="../model/roboCar.muml#_hGWCeI5HEeyhMvv5xjA9yA"/>
+    </componentContainers>
+  </ecuConfigurations>
+  <ecuConfigurations name="slowCarCoordinatorECU_config">
+    <structuredResourceInstance href="../model/roboCar.muml#_GT68QI5cEeyhMvv5xjA9yA"/>
+    <componentContainers name="MCC_CoordinatorComponent">
+      <componentType xsi:type="component:StaticAtomicComponent" href="../model/roboCar.muml#_Gb4gAH32Eey98LNJ4XeImg"/>
+      <componentInstanceConfigurations>
+        <componentInstance xsi:type="instance:AtomicComponentInstance" href="../model/roboCar.muml#_83pwyI5IEeyhMvv5xjA9yA"/>
+        <portInstanceConfigurations xsi:type="muml_container:PortInstanceConfiguration_MQTT" WiFi_ssid="Section Control" WiFi_pass="********" MQTT_serverAddress="192.168.0.100" MQTT_serverPort="1883" publishingTopic="slowCarCoordinatorECU/communicator.S/overtakingInitiator1/" subscriptionTopic="fastCarCoordinatorECU/communicator.F/overtakingAffiliate1/">
+          <portInstance xsi:type="instance:DiscreteSinglePortInstance" href="../model/roboCar.muml#_83pwyY5IEeyhMvv5xjA9yA"/>
+          <hwportInstance href="../model/roboCar.muml#_GT68QY5cEeyhMvv5xjA9yA"/>
+        </portInstanceConfigurations>
+        <portInstanceConfigurations xsi:type="muml_container:PortInstanceConfiguration_MQTT" WiFi_ssid="Section Control" WiFi_pass="********" MQTT_serverAddress="192.168.0.100" MQTT_serverPort="1883" publishingTopic="slowCarCoordinatorECU/communicator.S/overtakingAffiliate1/" subscriptionTopic="fastCarCoordinatorECU/communicator.F/overtakingInitiator1/">
+          <portInstance xsi:type="instance:DiscreteSinglePortInstance" href="../model/roboCar.muml#_83pwyo5IEeyhMvv5xjA9yA"/>
+          <hwportInstance href="../model/roboCar.muml#_GT68QY5cEeyhMvv5xjA9yA"/>
+        </portInstanceConfigurations>
+      </componentInstanceConfigurations>
+      <componentInstances xsi:type="instance:AtomicComponentInstance" href="../model/roboCar.muml#_83pwyI5IEeyhMvv5xjA9yA"/>
+    </componentContainers>
+  </ecuConfigurations>
+  <ecuConfigurations name="fastCarDriverECU_config">
+    <structuredResourceInstance href="../model/roboCar.muml#_e_53YI5oEeyhMvv5xjA9yA"/>
+    <componentContainers name="MCC_DriveControlComponent">
+      <componentType xsi:type="component:StaticAtomicComponent" href="../model/roboCar.muml#_3lfwAH30Eey98LNJ4XeImg"/>
+      <componentInstanceConfigurations>
+        <componentInstance xsi:type="instance:AtomicComponentInstance" href="../model/roboCar.muml#_hGWCc45HEeyhMvv5xjA9yA"/>
+        <portInstanceConfigurations xsi:type="muml_container:PortInstanceConfiguration_Local" ownID="-12409" writersID="-25176">
+          <portInstance xsi:type="instance:HybridPortInstance" href="../model/roboCar.muml#_hGWCdI5HEeyhMvv5xjA9yA"/>
+        </portInstanceConfigurations>
+        <portInstanceConfigurations xsi:type="muml_container:PortInstanceConfiguration_Local" ownID="2631" writersID="-9629">
+          <portInstance xsi:type="instance:HybridPortInstance" href="../model/roboCar.muml#_hGWCdY5HEeyhMvv5xjA9yA"/>
+        </portInstanceConfigurations>
+        <portInstanceConfigurations xsi:type="muml_container:PortInstanceConfiguration_Local" ownID="-25132" writersID="-26371">
+          <portInstance xsi:type="instance:HybridPortInstance" href="../model/roboCar.muml#_hGWCd45HEeyhMvv5xjA9yA"/>
+        </portInstanceConfigurations>
+      </componentInstanceConfigurations>
+      <componentInstances xsi:type="instance:AtomicComponentInstance" href="../model/roboCar.muml#_hGWCc45HEeyhMvv5xjA9yA"/>
+    </componentContainers>
+    <componentContainers name="MCC_DistanceSensorComponent">
+      <componentType xsi:type="component:StaticAtomicComponent" href="../model/roboCar.muml#_cCqtIH30Eey98LNJ4XeImg"/>
+      <componentInstanceConfigurations>
+        <componentInstance xsi:type="instance:AtomicComponentInstance" href="../model/roboCar.muml#_hGWCcY5HEeyhMvv5xjA9yA"/>
+        <portInstanceConfigurations xsi:type="muml_container:PortInstanceConfiguration_Local" ownID="-25176" writersID="-12409">
+          <portInstance xsi:type="instance:ContinuousPortInstance" href="../model/roboCar.muml#_hGWCco5HEeyhMvv5xjA9yA"/>
+        </portInstanceConfigurations>
+      </componentInstanceConfigurations>
+      <componentInstanceConfigurations>
+        <componentInstance xsi:type="instance:AtomicComponentInstance" href="../model/roboCar.muml#_hGWCfo5HEeyhMvv5xjA9yA"/>
+        <portInstanceConfigurations xsi:type="muml_container:PortInstanceConfiguration_Local" ownID="-9629" writersID="2631">
+          <portInstance xsi:type="instance:ContinuousPortInstance" href="../model/roboCar.muml#_hGWCf45HEeyhMvv5xjA9yA"/>
+        </portInstanceConfigurations>
+      </componentInstanceConfigurations>
+      <componentInstances xsi:type="instance:AtomicComponentInstance" href="../model/roboCar.muml#_hGWCfo5HEeyhMvv5xjA9yA"/>
+      <componentInstances xsi:type="instance:AtomicComponentInstance" href="../model/roboCar.muml#_hGWCcY5HEeyhMvv5xjA9yA"/>
+    </componentContainers>
+    <componentContainers name="MCC_PowerTrainComponent">
+      <componentType xsi:type="component:StaticAtomicComponent" href="../model/roboCar.muml#_wHY_sH30Eey98LNJ4XeImg"/>
+      <componentInstanceConfigurations>
+        <componentInstance xsi:type="instance:AtomicComponentInstance" href="../model/roboCar.muml#_hGWCfI5HEeyhMvv5xjA9yA"/>
+        <portInstanceConfigurations xsi:type="muml_container:PortInstanceConfiguration_Local" ownID="-26371" writersID="-25132">
+          <portInstance xsi:type="instance:ContinuousPortInstance" href="../model/roboCar.muml#_hGWCfY5HEeyhMvv5xjA9yA"/>
+        </portInstanceConfigurations>
+      </componentInstanceConfigurations>
+      <componentInstances xsi:type="instance:AtomicComponentInstance" href="../model/roboCar.muml#_hGWCfI5HEeyhMvv5xjA9yA"/>
+    </componentContainers>
+  </ecuConfigurations>
+  <ecuConfigurations name="slowCarDriverECU_config">
+    <structuredResourceInstance href="../model/roboCar.muml#_GUGic45cEeyhMvv5xjA9yA"/>
+    <componentContainers name="MCC_DriveControlComponent">
+      <componentType xsi:type="component:StaticAtomicComponent" href="../model/roboCar.muml#_3lfwAH30Eey98LNJ4XeImg"/>
+      <componentInstanceConfigurations>
+        <componentInstance xsi:type="instance:AtomicComponentInstance" href="../model/roboCar.muml#_83pww45IEeyhMvv5xjA9yA"/>
+        <portInstanceConfigurations xsi:type="muml_container:PortInstanceConfiguration_Local" ownID="12012" writersID="3192">
+          <portInstance xsi:type="instance:HybridPortInstance" href="../model/roboCar.muml#_83pwxY5IEeyhMvv5xjA9yA"/>
+        </portInstanceConfigurations>
+        <portInstanceConfigurations xsi:type="muml_container:PortInstanceConfiguration_Local" ownID="6450" writersID="-21218">
+          <portInstance xsi:type="instance:HybridPortInstance" href="../model/roboCar.muml#_83pwxo5IEeyhMvv5xjA9yA"/>
+        </portInstanceConfigurations>
+        <portInstanceConfigurations xsi:type="muml_container:PortInstanceConfiguration_Local" ownID="19917" writersID="-30463">
+          <portInstance xsi:type="instance:HybridPortInstance" href="../model/roboCar.muml#_83pwx45IEeyhMvv5xjA9yA"/>
+        </portInstanceConfigurations>
+      </componentInstanceConfigurations>
+      <componentInstances xsi:type="instance:AtomicComponentInstance" href="../model/roboCar.muml#_83pww45IEeyhMvv5xjA9yA"/>
+    </componentContainers>
+    <componentContainers name="MCC_DistanceSensorComponent">
+      <componentType xsi:type="component:StaticAtomicComponent" href="../model/roboCar.muml#_cCqtIH30Eey98LNJ4XeImg"/>
+      <componentInstanceConfigurations>
+        <componentInstance xsi:type="instance:AtomicComponentInstance" href="../model/roboCar.muml#_83pwwY5IEeyhMvv5xjA9yA"/>
+        <portInstanceConfigurations xsi:type="muml_container:PortInstanceConfiguration_Local" ownID="3192" writersID="12012">
+          <portInstance xsi:type="instance:ContinuousPortInstance" href="../model/roboCar.muml#_83pwwo5IEeyhMvv5xjA9yA"/>
+        </portInstanceConfigurations>
+      </componentInstanceConfigurations>
+      <componentInstanceConfigurations>
+        <componentInstance xsi:type="instance:AtomicComponentInstance" href="../model/roboCar.muml#_83pwzo5IEeyhMvv5xjA9yA"/>
+        <portInstanceConfigurations xsi:type="muml_container:PortInstanceConfiguration_Local" ownID="-30463" writersID="19917">
+          <portInstance xsi:type="instance:ContinuousPortInstance" href="../model/roboCar.muml#_83pwz45IEeyhMvv5xjA9yA"/>
+        </portInstanceConfigurations>
+      </componentInstanceConfigurations>
+      <componentInstances xsi:type="instance:AtomicComponentInstance" href="../model/roboCar.muml#_83pwwY5IEeyhMvv5xjA9yA"/>
+      <componentInstances xsi:type="instance:AtomicComponentInstance" href="../model/roboCar.muml#_83pwzo5IEeyhMvv5xjA9yA"/>
+    </componentContainers>
+    <componentContainers name="MCC_PowerTrainComponent">
+      <componentType xsi:type="component:StaticAtomicComponent" href="../model/roboCar.muml#_wHY_sH30Eey98LNJ4XeImg"/>
+      <componentInstanceConfigurations>
+        <componentInstance xsi:type="instance:AtomicComponentInstance" href="../model/roboCar.muml#_83pwzI5IEeyhMvv5xjA9yA"/>
+        <portInstanceConfigurations xsi:type="muml_container:PortInstanceConfiguration_Local" ownID="-21218" writersID="6450">
+          <portInstance xsi:type="instance:ContinuousPortInstance" href="../model/roboCar.muml#_83pwzY5IEeyhMvv5xjA9yA"/>
+        </portInstanceConfigurations>
+      </componentInstanceConfigurations>
+      <componentInstances xsi:type="instance:AtomicComponentInstance" href="../model/roboCar.muml#_83pwzI5IEeyhMvv5xjA9yA"/>
+    </componentContainers>
+  </ecuConfigurations>
+</muml_container:DeploymentConfiguration>

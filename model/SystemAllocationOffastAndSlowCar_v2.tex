@@ -1,0 +1,17 @@
+	\documentclass{article}
+	\begin{document}
+	\section{System Allocation}
+	\begin{tabular}{c |c | c | c | c}
+	~ & fastCarCoordinatorECU & fastCarDriverECU & slowCarCoordinatorECU & slowCarDriverECU \\\hline
+		communicator.F  & 1 & 0 & 0 & 0\\ 
+		communicator.S  & 0 & 0 & 1 & 0\\ 
+		driveControl.F  & 0 & 1 & 0 & 0\\ 
+		driveControl.S  & 0 & 0 & 0 & 1\\ 
+		frontDistanceSensor.F  & 0 & 1 & 0 & 0\\ 
+		frontDistanceSensor.S  & 0 & 0 & 0 & 1\\ 
+		powerTrain.F  & 0 & 1 & 0 & 0\\ 
+		powerTrain.S  & 0 & 0 & 0 & 1\\ 
+		rearDistanceSensor.F  & 0 & 1 & 0 & 0\\ 
+		rearDistanceSensor.S  & 0 & 0 & 0 & 1\\ 
+	\end{tabular}
+	\end{document}
