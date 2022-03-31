@@ -1,6 +1,6 @@
 		// Standard library
 		
-		#include "../components/distanceSensorComponent_Interface.h"
+		#include "distanceSensorComponent_Interface.h"
 		
 
 		

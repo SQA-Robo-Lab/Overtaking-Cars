@@ -1,6 +1,6 @@
 		// Standard library
 		
-		#include "../components/coordinatorComponent_Interface.h"
+		#include "coordinatorComponent_Interface.h"
 		
 
 		

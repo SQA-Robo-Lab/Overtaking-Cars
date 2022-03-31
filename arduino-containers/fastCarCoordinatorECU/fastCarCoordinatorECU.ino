@@ -1,16 +1,16 @@
 #define C99
 
-#include "lib/Debug.h"
+#include "Debug.h"
 
-#include "container_lib/I2cCustomLib.h"
+#include "I2cCustomLib.h"
 
-#include "container_lib/MqttCustomLib.h"
+#include "MqttCustomLib.h"
 #include <WiFiEsp.h>
 
 static struct WiFiConfig* wifiConfig;
 static struct MqttConfig* mqttConfig;
 
-#include "component_container/MCC_coordinatorComponent.h"
+#include "MCC_coordinatorComponent.h"
 
 
 //variable for component Instances

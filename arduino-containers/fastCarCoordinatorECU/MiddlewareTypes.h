@@ -13,8 +13,8 @@
 
 #ifndef MIDDLEWARETYPES_H_
 #define MIDDLEWARETYPES_H_
-#include "../types/standardTypes.h"
-#include "../types/customTypes.h"
+#include "standardTypes.h"
+#include "customTypes.h"
 
 /**
  * @brief Type to specify the length of a Queue

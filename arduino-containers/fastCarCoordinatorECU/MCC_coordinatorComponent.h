@@ -5,19 +5,19 @@
   extern "C" {
 #endif	
 // Library
-#include "../container_lib/ContainerTypes.h"
-#include "../container_lib/LocalBufferManager.h"
+#include "ContainerTypes.h"
+#include "LocalBufferManager.h"
 
 
 //Identifier of this ECU
-#include "../ECU_Identifier.h"
+#include "ECU_Identifier.h"
 
 //I2C Specific includes
-#include "../container_lib/I2cCustomLib.h"
+#include "I2cCustomLib.h"
 //MQTT specific includes
-#include "../container_lib/MqttCustomLib.h"
+#include "MqttCustomLib.h"
 //include the component_interface header
-#include "../components/coordinatorComponent_Interface.h"
+#include "coordinatorComponent_Interface.h"
 //include api mapping headers
 
 		

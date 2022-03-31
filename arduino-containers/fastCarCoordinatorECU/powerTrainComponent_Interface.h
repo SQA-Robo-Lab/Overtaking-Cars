@@ -11,11 +11,11 @@
 #ifdef __cplusplus
   extern "C" {
 #endif		// Library
-	#include "../types/standardTypes.h"
-	#include "../types/customTypes.h"
-	#include "../lib/port.h"
-	#include "../lib/clock.h"
-	#include "../lib/Debug.h"
+	#include "standardTypes.h"
+	#include "customTypes.h"
+	#include "port.h"
+	#include "clock.h"
+	#include "Debug.h"
 			/*****
  			 *
  			 *  Forward Delcaration of Container Functions

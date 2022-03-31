@@ -1,6 +1,6 @@
 		// Standard library
 		
-		#include "../components/powerTrainComponent_Interface.h"
+		#include "powerTrainComponent_Interface.h"
 		
 
 		

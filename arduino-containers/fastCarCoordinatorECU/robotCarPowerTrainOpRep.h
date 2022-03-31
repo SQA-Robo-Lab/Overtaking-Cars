@@ -4,8 +4,8 @@
   extern "C" {
 #endif
 
-	#include "../types/standardTypes.h"
-	#include "../types/customTypes.h"
+	#include "standardTypes.h"
+	#include "customTypes.h"
 
 
 			

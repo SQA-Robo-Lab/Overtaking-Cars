@@ -15,7 +15,7 @@
 
 
 
-#include "../types/standardTypes.h" // The standardTypes.h are located in the lib directory of the component type code
+#include "standardTypes.h" // The standardTypes.h are located in the lib directory of the component type code
 // use /types/standardTypes.h and NOT /lib/standardTypes.h, just to reference the same as the component type code -- without overriding NULL
 
 /**

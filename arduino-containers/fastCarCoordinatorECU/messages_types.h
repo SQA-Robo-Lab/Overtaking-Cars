@@ -6,7 +6,7 @@
  */
 #ifndef MESSAGE_TYPES_H
 #define MESSAGE_TYPES_H
-#include "../lib/standardTypes.h"
+#include "standardTypes.h"
 
 
 //the following message types are not generated, because they have no parameters

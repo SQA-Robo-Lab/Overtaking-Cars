@@ -11,12 +11,12 @@
 #ifdef __cplusplus
   extern "C" {
 #endif		// Library
-	#include "../types/standardTypes.h"
-	#include "../types/customTypes.h"
-	#include "../lib/port.h"
-		#include "../messages/messages_types.h"
-	#include "../lib/clock.h"
-	#include "../lib/Debug.h"
+	#include "standardTypes.h"
+	#include "customTypes.h"
+	#include "port.h"
+		#include "messages_types.h"
+	#include "clock.h"
+	#include "Debug.h"
 
 
 		

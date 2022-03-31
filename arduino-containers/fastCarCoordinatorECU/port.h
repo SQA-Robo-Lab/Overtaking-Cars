@@ -10,8 +10,8 @@
 #define PORT_H_
 
 #include "stdlib.h"
-#include "../types/standardTypes.h"
-#include "../types/customTypes.h"
+#include "standardTypes.h"
+#include "customTypes.h"
 
 /**
  * @brief The structure Port
