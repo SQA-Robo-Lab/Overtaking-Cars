@@ -273,7 +273,7 @@
 								switch(port->handle->type) {
 									case PORT_HANDLE_TYPE_I2C:
 										i2cHandle = (I2cHandle*) port->handle->concreteHandle;
-										sendI2cMessage(i2cHandle->otherI2cAdress, MESSAGE_OVERTAKINGPERMISSIONMESSAGESREQUESTPERMISSIONOVERTAKINGPERMISSIONMESSAGESMESSAGE, msg);
+										sendI2cMessage(i2cHandle->otherI2cAddress, MESSAGE_OVERTAKINGPERMISSIONMESSAGESREQUESTPERMISSIONOVERTAKINGPERMISSIONMESSAGESMESSAGE, msg);
 										break;
 								default:
 									break;	
@@ -290,7 +290,7 @@
 								switch(port->handle->type) {
 									case PORT_HANDLE_TYPE_I2C:
 										i2cHandle = (I2cHandle*) port->handle->concreteHandle;
-										sendI2cMessage(i2cHandle->otherI2cAdress, MESSAGE_OVERTAKINGPERMISSIONMESSAGESEXECUTEDOVERTAKINGOVERTAKINGPERMISSIONMESSAGESMESSAGE, msg);
+										sendI2cMessage(i2cHandle->otherI2cAddress, MESSAGE_OVERTAKINGPERMISSIONMESSAGESEXECUTEDOVERTAKINGOVERTAKINGPERMISSIONMESSAGESMESSAGE, msg);
 										break;
 								default:
 									break;	
@@ -396,12 +396,12 @@
 			createAndRegisterI2cReceiver(&(handle->receivers[0]), 
 										MESSAGE_OVERTAKINGPERMISSIONMESSAGESGRANTPERMISSIONOVERTAKINGPERMISSIONMESSAGESMESSAGE,
 										5,
-										sizeof(OvertakingPermissionMessagesGrantPermission_OvertakingPermissionMessages_Message);
+										sizeof(OvertakingPermissionMessagesGrantPermission_OvertakingPermissionMessages_Message),
 										 false );
 			createAndRegisterI2cReceiver(&(handle->receivers[0]), 
 										MESSAGE_OVERTAKINGPERMISSIONMESSAGESDENYPERMISSIONOVERTAKINGPERMISSIONMESSAGESMESSAGE,
 										5,
-										sizeof(OvertakingPermissionMessagesDenyPermission_OvertakingPermissionMessages_Message);
+										sizeof(OvertakingPermissionMessagesDenyPermission_OvertakingPermissionMessages_Message),
 										 false );
 			handle->ownI2cAddress = b->DRIVECONTROL_op.i2c_option.ownAddress;
 			handle->otherI2cAddress = b->DRIVECONTROL_op.i2c_option.otherAddress;
@@ -431,6 +431,10 @@
 			switch(ID){
 				case CI_DRIVECONTROLFDRIVECONTROL:
 					b.ID = ID;
+							b.FRONTDISTANCE = PORT_ACTIVE;
+							b.createFRONTDISTANCEHandle = &create_FRONTDISTANCELocalHandle;
+							b.FRONTDISTANCE_op.local_option.pubID = -12409;
+							b.FRONTDISTANCE_op.local_option.subID = -25176;
 							b.VELOCITY = PORT_ACTIVE;
 							b.createVELOCITYHandle = &create_VELOCITYLocalHandle;
 							b.VELOCITY_op.local_option.pubID = -25132;
@@ -439,10 +443,6 @@
 							b.createREARDISTANCEHandle = &create_REARDISTANCELocalHandle;
 							b.REARDISTANCE_op.local_option.pubID = 2631;
 							b.REARDISTANCE_op.local_option.subID = -9629;
-							b.FRONTDISTANCE = PORT_ACTIVE;
-							b.createFRONTDISTANCEHandle = &create_FRONTDISTANCELocalHandle;
-							b.FRONTDISTANCE_op.local_option.pubID = -12409;
-							b.FRONTDISTANCE_op.local_option.subID = -25176;
 							b.DRIVECONTROL = PORT_ACTIVE;
 							b.createDRIVECONTROLHandle = &create_DRIVECONTROLI2cHandle;
 							b.DRIVECONTROL_op.i2c_option.ownAddress = 9;

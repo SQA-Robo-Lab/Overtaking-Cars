@@ -22,9 +22,9 @@ typedef long Clock;
 #include <stdint.h>
 typedef uint64_t Clock;
 static inline Clock Clock_getTime2(Clock aClock) {
-	struct timespec spec;
-    clock_gettime(CLOCK_REALTIME, &spec);
-	return spec.tv_sec * 1000 + (spec.tv_nsec / 1.0e6) - aClock;
+	//struct timespec spec;
+    //clock_gettime(CLOCK_REALTIME, &spec);
+	//return spec.tv_sec * 1000 + (spec.tv_nsec / 1.0e6) - aClock;
 }
 static inline void Clock_reset2(Clock* clock) { *clock = Clock_getTime2(0); }
 

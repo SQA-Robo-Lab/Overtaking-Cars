@@ -176,7 +176,7 @@
 								switch(port->handle->type) {
 									case PORT_HANDLE_TYPE_I2C:
 										i2cHandle = (I2cHandle*) port->handle->concreteHandle;
-										sendI2cMessage(i2cHandle->otherI2cAdress, MESSAGE_OVERTAKINGPERMISSIONMESSAGESGRANTPERMISSIONOVERTAKINGPERMISSIONMESSAGESMESSAGE, msg);
+										sendI2cMessage(i2cHandle->otherI2cAddress, MESSAGE_OVERTAKINGPERMISSIONMESSAGESGRANTPERMISSIONOVERTAKINGPERMISSIONMESSAGESMESSAGE, msg);
 										break;
 								default:
 									break;	
@@ -193,7 +193,7 @@
 								switch(port->handle->type) {
 									case PORT_HANDLE_TYPE_I2C:
 										i2cHandle = (I2cHandle*) port->handle->concreteHandle;
-										sendI2cMessage(i2cHandle->otherI2cAdress, MESSAGE_OVERTAKINGPERMISSIONMESSAGESDENYPERMISSIONOVERTAKINGPERMISSIONMESSAGESMESSAGE, msg);
+										sendI2cMessage(i2cHandle->otherI2cAddress, MESSAGE_OVERTAKINGPERMISSIONMESSAGESDENYPERMISSIONOVERTAKINGPERMISSIONMESSAGESMESSAGE, msg);
 										break;
 								default:
 									break;	
@@ -459,12 +459,12 @@
 			createAndRegisterI2cReceiver(&(handle->receivers[0]), 
 										MESSAGE_OVERTAKINGPERMISSIONMESSAGESREQUESTPERMISSIONOVERTAKINGPERMISSIONMESSAGESMESSAGE,
 										5,
-										sizeof(OvertakingPermissionMessagesRequestPermission_OvertakingPermissionMessages_Message);
+										sizeof(OvertakingPermissionMessagesRequestPermission_OvertakingPermissionMessages_Message),
 										 false );
 			createAndRegisterI2cReceiver(&(handle->receivers[0]), 
 										MESSAGE_OVERTAKINGPERMISSIONMESSAGESEXECUTEDOVERTAKINGOVERTAKINGPERMISSIONMESSAGESMESSAGE,
 										5,
-										sizeof(OvertakingPermissionMessagesExecutedOvertaking_OvertakingPermissionMessages_Message);
+										sizeof(OvertakingPermissionMessagesExecutedOvertaking_OvertakingPermissionMessages_Message),
 										 false );
 			handle->ownI2cAddress = b->COMMUNICATOR_op.i2c_option.ownAddress;
 			handle->otherI2cAddress = b->COMMUNICATOR_op.i2c_option.otherAddress;
@@ -528,6 +528,10 @@
 			switch(ID){
 				case CI_COMMUNICATORSCOORDINATOR:
 					b.ID = ID;
+							b.OVERTAKINGAFFILIATE = PORT_ACTIVE;
+							b.createOVERTAKINGAFFILIATEHandle = &create_OVERTAKINGAFFILIATEMqttHandle;
+							b.OVERTAKINGAFFILIATE_op.mqtt_option.publishingTopic = "slowCarCoordinatorECU/communicator.S/overtakingAffiliate1/";
+							b.OVERTAKINGAFFILIATE_op.mqtt_option.subscriptionTopic = "fastCarCoordinatorECU/communicator.F/overtakingInitiator1/";
 							b.OVERTAKINGINITIATOR = PORT_ACTIVE;
 							b.createOVERTAKINGINITIATORHandle = &create_OVERTAKINGINITIATORMqttHandle;
 							b.OVERTAKINGINITIATOR_op.mqtt_option.publishingTopic = "slowCarCoordinatorECU/communicator.S/overtakingInitiator1/";
@@ -536,10 +540,6 @@
 							b.createCOMMUNICATORHandle = &create_COMMUNICATORI2cHandle;
 							b.COMMUNICATOR_op.i2c_option.ownAddress = 2;
 							b.COMMUNICATOR_op.i2c_option.otherAddress = 10;
-							b.OVERTAKINGAFFILIATE = PORT_ACTIVE;
-							b.createOVERTAKINGAFFILIATEHandle = &create_OVERTAKINGAFFILIATEMqttHandle;
-							b.OVERTAKINGAFFILIATE_op.mqtt_option.publishingTopic = "slowCarCoordinatorECU/communicator.S/overtakingAffiliate1/";
-							b.OVERTAKINGAFFILIATE_op.mqtt_option.subscriptionTopic = "fastCarCoordinatorECU/communicator.F/overtakingInitiator1/";
 				break;
 			default:
 				break;

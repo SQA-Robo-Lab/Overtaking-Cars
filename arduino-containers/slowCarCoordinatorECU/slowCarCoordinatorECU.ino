@@ -5,6 +5,7 @@
 #include "container_lib/I2cCustomLib.h"
 
 #include "container_lib/MqttCustomLib.h"
+#include <WiFiEsp.h>
 
 static struct WiFiConfig* wifiConfig;
 static struct MqttConfig* mqttConfig;

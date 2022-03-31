@@ -13,11 +13,9 @@
 #include "../ECU_Identifier.h"
 
 //I2C Specific includes
-//#include "container_lib/I2cCustomLib.h"
-//If I2C is used, it is already included in the main file due to the necessary I2C setup
+#include "../container_lib/I2cCustomLib.h"
 //MQTT specific includes
-//#include "container_lib/MqttCustomLib.h"
-//If MQTT is used, it must be already included in the main file to call the setup and loop functions
+#include "../container_lib/MqttCustomLib.h"
 //include the component_interface header
 #include "../components/coordinatorComponent_Interface.h"
 //include api mapping headers

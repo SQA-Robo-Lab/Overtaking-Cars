@@ -13,8 +13,7 @@
 #include "../ECU_Identifier.h"
 
 //I2C Specific includes
-//#include "container_lib/I2cCustomLib.h"
-//If I2C is used, it is already included in the main file due to the necessary I2C setup
+#include "../container_lib/I2cCustomLib.h"
 //include the component_interface header
 #include "../components/driveControlComponent_Interface.h"
 //include api mapping headers
