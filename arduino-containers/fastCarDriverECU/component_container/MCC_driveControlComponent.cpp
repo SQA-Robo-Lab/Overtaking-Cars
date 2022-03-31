@@ -390,7 +390,7 @@
 		static PortHandle* create_DRIVECONTROLI2cHandle(driveControlComponent_Builder* b, PortHandle *ptr){
 			ptr->type = PORT_HANDLE_TYPE_I2C;
 			//create the handle for the discrete port DRIVECONTROL with all its message types
-			I2cHandle* handle = malloc(sizeof(I2cHandle)+2*sizeof(I2cReceiver));
+			I2cHandle* handle = (I2cHandle*) malloc(sizeof(I2cHandle)+2*sizeof(I2cReceiver));
 			handle->numOfReceivers = 2;
 			//register a receiver for every message type of the port
 			createAndRegisterI2cReceiver(&(handle->receivers[0]), 
@@ -431,14 +431,6 @@
 			switch(ID){
 				case CI_DRIVECONTROLFDRIVECONTROL:
 					b.ID = ID;
-							b.FRONTDISTANCE = PORT_ACTIVE;
-							b.createFRONTDISTANCEHandle = &create_FRONTDISTANCELocalHandle;
-							b.FRONTDISTANCE_op.local_option.pubID = -12409;
-							b.FRONTDISTANCE_op.local_option.subID = -25176;
-							b.DRIVECONTROL = PORT_ACTIVE;
-							b.createDRIVECONTROLHandle = &create_DRIVECONTROLI2cHandle;
-							b.DRIVECONTROL_op.i2c_option.ownAddress = 9;
-							b.DRIVECONTROL_op.i2c_option.otherAddress = 1;
 							b.VELOCITY = PORT_ACTIVE;
 							b.createVELOCITYHandle = &create_VELOCITYLocalHandle;
 							b.VELOCITY_op.local_option.pubID = -25132;
@@ -447,6 +439,14 @@
 							b.createREARDISTANCEHandle = &create_REARDISTANCELocalHandle;
 							b.REARDISTANCE_op.local_option.pubID = 2631;
 							b.REARDISTANCE_op.local_option.subID = -9629;
+							b.FRONTDISTANCE = PORT_ACTIVE;
+							b.createFRONTDISTANCEHandle = &create_FRONTDISTANCELocalHandle;
+							b.FRONTDISTANCE_op.local_option.pubID = -12409;
+							b.FRONTDISTANCE_op.local_option.subID = -25176;
+							b.DRIVECONTROL = PORT_ACTIVE;
+							b.createDRIVECONTROLHandle = &create_DRIVECONTROLI2cHandle;
+							b.DRIVECONTROL_op.i2c_option.ownAddress = 9;
+							b.DRIVECONTROL_op.i2c_option.otherAddress = 1;
 				break;
 			default:
 				break;

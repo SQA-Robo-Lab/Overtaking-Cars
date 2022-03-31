@@ -210,7 +210,7 @@
 									int i;
 								switch(port->handle->type) {
 									case PORT_HANDLE_TYPE_MQTT:
-										MqttHandle = (MqttHandle*) port->handle->concreteHandle;
+										mqttHandle = (MqttHandle*) port->handle->concreteHandle;
 										MessageBuffer* buffer = NULL;
 										for (i = 0; i < mqttHandle->numOfSubs; i++){
 											if (mqttHandle->subscribers[i].messageId == MESSAGE_OVERTAKINGCOORDINATIONMESSAGESACCEPTOVERTAKINGOVERTAKINGCOORDINATIONMESSAGESMESSAGE){
@@ -236,7 +236,7 @@
 									int i;
 								switch(port->handle->type) {
 									case PORT_HANDLE_TYPE_MQTT:
-										MqttHandle = (MqttHandle*) port->handle->concreteHandle;
+										mqttHandle = (MqttHandle*) port->handle->concreteHandle;
 										MessageBuffer* buffer = NULL;
 										for (i = 0; i < mqttHandle->numOfSubs; i++){
 											if (mqttHandle->subscribers[i].messageId == MESSAGE_OVERTAKINGCOORDINATIONMESSAGESACCEPTOVERTAKINGOVERTAKINGCOORDINATIONMESSAGESMESSAGE){
@@ -261,7 +261,7 @@
 									MqttHandle* mqttHandle;
 								switch(port->handle->type) {
 									case PORT_HANDLE_TYPE_MQTT:
-										MqttHandle = (MqttHandle*) port->handle->concreteHandle;
+										mqttHandle = (MqttHandle*) port->handle->concreteHandle;
 										sendMqttMessage(mqttHandle->publishingTopic, MESSAGE_OVERTAKINGCOORDINATIONMESSAGESREQUESTOVERTAKINGOVERTAKINGCOORDINATIONMESSAGESMESSAGE, msg);
 										break;
 								default:
@@ -278,7 +278,7 @@
 									MqttHandle* mqttHandle;
 								switch(port->handle->type) {
 									case PORT_HANDLE_TYPE_MQTT:
-										MqttHandle = (MqttHandle*) port->handle->concreteHandle;
+										mqttHandle = (MqttHandle*) port->handle->concreteHandle;
 										sendMqttMessage(mqttHandle->publishingTopic, MESSAGE_OVERTAKINGCOORDINATIONMESSAGESFINISHEDOVERTAKINGOVERTAKINGCOORDINATIONMESSAGESMESSAGE, msg);
 										break;
 								default:
@@ -296,7 +296,7 @@
 									int i;
 								switch(port->handle->type) {
 									case PORT_HANDLE_TYPE_MQTT:
-										MqttHandle = (MqttHandle*) port->handle->concreteHandle;
+										mqttHandle = (MqttHandle*) port->handle->concreteHandle;
 										MessageBuffer* buffer = NULL;
 										for (i = 0; i < mqttHandle->numOfSubs; i++){
 											if (mqttHandle->subscribers[i].messageId == MESSAGE_OVERTAKINGCOORDINATIONMESSAGESREQUESTOVERTAKINGOVERTAKINGCOORDINATIONMESSAGESMESSAGE){
@@ -322,7 +322,7 @@
 									int i;
 								switch(port->handle->type) {
 									case PORT_HANDLE_TYPE_MQTT:
-										MqttHandle = (MqttHandle*) port->handle->concreteHandle;
+										mqttHandle = (MqttHandle*) port->handle->concreteHandle;
 										MessageBuffer* buffer = NULL;
 										for (i = 0; i < mqttHandle->numOfSubs; i++){
 											if (mqttHandle->subscribers[i].messageId == MESSAGE_OVERTAKINGCOORDINATIONMESSAGESREQUESTOVERTAKINGOVERTAKINGCOORDINATIONMESSAGESMESSAGE){
@@ -348,7 +348,7 @@
 									int i;
 								switch(port->handle->type) {
 									case PORT_HANDLE_TYPE_MQTT:
-										MqttHandle = (MqttHandle*) port->handle->concreteHandle;
+										mqttHandle = (MqttHandle*) port->handle->concreteHandle;
 										MessageBuffer* buffer = NULL;
 										for (i = 0; i < mqttHandle->numOfSubs; i++){
 											if (mqttHandle->subscribers[i].messageId == MESSAGE_OVERTAKINGCOORDINATIONMESSAGESFINISHEDOVERTAKINGOVERTAKINGCOORDINATIONMESSAGESMESSAGE){
@@ -374,7 +374,7 @@
 									int i;
 								switch(port->handle->type) {
 									case PORT_HANDLE_TYPE_MQTT:
-										MqttHandle = (MqttHandle*) port->handle->concreteHandle;
+										mqttHandle = (MqttHandle*) port->handle->concreteHandle;
 										MessageBuffer* buffer = NULL;
 										for (i = 0; i < mqttHandle->numOfSubs; i++){
 											if (mqttHandle->subscribers[i].messageId == MESSAGE_OVERTAKINGCOORDINATIONMESSAGESFINISHEDOVERTAKINGOVERTAKINGCOORDINATIONMESSAGESMESSAGE){
@@ -399,7 +399,7 @@
 									MqttHandle* mqttHandle;
 								switch(port->handle->type) {
 									case PORT_HANDLE_TYPE_MQTT:
-										MqttHandle = (MqttHandle*) port->handle->concreteHandle;
+										mqttHandle = (MqttHandle*) port->handle->concreteHandle;
 										sendMqttMessage(mqttHandle->publishingTopic, MESSAGE_OVERTAKINGCOORDINATIONMESSAGESACCEPTOVERTAKINGOVERTAKINGCOORDINATIONMESSAGESMESSAGE, msg);
 										break;
 								default:
@@ -453,7 +453,7 @@
 		static PortHandle* create_COMMUNICATORI2cHandle(coordinatorComponent_Builder* b, PortHandle *ptr){
 			ptr->type = PORT_HANDLE_TYPE_I2C;
 			//create the handle for the discrete port COMMUNICATOR with all its message types
-			I2cHandle* handle = malloc(sizeof(I2cHandle)+2*sizeof(I2cReceiver));
+			I2cHandle* handle = (I2cHandle*) malloc(sizeof(I2cHandle)+2*sizeof(I2cReceiver));
 			handle->numOfReceivers = 2;
 			//register a receiver for every message type of the port
 			createAndRegisterI2cReceiver(&(handle->receivers[0]), 
@@ -475,7 +475,7 @@
 		static PortHandle* create_OVERTAKINGINITIATORMqttHandle(coordinatorComponent_Builder* b, PortHandle *ptr){
 			ptr->type = PORT_HANDLE_TYPE_MQTT;
 			//create the handle for the discrete port OVERTAKINGINITIATOR with all its message types
-			MqttHandle* handle = malloc(sizeof(MqttHandle)+1*sizeof(MqttSubscriber));
+			MqttHandle* handle = (MqttHandle*) malloc(sizeof(MqttHandle)+1*sizeof(MqttSubscriber));
 			handle->numOfSubs = 1;
 			//register a subscriber for every message type of the port
 			createAndRegisterMqttSubscriber(&(handle->subscribers[0]),
@@ -493,7 +493,7 @@
 		static PortHandle* create_OVERTAKINGAFFILIATEMqttHandle(coordinatorComponent_Builder* b, PortHandle *ptr){
 			ptr->type = PORT_HANDLE_TYPE_MQTT;
 			//create the handle for the discrete port OVERTAKINGAFFILIATE with all its message types
-			MqttHandle* handle = malloc(sizeof(MqttHandle)+2*sizeof(MqttSubscriber));
+			MqttHandle* handle = (MqttHandle*) malloc(sizeof(MqttHandle)+2*sizeof(MqttSubscriber));
 			handle->numOfSubs = 2;
 			//register a subscriber for every message type of the port
 			createAndRegisterMqttSubscriber(&(handle->subscribers[0]),
@@ -528,18 +528,18 @@
 			switch(ID){
 				case CI_COMMUNICATORFCOORDINATOR:
 					b.ID = ID;
-							b.OVERTAKINGINITIATOR = PORT_ACTIVE;
-							b.createOVERTAKINGINITIATORHandle = &create_OVERTAKINGINITIATORMqttHandle;
-							b.OVERTAKINGINITIATOR_op.mqtt_option.publishingTopic = "fastCarCoordinatorECU/communicator.F/overtakingInitiator1/";
-							b.OVERTAKINGINITIATOR_op.mqtt_option.subscriptionTopic = "slowCarCoordinatorECU/communicator.S/overtakingAffiliate1/";
-							b.COMMUNICATOR = PORT_ACTIVE;
-							b.createCOMMUNICATORHandle = &create_COMMUNICATORI2cHandle;
-							b.COMMUNICATOR_op.i2c_option.ownAddress = 1;
-							b.COMMUNICATOR_op.i2c_option.otherAddress = 9;
 							b.OVERTAKINGAFFILIATE = PORT_ACTIVE;
 							b.createOVERTAKINGAFFILIATEHandle = &create_OVERTAKINGAFFILIATEMqttHandle;
 							b.OVERTAKINGAFFILIATE_op.mqtt_option.publishingTopic = "fastCarCoordinatorECU/communicator.F/overtakingAffiliate1/";
 							b.OVERTAKINGAFFILIATE_op.mqtt_option.subscriptionTopic = "slowCarCoordinatorECU/communicator.S/overtakingInitiator1/";
+							b.COMMUNICATOR = PORT_ACTIVE;
+							b.createCOMMUNICATORHandle = &create_COMMUNICATORI2cHandle;
+							b.COMMUNICATOR_op.i2c_option.ownAddress = 1;
+							b.COMMUNICATOR_op.i2c_option.otherAddress = 9;
+							b.OVERTAKINGINITIATOR = PORT_ACTIVE;
+							b.createOVERTAKINGINITIATORHandle = &create_OVERTAKINGINITIATORMqttHandle;
+							b.OVERTAKINGINITIATOR_op.mqtt_option.publishingTopic = "fastCarCoordinatorECU/communicator.F/overtakingInitiator1/";
+							b.OVERTAKINGINITIATOR_op.mqtt_option.subscriptionTopic = "slowCarCoordinatorECU/communicator.S/overtakingAffiliate1/";
 				break;
 			default:
 				break;

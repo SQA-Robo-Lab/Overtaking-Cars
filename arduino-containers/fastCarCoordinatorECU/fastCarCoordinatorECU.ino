@@ -1,3 +1,5 @@
+#define C99
+
 #include "lib/Debug.h"
 
 #include "container_lib/I2cCustomLib.h"
@@ -19,13 +21,13 @@ void setup(){
 	I2cCommunication_setup(1);
 
 	//collect the data required for the WiFi configuration
-	wifiConfig = malloc(sizeof(struct WiFiConfig));
+	wifiConfig = (struct WiFiConfig*) malloc(sizeof(struct WiFiConfig));
 	wifiConfig->ssid = "Section Control";
 	wifiConfig->pass = "********";
 	wifiConfig->status = WL_IDLE_STATUS;
 
 	//collect the data required for the MQTT configuration
-	mqttConfig = malloc(sizeof(struct MqttConfig));
+	mqttConfig = (struct MqttConfig*) malloc(sizeof(struct MqttConfig));
 	mqttConfig->serverIPAddress = "192.168.0.100";
 	mqttConfig->serverPort = 1883;
 	mqttConfig->clientName = "fastCarCoordinatorECU_config";
@@ -43,3 +45,6 @@ void loop(){
 
 	CoordinatorComponent_processStep(atomic_c1);
 }	
+
+
+

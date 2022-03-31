@@ -12,12 +12,12 @@ typedef struct MqttSubscriber {
 } MqttSubscriber;
 
 
-typedef struct MQTTHandle {
+typedef struct MqttHandle {
     char* publishingTopic;
     char* subscriptionTopic;
     uint8_T numOfSubs;
     MqttSubscriber subscribers[];
-} MQTTHandle;
+} MqttHandle;
 
 struct WiFiConfig {
     char* ssid;

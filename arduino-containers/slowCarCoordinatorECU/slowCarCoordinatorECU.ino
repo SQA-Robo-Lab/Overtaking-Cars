@@ -1,3 +1,5 @@
+#define C99
+
 #include "lib/Debug.h"
 
 #include "container_lib/I2cCustomLib.h"
@@ -13,19 +15,19 @@ static struct MqttConfig* mqttConfig;
 //variable for component Instances
 CoordinatorComponent* atomic_c1;
 
-int setup(){
+void setup(){
 	atomic_c1= MCC_create_CoordinatorComponent(CI_COMMUNICATORSCOORDINATOR);
 	
 	I2cCommunication_setup(2);
 
 	//collect the data required for the WiFi configuration
-	wifiConfig = malloc(sizeof(struct WiFiConfig));
+	wifiConfig = (struct WiFiConfig*) malloc(sizeof(struct WiFiConfig));
 	wifiConfig->ssid = "Section Control";
 	wifiConfig->pass = "********";
 	wifiConfig->status = WL_IDLE_STATUS;
 
 	//collect the data required for the MQTT configuration
-	mqttConfig = malloc(sizeof(struct MqttConfig));
+	mqttConfig = (struct MqttConfig*) malloc(sizeof(struct MqttConfig));
 	mqttConfig->serverIPAddress = "192.168.0.100";
 	mqttConfig->serverPort = 1883;
 	mqttConfig->clientName = "slowCarCoordinatorECU_config";
