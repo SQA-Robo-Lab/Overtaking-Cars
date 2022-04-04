@@ -50,7 +50,7 @@
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ds8KwY5UEeyhMvv5xjA9yA" x="900" y="388"/>
     </children>
     <element xmi:type="hwplatform:HWPlatform" href="../roboCar.muml#_zje5UIj7EeyYKPpICO9qfw"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2gh5QYj7EeyYKPpICO9qfw" width="1525" height="400"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2gh5QYj7EeyYKPpICO9qfw" width="1525" height="240"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_zje5Uoj7EeyYKPpICO9qfw"/>
   <element xmi:type="hwplatform:HWPlatform" href="../roboCar.muml#_zje5UIj7EeyYKPpICO9qfw"/>

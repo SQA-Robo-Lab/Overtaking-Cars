@@ -65,17 +65,17 @@
           <styles xmi:type="notation:FilteringStyle" xmi:id="_XljCXn6IEeyKLqeH6TVEeQ"/>
         </children>
         <element xmi:type="realtimestatechart:State" href="../roboCar.muml#_XlbtkH6IEeyKLqeH6TVEeQ"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XljCUX6IEeyKLqeH6TVEeQ" x="182" y="257" width="229"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XljCUX6IEeyKLqeH6TVEeQ" x="206" y="185" width="229"/>
       </children>
     </children>
     <element xmi:type="realtimestatechart:RealtimeStatechart" href="../roboCar.muml#_h9IFsH5-EeyKLqeH6TVEeQ"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lNecIX5-EeyKLqeH6TVEeQ" width="709" height="421"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lNecIX5-EeyKLqeH6TVEeQ" width="709" height="313"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_h9YkYX5-EeyKLqeH6TVEeQ"/>
   <element xmi:type="realtimestatechart:RealtimeStatechart" href="../roboCar.muml#_h9IFsH5-EeyKLqeH6TVEeQ"/>
   <edges xmi:type="notation:Connector" xmi:id="_fd63UH6JEeyKLqeH6TVEeQ" type="4003" source="_SVcaoH6IEeyKLqeH6TVEeQ" target="_XljCUH6IEeyKLqeH6TVEeQ" lineColor="0">
     <children xmi:type="notation:DecorationNode" xmi:id="_fd63U36JEeyKLqeH6TVEeQ" type="6005">
-      <layoutConstraint xmi:type="notation:Location" xmi:id="_fd63VH6JEeyKLqeH6TVEeQ" x="-20" y="-38"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_fd63VH6JEeyKLqeH6TVEeQ" x="-34" y="-26"/>
     </children>
     <children xmi:type="notation:DecorationNode" xmi:id="_fd63VX6JEeyKLqeH6TVEeQ" type="6006">
       <layoutConstraint xmi:type="notation:Location" xmi:id="_fd63Vn6JEeyKLqeH6TVEeQ" x="-10" y="20"/>
@@ -112,7 +112,7 @@
   </edges>
   <edges xmi:type="notation:Connector" xmi:id="_Z7sj4H6UEeyKLqeH6TVEeQ" type="4003" source="_XljCUH6IEeyKLqeH6TVEeQ" target="_lOTikH5-EeyKLqeH6TVEeQ" lineColor="0">
     <children xmi:type="notation:DecorationNode" xmi:id="_Z7tK8H6UEeyKLqeH6TVEeQ" type="6005">
-      <layoutConstraint xmi:type="notation:Location" xmi:id="_Z7tK8X6UEeyKLqeH6TVEeQ" y="-20"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_Z7tK8X6UEeyKLqeH6TVEeQ" x="39" y="-41"/>
     </children>
     <children xmi:type="notation:DecorationNode" xmi:id="_Z7tK8n6UEeyKLqeH6TVEeQ" type="6006">
       <layoutConstraint xmi:type="notation:Location" xmi:id="_Z7tK836UEeyKLqeH6TVEeQ" x="-10" y="20"/>
