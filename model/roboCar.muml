@@ -734,26 +734,26 @@
       <resources xsi:type="hwresource:StructuredResource" xmi:id="_ku2lQIgoEeyYKPpICO9qfw" name="Arduino">
         <communicationResources xmi:id="_R0YGAIgtEeyYKPpICO9qfw" name="DigitalIOPin" protocol="_IeiE0IjZEeyYKPpICO9qfw">
           <cardinality xmi:id="_R0hP8IgtEeyYKPpICO9qfw">
-            <lowerBound xmi:id="_lmDHYIj2EeyYKPpICO9qfw"/>
-            <upperBound xmi:id="_kJC94Ij2EeyYKPpICO9qfw" value="54"/>
+            <lowerBound xmi:id="_6DIlYLZCEeyfU6Yqx-iT0A"/>
+            <upperBound xmi:id="_6D7PkLZCEeyfU6Yqx-iT0A" value="54"/>
           </cardinality>
         </communicationResources>
         <communicationResources xmi:id="_TTsHIIjyEeyYKPpICO9qfw" name="MotorDriver" protocol="__-vjIIjaEeyYKPpICO9qfw">
           <cardinality xmi:id="_TTsuMIjyEeyYKPpICO9qfw">
-            <lowerBound xmi:id="_4FHAgIjyEeyYKPpICO9qfw" value="0"/>
-            <upperBound xmi:id="_4F2AUIjyEeyYKPpICO9qfw"/>
+            <lowerBound xmi:id="_CjrqILZDEeyfU6Yqx-iT0A" value="0"/>
+            <upperBound xmi:id="_CkneQLZDEeyfU6Yqx-iT0A"/>
           </cardinality>
         </communicationResources>
-        <communicationResources xmi:id="_cuyIkIjyEeyYKPpICO9qfw" name="WiFi Shield" protocol="_1GqmUIjaEeyYKPpICO9qfw">
+        <communicationResources xmi:id="_cuyIkIjyEeyYKPpICO9qfw" name="WiFiShield" protocol="_1GqmUIjaEeyYKPpICO9qfw">
           <cardinality xmi:id="_cu0k0IjyEeyYKPpICO9qfw">
-            <lowerBound xmi:id="_lrQWgIkBEeyYKPpICO9qfw"/>
-            <upperBound xmi:id="_1-iVkIjyEeyYKPpICO9qfw"/>
+            <lowerBound xmi:id="_6Wp3ILZqEeyrdq0lxDCLWw" value="0"/>
+            <upperBound xmi:id="_6XlrQLZqEeyrdq0lxDCLWw"/>
           </cardinality>
         </communicationResources>
-        <communicationResources xmi:id="_ChVxkI5TEeyhMvv5xjA9yA" name="I2C Pins" protocol="_Fr0JgI5TEeyhMvv5xjA9yA">
+        <communicationResources xmi:id="_ChVxkI5TEeyhMvv5xjA9yA" name="I2CPins" protocol="_Fr0JgI5TEeyhMvv5xjA9yA">
           <cardinality xmi:id="_ChY04I5TEeyhMvv5xjA9yA">
-            <lowerBound xmi:id="_OYtoMI5TEeyhMvv5xjA9yA"/>
-            <upperBound xmi:id="_OZhggI5TEeyhMvv5xjA9yA"/>
+            <lowerBound xmi:id="_5lSroLZqEeyrdq0lxDCLWw"/>
+            <upperBound xmi:id="_5mSKILZqEeyrdq0lxDCLWw"/>
           </cardinality>
         </communicationResources>
         <embeddedAtomicResources xsi:type="hwresource:Processor" xmi:id="_v3H6MIgoEeyYKPpICO9qfw" name="ATmega" family="ATmega">
@@ -766,8 +766,8 @@
       <resources xsi:type="hwresource:Device" xmi:id="_ElwxkIjbEeyYKPpICO9qfw" name="DCMotor" deviceKind="ACTUATOR">
         <communicationResources xmi:id="_-4TyoIjyEeyYKPpICO9qfw" name="inputSignal" protocol="__-vjIIjaEeyYKPpICO9qfw">
           <cardinality xmi:id="_C6IpUIjzEeyYKPpICO9qfw">
-            <lowerBound xmi:id="_SKxh0IjzEeyYKPpICO9qfw"/>
-            <upperBound xmi:id="_SKyv8IjzEeyYKPpICO9qfw"/>
+            <lowerBound xmi:id="_geXVMLZDEeyfU6Yqx-iT0A"/>
+            <upperBound xmi:id="_geYjULZDEeyfU6Yqx-iT0A"/>
           </cardinality>
         </communicationResources>
       </resources>
@@ -780,13 +780,13 @@
         </communicationResources>
         <communicationResources xmi:id="_TOJDUIjzEeyYKPpICO9qfw" name="echo" protocol="_IeiE0IjZEeyYKPpICO9qfw">
           <cardinality xmi:id="_VNHRcIjzEeyYKPpICO9qfw">
-            <lowerBound xmi:id="_kYFm0IjzEeyYKPpICO9qfw"/>
-            <upperBound xmi:id="_kYGN4IjzEeyYKPpICO9qfw"/>
+            <lowerBound xmi:id="_PjzcELZEEeyMY74n4t1_mg"/>
+            <upperBound xmi:id="_Pj7-8LZEEeyMY74n4t1_mg"/>
           </cardinality>
         </communicationResources>
       </resources>
       <protocols xmi:id="_ytc00IgtEeyYKPpICO9qfw" name="RoboCarProtocols">
-        <communicationProtocols xsi:type="hwresource:LinkProtocol" xmi:id="_IeiE0IjZEeyYKPpICO9qfw" name="Digital IO" isNetworkingProtocol="false" linkProtocol="OTHER"/>
+        <communicationProtocols xsi:type="hwresource:LinkProtocol" xmi:id="_IeiE0IjZEeyYKPpICO9qfw" name="DigitalIO" isNetworkingProtocol="false" linkProtocol="OTHER"/>
         <communicationProtocols xsi:type="hwresource:LinkProtocol" xmi:id="__-vjIIjaEeyYKPpICO9qfw" name="MotorControl" isNetworkingProtocol="false" linkProtocol="ANALOG"/>
         <communicationProtocols xsi:type="hwresource:LinkProtocol" xmi:id="_1GqmUIjaEeyYKPpICO9qfw" name="WiFi" linkProtocol="WIFI"/>
         <communicationProtocols xsi:type="hwresource:BusProtocol" xmi:id="_Fr0JgI5TEeyhMvv5xjA9yA" name="I2C" busProtocol="I2C">
@@ -796,9 +796,9 @@
     </modelElements>
     <modelElements xsi:type="hwresourceinstance:ResourceInstanceRepository" xmi:id="_D7JsYIgtEeyYKPpICO9qfw" comment="The resource instance repository for the Arduino car.">
       <resourceInstances xsi:type="hwresourceinstance:StructuredResourceInstance" xmi:id="_L-JLAIj0EeyYKPpICO9qfw" name="NanoRev3" resourceType="_ku2lQIgoEeyYKPpICO9qfw">
-        <hwports xmi:id="_N3t7wIj0EeyYKPpICO9qfw" name="WiFi Shield" communicationResource="_cuyIkIjyEeyYKPpICO9qfw"/>
+        <hwports xmi:id="_N3t7wIj0EeyYKPpICO9qfw" name="WiFiShield" communicationResource="_cuyIkIjyEeyYKPpICO9qfw"/>
         <hwports xmi:id="_N3yNMIj0EeyYKPpICO9qfw" name="DigitalIOPin" communicationResource="_R0YGAIgtEeyYKPpICO9qfw"/>
-        <hwports xmi:id="_Up9j0I5TEeyhMvv5xjA9yA" name="I2C Pins" communicationResource="_ChVxkI5TEeyhMvv5xjA9yA"/>
+        <hwports xmi:id="_Up9j0I5TEeyhMvv5xjA9yA" name="I2CPins" communicationResource="_ChVxkI5TEeyhMvv5xjA9yA"/>
         <hwports xmi:id="_SvMmoI5bEeyhMvv5xjA9yA" name="MotorDriver" communicationResource="_TTsHIIjyEeyYKPpICO9qfw"/>
         <embeddedAtomicResourceInstances xsi:type="hwresourceinstance:ProcessingMemoryInstance" xmi:id="_N3AKEIj0EeyYKPpICO9qfw" name="SRAM" resourceType="_UiMpEIgrEeyYKPpICO9qfw">
           <memorySize xmi:id="_N3AKEYj0EeyYKPpICO9qfw" value="2.0" unit="KByte"/>
@@ -814,10 +814,10 @@
         </embeddedAtomicResourceInstances>
       </resourceInstances>
       <resourceInstances xsi:type="hwresourceinstance:StructuredResourceInstance" xmi:id="_EZOWIIj2EeyYKPpICO9qfw" name="Mega2560Rev3" resourceType="_ku2lQIgoEeyYKPpICO9qfw">
-        <hwports xmi:id="_JZoU8Ij2EeyYKPpICO9qfw" name="WiFi Shield" communicationResource="_cuyIkIjyEeyYKPpICO9qfw"/>
+        <hwports xmi:id="_JZoU8Ij2EeyYKPpICO9qfw" name="WiFiShield" communicationResource="_cuyIkIjyEeyYKPpICO9qfw"/>
         <hwports xmi:id="_JZtNcIj2EeyYKPpICO9qfw" name="MotorDriver" communicationResource="_TTsHIIjyEeyYKPpICO9qfw"/>
         <hwports xmi:id="_JZwQwIj2EeyYKPpICO9qfw" name="DigitalIOPin" communicationResource="_R0YGAIgtEeyYKPpICO9qfw"/>
-        <hwports xmi:id="_UqqucI5TEeyhMvv5xjA9yA" name="I2C Pins" communicationResource="_ChVxkI5TEeyhMvv5xjA9yA"/>
+        <hwports xmi:id="_UqqucI5TEeyhMvv5xjA9yA" name="I2CPins" communicationResource="_ChVxkI5TEeyhMvv5xjA9yA"/>
         <embeddedAtomicResourceInstances xsi:type="hwresourceinstance:ProcessorInstance" xmi:id="_JZWoIIj2EeyYKPpICO9qfw" name="ATmega2560" resourceType="_v3H6MIgoEeyYKPpICO9qfw" MIPS="16.0">
           <frequency xmi:id="_JZWoIYj2EeyYKPpICO9qfw" value="16.0" unit="MHz"/>
         </embeddedAtomicResourceInstances>
@@ -844,8 +844,8 @@
     <modelElements xsi:type="hwplatform:HWPlatform" xmi:id="_piC7gYj5EeyYKPpICO9qfw" name="DriveControlUnit">
       <embeddedPlatformParts xsi:type="hwplatform:ResourcePart" xmi:id="_1QhU0Ij5EeyYKPpICO9qfw" name="ecu" resourceType="_EZOWIIj2EeyYKPpICO9qfw">
         <cardinality xmi:id="_2d_0kIj5EeyYKPpICO9qfw">
-          <lowerBound xmi:id="_P0SJII5lEeyhMvv5xjA9yA"/>
-          <upperBound xmi:id="_P0aE8I5lEeyhMvv5xjA9yA"/>
+          <lowerBound xmi:id="__87tsLZrEeyrdq0lxDCLWw"/>
+          <upperBound xmi:id="__9FesLZrEeyrdq0lxDCLWw"/>
         </cardinality>
         <hwPortParts xmi:id="_1kG_MIj5EeyYKPpICO9qfw" comment="motorDriver" connectors="_i2ChEIj6EeyYKPpICO9qfw _pjAIUIj6EeyYKPpICO9qfw" hwport="_JZtNcIj2EeyYKPpICO9qfw"/>
         <hwPortParts xmi:id="_1kI0YIj5EeyYKPpICO9qfw" comment="digitalIOPoin" connectors="_U8q9EI5WEeyhMvv5xjA9yA _WmW3sI5WEeyhMvv5xjA9yA _ZQBooI5WEeyhMvv5xjA9yA _aPru0I5WEeyhMvv5xjA9yA" hwport="_JZwQwIj2EeyYKPpICO9qfw"/>
