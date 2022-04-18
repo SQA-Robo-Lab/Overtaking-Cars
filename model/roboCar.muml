@@ -535,7 +535,7 @@
           <lowerBound xmi:id="_doSl4H6eEeyKLqeH6TVEeQ"/>
           <upperBound xmi:id="_doZ6oH6eEeyKLqeH6TVEeQ"/>
         </cardinality>
-        <receiverMessageBuffer xmi:id="_uvCIkH6XEeyKLqeH6TVEeQ" name="initiatorMessageBuffer" messageType="_Uvmw8H59EeyKLqeH6TVEeQ">
+        <receiverMessageBuffer xmi:id="_uvCIkH6XEeyKLqeH6TVEeQ" name="initiatorMessageBuffer" messageType="_Uvmw8H59EeyKLqeH6TVEeQ" bufferOverflowAvoidanceStrategy="discard oldest message in buffer">
           <bufferSize xmi:id="_iqVNEH9GEeyUPcnecBPxtQ"/>
         </receiverMessageBuffer>
       </roles>
