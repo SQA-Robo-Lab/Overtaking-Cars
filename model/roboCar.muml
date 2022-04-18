@@ -549,9 +549,9 @@
         </receiverMessageBuffer>
       </roles>
       <roleConnector xmi:id="_Ooeb0H6XEeyKLqeH6TVEeQ" connectorEndpoints="_OofC4n6XEeyKLqeH6TVEeQ _Oofp8H6XEeyKLqeH6TVEeQ">
-        <connectorQualityOfServiceAssumptions xmi:id="_Ooeb0X6XEeyKLqeH6TVEeQ" comment="" messageLossPossible="true">
-          <maxMessageDelay xmi:id="_Ooeb0n6XEeyKLqeH6TVEeQ" unit="MILLISECONDS">
-            <value xsi:type="common:LiteralExpression" xmi:id="_5QcMoH6pEeyKLqeH6TVEeQ" value="500"/>
+        <connectorQualityOfServiceAssumptions xmi:id="_Ooeb0X6XEeyKLqeH6TVEeQ" comment="">
+          <maxMessageDelay xmi:id="_SQRk4L8BEeyg-4Ggq8ZgUA">
+            <value xsi:type="common:LiteralExpression" xmi:id="_TXWhsL8BEeyg-4Ggq8ZgUA" value="1000"/>
           </maxMessageDelay>
         </connectorQualityOfServiceAssumptions>
       </roleConnector>
