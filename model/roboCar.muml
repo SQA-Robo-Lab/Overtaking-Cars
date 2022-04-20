@@ -787,7 +787,7 @@
       </resources>
       <protocols xmi:id="_ytc00IgtEeyYKPpICO9qfw" name="RoboCarProtocols">
         <communicationProtocols xsi:type="hwresource:LinkProtocol" xmi:id="_IeiE0IjZEeyYKPpICO9qfw" name="DigitalIO" isNetworkingProtocol="false" linkProtocol="OTHER"/>
-        <communicationProtocols xsi:type="hwresource:LinkProtocol" xmi:id="__-vjIIjaEeyYKPpICO9qfw" name="MotorControl" isNetworkingProtocol="false" linkProtocol="ANALOG"/>
+        <communicationProtocols xsi:type="hwresource:LinkProtocol" xmi:id="__-vjIIjaEeyYKPpICO9qfw" name="MotorControl" isNetworkingProtocol="false" linkProtocol="OTHER"/>
         <communicationProtocols xsi:type="hwresource:LinkProtocol" xmi:id="_1GqmUIjaEeyYKPpICO9qfw" name="WiFi" linkProtocol="WIFI"/>
         <communicationProtocols xsi:type="hwresource:BusProtocol" xmi:id="_Fr0JgI5TEeyhMvv5xjA9yA" name="I2C" busProtocol="I2C">
           <bandwidth xmi:id="_H_s3sI5TEeyhMvv5xjA9yA" value="100.0" unit="Kb\s"/>
