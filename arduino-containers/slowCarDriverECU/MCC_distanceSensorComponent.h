@@ -12,8 +12,8 @@
 //include the component_interface header
 #include "distanceSensorComponent_Interface.h"
 //include api mapping headers
-#include "CI_FRONTDISTANCESENSORSDISTANCESENSORdistancePortaccessCommand.h"
 #include "CI_REARDISTANCESENSORSDISTANCESENSORdistancePortaccessCommand.h"
+#include "CI_FRONTDISTANCESENSORSDISTANCESENSORdistancePortaccessCommand.h"
 
 		
 /**

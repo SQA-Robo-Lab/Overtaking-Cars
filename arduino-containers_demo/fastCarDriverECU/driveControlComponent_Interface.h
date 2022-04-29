@@ -8,10 +8,6 @@
 #ifndef DRIVECONTROLCOMPONENT_Interface_H_
 #define DRIVECONTROLCOMPONENT_Interface_H_
 
-#ifdef __cplusplus
-extern "C"
-{
-#endif // Library
 #include "standardTypes.h"
 #include "customTypes.h"
 #include "port.h"
@@ -277,7 +273,4 @@ void DriveControlDriveControlDriveControlPortStateChart_exit(DriveControlDriveCo
  */
 bool_t DriveControlDriveControlComponentStateChart_isInState(DriveControlDriveControlComponentStateChart *rtsc, DriveControlDriveControlComponentState state);
 
-#ifdef __cplusplus
-}
-#endif
 #endif /* DRIVECONTROLCOMPONENT_Interface_H_ */

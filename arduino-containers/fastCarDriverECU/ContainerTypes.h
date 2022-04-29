@@ -1,6 +1,8 @@
 #ifndef CONTAINER_TYPES_
 #define CONTAINER_TYPES_
-
+#ifdef __cplusplus
+extern "C" {
+#endif
 //available per ECU across container
 //copied from orglmuml.c.adapter.container/resources/container_lib due to necessary adjustments
 
@@ -19,5 +21,8 @@ typedef struct PortHandle {
 	void *concreteHandle;
 } PortHandle;
 
+#ifdef __cplusplus
+}
+#endif
 
 #endif /* CONTAINER_TYPES_ */

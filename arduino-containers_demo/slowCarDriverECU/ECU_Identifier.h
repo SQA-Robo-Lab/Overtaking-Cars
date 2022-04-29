@@ -19,9 +19,9 @@
 *@brief Identifier to distinguish Component Instance on ECU slowCarDriverECU_config
 *@details Used by a component container to identify component instances of the same component type
 */
-#define CI_FRONTDISTANCESENSORSDISTANCESENSOR 1 /**< Identifier for Component Instance frontDistanceSensor.S */
-#define CI_DRIVECONTROLSDRIVECONTROL 2 /**< Identifier for Component Instance driveControl.S */
-#define CI_POWERTRAINSPOWERTRAIN 3 /**< Identifier for Component Instance powerTrain.S */
-#define CI_REARDISTANCESENSORSDISTANCESENSOR 4 /**< Identifier for Component Instance rearDistanceSensor.S */
+#define CI_DRIVECONTROLSDRIVECONTROL 1 /**< Identifier for Component Instance driveControl.S */
+#define CI_REARDISTANCESENSORSDISTANCESENSOR 2 /**< Identifier for Component Instance rearDistanceSensor.S */
+#define CI_FRONTDISTANCESENSORSDISTANCESENSOR 3 /**< Identifier for Component Instance frontDistanceSensor.S */
+#define CI_POWERTRAINSPOWERTRAIN 4 /**< Identifier for Component Instance powerTrain.S */
 			
 #endif /* ECU_IDENTIFIER_H */

@@ -540,14 +540,14 @@ CoordinatorComponent* MCC_create_CoordinatorComponent(uint8_T ID){
 			b.createOVERTAKINGAFFILIATEHandle = &create_OVERTAKINGAFFILIATEMqttHandle;
 			b.OVERTAKINGAFFILIATE_op.mqtt_option.publishingTopic = "fastCarCoordinatorECU/communicator.F/overtakingAffiliate1/";
 			b.OVERTAKINGAFFILIATE_op.mqtt_option.subscriptionTopic = "slowCarCoordinatorECU/communicator.S/overtakingInitiator1/";
-			b.COMMUNICATOR = PORT_ACTIVE;
-			b.createCOMMUNICATORHandle = &create_COMMUNICATORI2cHandle;
-			b.COMMUNICATOR_op.i2c_option.ownAddress = 1;
-			b.COMMUNICATOR_op.i2c_option.otherAddress = 9;
 			b.OVERTAKINGINITIATOR = PORT_ACTIVE;
 			b.createOVERTAKINGINITIATORHandle = &create_OVERTAKINGINITIATORMqttHandle;
 			b.OVERTAKINGINITIATOR_op.mqtt_option.publishingTopic = "fastCarCoordinatorECU/communicator.F/overtakingInitiator1/";
 			b.OVERTAKINGINITIATOR_op.mqtt_option.subscriptionTopic = "slowCarCoordinatorECU/communicator.S/overtakingAffiliate1/";
+			b.COMMUNICATOR = PORT_ACTIVE;
+			b.createCOMMUNICATORHandle = &create_COMMUNICATORI2cHandle;
+			b.COMMUNICATOR_op.i2c_option.ownAddress = 1;
+			b.COMMUNICATOR_op.i2c_option.otherAddress = 9;
 		break;
 	default:
 		break;

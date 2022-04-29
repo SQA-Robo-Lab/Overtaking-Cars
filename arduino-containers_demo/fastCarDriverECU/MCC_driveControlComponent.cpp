@@ -450,14 +450,14 @@ DriveControlComponent* MCC_create_DriveControlComponent(uint8_T ID){
 			b.createDRIVECONTROLHandle = &create_DRIVECONTROLI2cHandle;
 			b.DRIVECONTROL_op.i2c_option.ownAddress = 9;
 			b.DRIVECONTROL_op.i2c_option.otherAddress = 1;
-			b.REARDISTANCE = PORT_ACTIVE;
-			b.createREARDISTANCEHandle = &create_REARDISTANCELocalHandle;
-			b.REARDISTANCE_op.local_option.pubID = 2631;
-			b.REARDISTANCE_op.local_option.subID = -9629;
 			b.VELOCITY = PORT_ACTIVE;
 			b.createVELOCITYHandle = &create_VELOCITYLocalHandle;
 			b.VELOCITY_op.local_option.pubID = -25132;
 			b.VELOCITY_op.local_option.subID = -26371;
+			b.REARDISTANCE = PORT_ACTIVE;
+			b.createREARDISTANCEHandle = &create_REARDISTANCELocalHandle;
+			b.REARDISTANCE_op.local_option.pubID = 2631;
+			b.REARDISTANCE_op.local_option.subID = -9629;
 		break;
 	default:
 		break;
