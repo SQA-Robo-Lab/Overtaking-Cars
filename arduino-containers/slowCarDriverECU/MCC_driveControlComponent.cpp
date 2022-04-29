@@ -373,7 +373,7 @@ void MCC_DriveControlComponent_velocity_send_value(Port* port, int32_T* msg){
 
 static PortHandle* create_FRONTDISTANCELocalHandle(driveControlComponent_Builder* b, PortHandle *ptr){
 	ptr->type = PORT_HANDLE_TYPE_LOCAL;
-	LocalHandle* hndl = malloc(sizeof(LocalHandle)+1*sizeof(LocalSubscriber));
+	LocalHandle* hndl = (LocalHandle*) malloc(sizeof(LocalHandle)+1*sizeof(LocalSubscriber));
 	ptr->concreteHandle = hndl;
 	hndl->pubID = b->FRONTDISTANCE_op.local_option.pubID;
 	hndl->subID = b->FRONTDISTANCE_op.local_option.subID;
@@ -384,7 +384,7 @@ static PortHandle* create_FRONTDISTANCELocalHandle(driveControlComponent_Builder
 }
 static PortHandle* create_REARDISTANCELocalHandle(driveControlComponent_Builder* b, PortHandle *ptr){
 	ptr->type = PORT_HANDLE_TYPE_LOCAL;
-	LocalHandle* hndl = malloc(sizeof(LocalHandle)+1*sizeof(LocalSubscriber));
+	LocalHandle* hndl = (LocalHandle*) malloc(sizeof(LocalHandle)+1*sizeof(LocalSubscriber));
 	ptr->concreteHandle = hndl;
 	hndl->pubID = b->REARDISTANCE_op.local_option.pubID;
 	hndl->subID = b->REARDISTANCE_op.local_option.subID;
@@ -422,7 +422,7 @@ static PortHandle* create_DRIVECONTROLI2cHandle(driveControlComponent_Builder* b
 }
 static PortHandle* create_VELOCITYLocalHandle(driveControlComponent_Builder* b, PortHandle *ptr){
 	ptr->type = PORT_HANDLE_TYPE_LOCAL;
-	LocalHandle* hndl = malloc(sizeof(LocalHandle)+0*sizeof(LocalSubscriber));
+	LocalHandle* hndl = (LocalHandle*) malloc(sizeof(LocalHandle)+0*sizeof(LocalSubscriber));
 	ptr->concreteHandle = hndl;
 	hndl->pubID = b->VELOCITY_op.local_option.pubID;
 	hndl->subID = b->VELOCITY_op.local_option.subID;
@@ -442,14 +442,14 @@ DriveControlComponent* MCC_create_DriveControlComponent(uint8_T ID){
 	switch(ID){
 		case CI_DRIVECONTROLSDRIVECONTROL:
 			b.ID = ID;
-			b.VELOCITY = PORT_ACTIVE;
-			b.createVELOCITYHandle = &create_VELOCITYLocalHandle;
-			b.VELOCITY_op.local_option.pubID = 6450;
-			b.VELOCITY_op.local_option.subID = -21218;
 			b.DRIVECONTROL = PORT_ACTIVE;
 			b.createDRIVECONTROLHandle = &create_DRIVECONTROLI2cHandle;
 			b.DRIVECONTROL_op.i2c_option.ownAddress = 10;
 			b.DRIVECONTROL_op.i2c_option.otherAddress = 2;
+			b.VELOCITY = PORT_ACTIVE;
+			b.createVELOCITYHandle = &create_VELOCITYLocalHandle;
+			b.VELOCITY_op.local_option.pubID = 6450;
+			b.VELOCITY_op.local_option.subID = -21218;
 			b.REARDISTANCE = PORT_ACTIVE;
 			b.createREARDISTANCEHandle = &create_REARDISTANCELocalHandle;
 			b.REARDISTANCE_op.local_option.pubID = 19917;

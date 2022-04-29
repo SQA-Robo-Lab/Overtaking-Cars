@@ -130,7 +130,7 @@ bool_t MCC_PowerTrainComponent_velocity_recv_value(Port* port, int32_T* msg){
 
 static PortHandle* create_VELOCITYLocalHandle(powerTrainComponent_Builder* b, PortHandle *ptr){
 	ptr->type = PORT_HANDLE_TYPE_LOCAL;
-	LocalHandle* hndl = malloc(sizeof(LocalHandle)+1*sizeof(LocalSubscriber));
+	LocalHandle* hndl = (LocalHandle*) malloc(sizeof(LocalHandle)+1*sizeof(LocalSubscriber));
 	ptr->concreteHandle = hndl;
 	hndl->pubID = b->VELOCITY_op.local_option.pubID;
 	hndl->subID = b->VELOCITY_op.local_option.subID;

@@ -101,7 +101,7 @@ void MCC_DistanceSensorComponent_distance_send_value(Port* port, int32_T* msg){
 
 static PortHandle* create_DISTANCELocalHandle(distanceSensorComponent_Builder* b, PortHandle *ptr){
 	ptr->type = PORT_HANDLE_TYPE_LOCAL;
-	LocalHandle* hndl = malloc(sizeof(LocalHandle)+0*sizeof(LocalSubscriber));
+	LocalHandle* hndl = (LocalHandle*) malloc(sizeof(LocalHandle)+0*sizeof(LocalSubscriber));
 	ptr->concreteHandle = hndl;
 	hndl->pubID = b->DISTANCE_op.local_option.pubID;
 	hndl->subID = b->DISTANCE_op.local_option.subID;
