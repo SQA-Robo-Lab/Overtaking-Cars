@@ -23,7 +23,7 @@ typedef struct I2cHandle {
  * 
  * @param ownI2cAddress the own address on the I2C bus.
  */
-void I2cCommunication_setup(uint8_T ownI2cAddress);
+void i2cCommunication_setup(uint8_T ownI2cAddress);
 
 /**
  * @brief Create and register an I2c Receiver object

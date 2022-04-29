@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "messagebuffer.h": "c",
+        "localbuffermanager.h": "c"
+    }
+}

@@ -6,6 +6,7 @@
 
 typedef struct MqttSubscriber {
     char* topic;
+    char* messageTypeName;
     MessageBuffer* buffer;
 } MqttSubscriber;
 
@@ -40,7 +41,7 @@ struct MqttConfig {
  * @param wifiConfig the configuration for the WiFi network
  * @param mqttConfig the configuration for the MQTT connection
  */
-void MqttCommunication_setup(struct WiFiConfig *wifiConfig, 
+void mqttCommunication_setup(struct WiFiConfig *wifiConfig, 
                             struct MqttConfig *mqttConfig);
 
 /**
@@ -49,7 +50,7 @@ void MqttCommunication_setup(struct WiFiConfig *wifiConfig,
  * 
  * @param mqttConfig the configuration for the MQTT connection
  */
-void MqttCommunication_loop(struct MqttConfig *mqttConfig);
+void mqttCommunication_loop(struct MqttConfig *mqttConfig);
 
 /**
  * @brief Create and Register an MQTT subscriber

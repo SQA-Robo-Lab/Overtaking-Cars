@@ -86,7 +86,7 @@ static void consumeMessageIntoBuffer(char* topic, byte* payload, unsigned int le
     }
 }
 
-static void MqttCommunication_setup(struct WiFiConfig *wifiConfig, struct MqttConfig *mqttConfig){
+static void mqttCommunication_setup(struct WiFiConfig *wifiConfig, struct MqttConfig *mqttConfig){
     wifiConfig->status = WL_IDLE_STATUS;
     EspSerial.begin(MQTT_ESP_BAUDRADTE);
     WiFi.init(&EspSerial);
@@ -107,7 +107,7 @@ static void MqttCommunication_setup(struct WiFiConfig *wifiConfig, struct MqttCo
     globalMqttClient.setCallback(consumeMessageIntoBuffer);
 }
 
-static void MqttCommunication_loop(struct MqttConfig *mqttConfig){
+static void mqttCommunication_loop(struct MqttConfig *mqttConfig){
     if (!globalMqttClient.connected()){
         mqttConnect(mqttConfig->clientName);
     }
@@ -140,6 +140,7 @@ void createAndRegisterMqttSubscriber(MqttSubscriber* subscriber,
                                     bool_t bufferMode){
     subscriber->buffer = MessageBuffer_create(bufferCapacity, messageSize, bufferMode);
     subscriber->topic = createAndMallocTopic(subscriptionTopic, messageTypeName);
+    subscriber->messageTypeName = messageTypeName;
     appendMqttSubscriberToList(&mqttSubscriberList, subscriber);
     globalMqttClient.subscribe(subscriber->topic);
 }

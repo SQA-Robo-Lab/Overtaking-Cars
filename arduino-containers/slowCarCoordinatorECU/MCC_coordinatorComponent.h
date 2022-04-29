@@ -1,9 +1,6 @@
 #ifndef MCC_MCC_COORDINATORCOMPONENT_H_
 #define MCC_MCC_COORDINATORCOMPONENT_H_
 
-#ifdef __cplusplus
-  extern "C" {
-#endif	
 // Library
 #include "ContainerTypes.h"
 #include "LocalBufferManager.h"
@@ -33,7 +30,5 @@
  * @details The method for initializing and creating a component instance of type: Atomic_Component_Coordinator
  */
 CoordinatorComponent* MCC_create_CoordinatorComponent(uint8_T id);
-#ifdef __cplusplus
-  }
-#endif
+
 #endif /* MCC_MCC_COORDINATORCOMPONENT_H_ */

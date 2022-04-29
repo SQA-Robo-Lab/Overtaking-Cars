@@ -1,9 +1,6 @@
 #ifndef MCC_MCC_DRIVECONTROLCOMPONENT_H_
 #define MCC_MCC_DRIVECONTROLCOMPONENT_H_
 
-#ifdef __cplusplus
-  extern "C" {
-#endif	
 // Library
 #include "ContainerTypes.h"
 #include "LocalBufferManager.h"
@@ -31,7 +28,5 @@
  * @details The method for initializing and creating a component instance of type: Atomic_Component_DriveControl
  */
 DriveControlComponent* MCC_create_DriveControlComponent(uint8_T id);
-#ifdef __cplusplus
-  }
-#endif
+
 #endif /* MCC_MCC_DRIVECONTROLCOMPONENT_H_ */
