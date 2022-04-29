@@ -7,15 +7,17 @@
  */
 #ifndef DRIVECONTROLCOMPONENT_Interface_H_
 #define DRIVECONTROLCOMPONENT_Interface_H_
-#include "port.h"
-#ifdef __cplusplus
-extern "C" {
-#endif
 
+#include "clock.h"
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif // Library
 #include "standardTypes.h"
 #include "customTypes.h"
+#include "port.h"
 #include "messages_types.h"
-#include "clock.h"
 #include "Debug.h"
 
 // include Operation Repositories

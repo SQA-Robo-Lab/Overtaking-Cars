@@ -8,6 +8,8 @@
 #ifndef DRIVECONTROLCOMPONENT_Interface_H_
 #define DRIVECONTROLCOMPONENT_Interface_H_
 
+#include "clock.h"
+
 #ifdef __cplusplus
 extern "C"
 {
@@ -16,7 +18,6 @@ extern "C"
 #include "customTypes.h"
 #include "port.h"
 #include "messages_types.h"
-#include "clock.h"
 #include "Debug.h"
 
 // include Operation Repositories

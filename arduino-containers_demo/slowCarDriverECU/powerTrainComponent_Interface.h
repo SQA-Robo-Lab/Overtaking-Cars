@@ -8,6 +8,8 @@
 #ifndef POWERTRAINCOMPONENT_Interface_H_
 #define POWERTRAINCOMPONENT_Interface_H_
 
+#include "clock.h"
+
 #ifdef __cplusplus
 extern "C"
 {
@@ -15,7 +17,6 @@ extern "C"
 #include "standardTypes.h"
 #include "customTypes.h"
 #include "port.h"
-#include "clock.h"
 #include "Debug.h"
 /*****
  *
