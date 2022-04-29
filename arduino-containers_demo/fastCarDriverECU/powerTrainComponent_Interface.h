@@ -7,11 +7,14 @@
  */
 #ifndef POWERTRAINCOMPONENT_Interface_H_
 #define POWERTRAINCOMPONENT_Interface_H_
+#include "clock.h"
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 #include "standardTypes.h"
 #include "customTypes.h"
 #include "port.h"
-#include "clock.h"
 #include "Debug.h"
 /*****
  *
@@ -95,4 +98,7 @@ void PowerTrainComponent_processStep(PowerTrainComponent *component);
 /*Getter and Setter for Sending Values of Hybrid/Continuous ports*/
 bool_T getterOf_velocity(Port *velocityPort, int32_T *velocity); /**< A Pointer to the getter function of the port: velocity */
 
+#ifdef __cplusplus
+}
+#endif
 #endif /* POWERTRAINCOMPONENT_Interface_H_ */

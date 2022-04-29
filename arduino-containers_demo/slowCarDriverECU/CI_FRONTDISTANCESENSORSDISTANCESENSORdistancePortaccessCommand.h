@@ -1,3 +1,6 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
 // Start of user code FORINCLUDES
 #include "DistanceSensor.h"
 // End of user code
@@ -7,3 +10,6 @@ void CI_FRONTDISTANCESENSORSDISTANCESENSORdistancePortaccessCommand(int32_T* dis
 // Start of user code API
 	
 	// End of user code
+#ifdef __cplusplus
+}
+#endif

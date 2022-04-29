@@ -7,11 +7,14 @@
  */
 #ifndef DISTANCESENSORCOMPONENT_Interface_H_
 #define DISTANCESENSORCOMPONENT_Interface_H_
+#include "clock.h"
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 #include "standardTypes.h"
 #include "customTypes.h"
 #include "port.h"
-#include "clock.h"
 #include "Debug.h"
 /*****
  *
@@ -93,6 +96,8 @@ void DistanceSensorComponent_processStep(DistanceSensorComponent *component);
 
 /*Getter and Setter for Sending Values of Hybrid/Continuous ports*/
 void setterOf_distance(Port *distancePort, int32_T *distance); /**< A Pointer to the setter function of the port: distance */
-
+#ifdef __cplusplus
+}
+#endif
 
 #endif /* DISTANCESENSORCOMPONENT_Interface_H_ */

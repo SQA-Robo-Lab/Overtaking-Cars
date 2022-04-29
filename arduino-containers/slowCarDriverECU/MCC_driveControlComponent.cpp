@@ -442,22 +442,22 @@ DriveControlComponent* MCC_create_DriveControlComponent(uint8_T ID){
 	switch(ID){
 		case CI_DRIVECONTROLSDRIVECONTROL:
 			b.ID = ID;
-			b.DRIVECONTROL = PORT_ACTIVE;
-			b.createDRIVECONTROLHandle = &create_DRIVECONTROLI2cHandle;
-			b.DRIVECONTROL_op.i2c_option.ownAddress = 10;
-			b.DRIVECONTROL_op.i2c_option.otherAddress = 2;
 			b.VELOCITY = PORT_ACTIVE;
 			b.createVELOCITYHandle = &create_VELOCITYLocalHandle;
 			b.VELOCITY_op.local_option.pubID = 6450;
 			b.VELOCITY_op.local_option.subID = -21218;
-			b.REARDISTANCE = PORT_ACTIVE;
-			b.createREARDISTANCEHandle = &create_REARDISTANCELocalHandle;
-			b.REARDISTANCE_op.local_option.pubID = 19917;
-			b.REARDISTANCE_op.local_option.subID = -30463;
+			b.DRIVECONTROL = PORT_ACTIVE;
+			b.createDRIVECONTROLHandle = &create_DRIVECONTROLI2cHandle;
+			b.DRIVECONTROL_op.i2c_option.ownAddress = 10;
+			b.DRIVECONTROL_op.i2c_option.otherAddress = 2;
 			b.FRONTDISTANCE = PORT_ACTIVE;
 			b.createFRONTDISTANCEHandle = &create_FRONTDISTANCELocalHandle;
 			b.FRONTDISTANCE_op.local_option.pubID = 12012;
 			b.FRONTDISTANCE_op.local_option.subID = 3192;
+			b.REARDISTANCE = PORT_ACTIVE;
+			b.createREARDISTANCEHandle = &create_REARDISTANCELocalHandle;
+			b.REARDISTANCE_op.local_option.pubID = 19917;
+			b.REARDISTANCE_op.local_option.subID = -30463;
 		break;
 	default:
 		break;
