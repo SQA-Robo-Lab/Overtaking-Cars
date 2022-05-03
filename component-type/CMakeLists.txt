@@ -1,9 +1,0 @@
-CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
-PROJECT(fastAndSlowCar_v2)
-
-file(GLOB_RECURSE SRCS *.c)
-file(GLOB_RECURSE HDRS *.h)
-include_directories(${CMAKE_SOURCE_DIR})
-
-ADD_EXECUTABLE(fastAndSlowCar_v2  ${SRCS} ${HDRS})
-TARGET_LINK_LIBRARIES(fastAndSlowCar_v2) 
