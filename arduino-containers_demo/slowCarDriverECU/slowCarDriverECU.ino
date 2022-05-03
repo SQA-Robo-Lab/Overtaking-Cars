@@ -4,14 +4,18 @@
 #include "I2cCustomLib.hpp"
 
 
-#include "MCC_distanceSensorComponent.h"
 #include "MCC_powerTrainComponent.h"
+#include "MCC_distanceSensorComponent.h"
 #include "MCC_driveControlComponent.h"
+
+// Start of user code DEVICEINITINCLUDES
+/* TODO: if devices or libraries are used which need an initialization, include the headers here */
+// End of user code
 
 
 //variable for component Instances
-DriveControlComponent* atomic_c1;
-DistanceSensorComponent* atomic_c2;
+DistanceSensorComponent* atomic_c1;
+DriveControlComponent* atomic_c2;
 DistanceSensorComponent* atomic_c3;
 PowerTrainComponent* atomic_c4;
 
@@ -20,8 +24,12 @@ void setup(){
 	Serial.begin(9600);
 	Serial.println("Initialization starting...");
 	#endif
-	atomic_c1= MCC_create_DriveControlComponent(CI_DRIVECONTROLSDRIVECONTROL);
-	atomic_c2= MCC_create_DistanceSensorComponent(CI_REARDISTANCESENSORSDISTANCESENSOR);
+	// Start of user code DEVICEINIT
+	initializeDistanceSensors();
+	initLineFollower();
+	// End of user code
+	atomic_c1= MCC_create_DistanceSensorComponent(CI_REARDISTANCESENSORSDISTANCESENSOR);
+	atomic_c2= MCC_create_DriveControlComponent(CI_DRIVECONTROLSDRIVECONTROL);
 	atomic_c3= MCC_create_DistanceSensorComponent(CI_FRONTDISTANCESENSORSDISTANCESENSOR);
 	atomic_c4= MCC_create_PowerTrainComponent(CI_POWERTRAINSPOWERTRAIN);
 	
@@ -35,8 +43,8 @@ void setup(){
 
 void loop(){
 
-	DriveControlComponent_processStep(atomic_c1);
-	DistanceSensorComponent_processStep(atomic_c2);
+	DistanceSensorComponent_processStep(atomic_c1);
+	DriveControlComponent_processStep(atomic_c2);
 	DistanceSensorComponent_processStep(atomic_c3);
 	PowerTrainComponent_processStep(atomic_c4);
 }	

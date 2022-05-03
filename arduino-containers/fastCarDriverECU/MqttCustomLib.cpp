@@ -1,3 +1,12 @@
+/**
+ * @file MqttCustomLib.cpp
+ * @author david
+ * @brief Implementation of the library to wrap the MQTT commuication capabilities for the robot cars.
+ * 
+ * @details The library uses the <PubSubClient.h> for Arduino and the MessageBuffer.h from the MUML C Component Type Code generator.
+ * Futhermore, it uses a SoftwareSerial connection via the DigitalIO Pins 2 and 3 of the Arduino, and expects a connection to an
+ * ESP8266-01s WiFi module using the <WiFiEsp.h> library. Only then, it can successfully connect to an MQTT server to publish messages.
+ */
 #include "MqttCustomLib.hpp"
 
 #include <SoftwareSerial.h>
@@ -5,13 +14,16 @@
 
 #define MQTT_ESP_BAUDRADTE 9600
 
-// #define _SS_MAX_RX_BUFF 256 // May be required for receiving larger messages via Software Serial
+// #define _SS_MAX_RX_BUFF 256 // May be required for receiving larger messages via Software Serial, requires more testing
 
 
-static WiFiEspClient globalWifiClient;
-static PubSubClient globalMqttClient;
+WiFiEspClient globalWifiClient;
+PubSubClient globalMqttClient;
 SoftwareSerial EspSerial(2,3);
 
+/**
+ * @brief A struct to store a linked list of MqttSubscribers.
+ */
 struct MqttSubscriberListElement {
     MqttSubscriber* subscriber;
     struct MqttSubscriberListElement *nextElement;
@@ -27,9 +39,9 @@ static struct MqttSubscriberListElement *mqttSubscriberList = NULL; /*init an em
  * @param messageTypeName The second part of the string
  * @return char* the composed string
  */
-static char* createAndMallocTopic(char* baseTopic, char* messageTypeName){
+static char* createAndMallocTopic(char* const baseTopic, char* const messageTypeName){
     char *temp;
-    temp = (char *) malloc(strlen(baseTopic) + strlen(messageTypeName));
+    temp = (char *) malloc(strlen(baseTopic) + strlen(messageTypeName) + 1);
     strcpy(temp, baseTopic);
     strcat(temp, messageTypeName);
     return temp;
@@ -40,7 +52,7 @@ static char* createAndMallocTopic(char* baseTopic, char* messageTypeName){
  * 
  * @param mqttClientName the name to register at the broker with
  */
-static void mqttConnect(char* mqttClientName){
+static void mqttConnect(char* const mqttClientName){
     while(!globalMqttClient.connected()){ 
         if (globalMqttClient.connect(mqttClientName)) {
             #ifdef DEBUG
@@ -68,7 +80,7 @@ static void consumeMessageIntoBuffer(char* topic, byte* payload, unsigned int le
     #ifdef DEBUG
     Serial.print("Mqtt Message arrived [");
     Serial.print(topic);
-    Serial.print("] ");
+    Serial.println("] ");
     #endif
 
     struct MqttSubscriberListElement **list = &mqttSubscriberList;
@@ -82,11 +94,11 @@ static void consumeMessageIntoBuffer(char* topic, byte* payload, unsigned int le
         list = &(*list)->nextElement;
     }
     if (bufferToFill != NULL){
-        MessageBuffer_enqueue(bufferToFill, payload);
+        MessageBuffer_enqueue(bufferToFill, payload); //enqueing copies the payload
     }
 }
 
-static void mqttCommunication_setup(struct WiFiConfig *wifiConfig, struct MqttConfig *mqttConfig){
+static void mqttCommunication_setup(struct WiFiConfig* const wifiConfig, struct MqttConfig* const mqttConfig){
     wifiConfig->status = WL_IDLE_STATUS;
     EspSerial.begin(MQTT_ESP_BAUDRADTE);
     WiFi.init(&EspSerial);
@@ -100,14 +112,13 @@ static void mqttCommunication_setup(struct WiFiConfig *wifiConfig, struct MqttCo
 
     globalMqttClient.setClient(globalWifiClient);
     globalMqttClient.setServer(mqttConfig->serverIPAddress, mqttConfig->serverPort);
+    globalMqttClient.setCallback(consumeMessageIntoBuffer);
+    globalMqttClient.setKeepAlive(20);
     
     mqttConnect(mqttConfig->clientName);
-
-    globalMqttClient.setKeepAlive(20);
-    globalMqttClient.setCallback(consumeMessageIntoBuffer);
 }
 
-static void mqttCommunication_loop(struct MqttConfig *mqttConfig){
+static void mqttCommunication_loop(struct MqttConfig* const mqttConfig){
     if (!globalMqttClient.connected()){
         mqttConnect(mqttConfig->clientName);
     }
@@ -132,9 +143,9 @@ static void appendMqttSubscriberToList(struct MqttSubscriberListElement **list,
     *list = newListElement; //append the new item to the list
 }
 
-void createAndRegisterMqttSubscriber(MqttSubscriber* subscriber,
-                                    char* subscriptionTopic,
-                                    char* messageTypeName,
+void initAndRegisterMqttSubscriber(MqttSubscriber* const subscriber,
+                                    char* const subscriptionTopic,
+                                    char* const messageTypeName,
                                     size_t bufferCapacity,
                                     size_t messageSize,
                                     bool_t bufferMode){
@@ -145,9 +156,9 @@ void createAndRegisterMqttSubscriber(MqttSubscriber* subscriber,
     globalMqttClient.subscribe(subscriber->topic);
 }
 
-static void sendMqttMessage(char* publishingTopic,
-                            char* messageTypeName,
-                            byte* message,
+static void sendMqttMessage(char* const publishingTopic,
+                            char* const messageTypeName,
+                            byte* const message,
                             unsigned int messageLength){
     char *composedTopic = createAndMallocTopic(publishingTopic, messageTypeName);
     globalMqttClient.publish(composedTopic, message, messageLength);

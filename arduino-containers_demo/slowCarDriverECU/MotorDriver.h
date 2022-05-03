@@ -22,10 +22,11 @@ void initMotorDriver();
 /**
  * @brief Sets the speed of all motors to the desired value without changing directions etc.
  * 
- * @param speed specify the motor speed between 60 (slowest moving speed) and 255 (full speed), or 0 to deactivate the motors.
+ * @param speed specify the motor speed between 50 (slowest moving speed) and 255 (full speed), or 0 to deactivate the motors.
+ * Suggested fast speed value where turns are possible: 80
  * 
  * The operation controls the motors my sending PMW signals to the L298N motor controller. 
- * A value between 0-59 is not recommended, because the motors do not get enough power to move the car.
+ * A value between 0-49 is not recommended, because the motors do not get enough power to move the car around tight turns.
  */
 void setSpeed(int speed);
 
@@ -35,10 +36,11 @@ void setSpeed(int speed);
  * If the motor direction is currently set to "reverse", this method changes the motor direction.
  * If the motor direction was already set to "forward", the method will not affect any change.
  * 
- * @param speed specify the motor speed between 60 (slowest moving speed) and 255 (full speed), or 0 to deactivate the motors.
+ * @param speed specify the motor speed between 50 (slowest moving speed) and 255 (full speed), or 0 to deactivate the motors.
+ * Suggested fast speed value where turns are possible: 80
  * 
  * The operation controls the motors my sending PMW signals to the L298N motor controller. 
- * A value between 0-59 is not recommended, because the motors do not getenough power to move the car.
+ * A value between 0-49 is not recommended, because the motors do not getenough power to move the car.
  */
 void driveForward(int speed);
 
@@ -48,30 +50,33 @@ void driveForward(int speed);
  * If the motor direction is currently set to "forward", this method changes the motor direction.
  * If the motor direction was already set to "reverse", the method will not affect any change.
  * 
- * @param speed specify the motor speed between 60 (slowest moving speed) and 255 (full speed), or 0 to deactivate the motors.
+ * @param speed specify the motor speed between 50 (slowest moving speed) and 255 (full speed), or 0 to deactivate the motors.
+ * Suggested fast speed value where turns are possible: 80
  * 
  * The operation controls the motors my sending PMW signals to the L298N motor controller. 
- * A value between 0-59 is not recommended, because the motors do not getenough power to move the car.
+ * A value between 0-49 is not recommended, because the motors do not getenough power to move the car.
  */
 void driveReverse(int speed);
 
 /**
  * @brief Turns the car left with the desired speed.
  * 
- * @param speed specify the motor speed between 60 (slowest moving speed) and 255 (full speed), or 0 to deactivate the motors.
+ * @param speed specify the motor speed between 50 (slowest moving speed) and 255 (full speed), or 0 to deactivate the motors.
+ * Suggested fast speed value where turns are possible: 80
  * 
  * The operation controls the motors my sending PMW signals to the L298N motor controller. 
- * A value between 0-59 is not recommended, because the motors do not getenough power to move the car.
+ * A value between 0-49 is not recommended, because the motors do not getenough power to move the car.
  */
 void turnLeftForward(int speed);
 
 /**
  * @brief Turns the car right with the desired speed.
  * 
- * @param speed specify the motor speed between 60 (slowest moving speed) and 255 (full speed), or 0 to deactivate the motors.
+ * @param speed specify the motor speed between 50 (slowest moving speed) and 255 (full speed), or 0 to deactivate the motors.
+ * Suggested fast speed value where turns are possible: 80
  * 
  * The operation controls the motors my sending PMW signals to the L298N motor controller. 
- * A value between 0-59 is not recommended, because the motors do not getenough power to move the car.
+ * A value between 0-49 is not recommended, because the motors do not get enough power to move the car around tight turns.
  */
 void turnRightForward(int speed);
 

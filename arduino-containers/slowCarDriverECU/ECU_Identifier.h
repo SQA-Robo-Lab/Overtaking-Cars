@@ -8,9 +8,9 @@
 *@details Identifier to Identy Local Messages
 */
 //Identifier for Messages used on this ECU
-#define MESSAGE_OVERTAKINGPERMISSIONMESSAGESREQUESTPERMISSIONOVERTAKINGPERMISSIONMESSAGESMESSAGE 1 /**< ECU Identifier: For the Message-Type: requestPermission */
-#define MESSAGE_OVERTAKINGPERMISSIONMESSAGESEXECUTEDOVERTAKINGOVERTAKINGPERMISSIONMESSAGESMESSAGE 2 /**< ECU Identifier: For the Message-Type: executedOvertaking */
-#define MESSAGE_OVERTAKINGPERMISSIONMESSAGESDENYPERMISSIONOVERTAKINGPERMISSIONMESSAGESMESSAGE 3 /**< ECU Identifier: For the Message-Type: denyPermission */
+#define MESSAGE_OVERTAKINGPERMISSIONMESSAGESDENYPERMISSIONOVERTAKINGPERMISSIONMESSAGESMESSAGE 1 /**< ECU Identifier: For the Message-Type: denyPermission */
+#define MESSAGE_OVERTAKINGPERMISSIONMESSAGESREQUESTPERMISSIONOVERTAKINGPERMISSIONMESSAGESMESSAGE 2 /**< ECU Identifier: For the Message-Type: requestPermission */
+#define MESSAGE_OVERTAKINGPERMISSIONMESSAGESEXECUTEDOVERTAKINGOVERTAKINGPERMISSIONMESSAGESMESSAGE 3 /**< ECU Identifier: For the Message-Type: executedOvertaking */
 #define MESSAGE_OVERTAKINGPERMISSIONMESSAGESGRANTPERMISSIONOVERTAKINGPERMISSIONMESSAGESMESSAGE 4 /**< ECU Identifier: For the Message-Type: grantPermission */
 
 //Identifier for ComponentInstances
@@ -21,7 +21,7 @@
 */
 #define CI_REARDISTANCESENSORSDISTANCESENSOR 1 /**< Identifier for Component Instance rearDistanceSensor.S */
 #define CI_DRIVECONTROLSDRIVECONTROL 2 /**< Identifier for Component Instance driveControl.S */
-#define CI_POWERTRAINSPOWERTRAIN 3 /**< Identifier for Component Instance powerTrain.S */
-#define CI_FRONTDISTANCESENSORSDISTANCESENSOR 4 /**< Identifier for Component Instance frontDistanceSensor.S */
+#define CI_FRONTDISTANCESENSORSDISTANCESENSOR 3 /**< Identifier for Component Instance frontDistanceSensor.S */
+#define CI_POWERTRAINSPOWERTRAIN 4 /**< Identifier for Component Instance powerTrain.S */
 			
 #endif /* ECU_IDENTIFIER_H */

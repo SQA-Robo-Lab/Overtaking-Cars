@@ -88,7 +88,7 @@ void MCC_DistanceSensorComponent_distance_send_value(Port* port, int32_T* msg){
 		instancePool[pool_index].ID = b->ID;
 		instancePool[pool_index].distancePortAccessFunction = b->distancePortAccessFunction;
 		//For each port initialize it
-			if(b->DISTANCE != PORT_DEACTIVATED) {
+		if(b->DISTANCE != PORT_DEACTIVATED) {
 			instancePool[pool_index].distancePort.status = b->DISTANCE;
 			instancePool[pool_index].distancePort.handle = (PortHandle*) malloc(sizeof(PortHandle));
  			instancePool[pool_index].distancePort.handle->port = &(instancePool[pool_index].distancePort);

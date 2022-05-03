@@ -117,7 +117,7 @@ bool_t MCC_PowerTrainComponent_velocity_recv_value(Port* port, int32_T* msg){
 		instancePool[pool_index].ID = b->ID;
 		instancePool[pool_index].velocityPortAccessFunction = b->velocityPortAccessFunction;
 		//For each port initialize it
-			if(b->VELOCITY != PORT_DEACTIVATED) {
+		if(b->VELOCITY != PORT_DEACTIVATED) {
 			instancePool[pool_index].velocityPort.status = b->VELOCITY;
 			instancePool[pool_index].velocityPort.handle = (PortHandle*) malloc(sizeof(PortHandle));
  			instancePool[pool_index].velocityPort.handle->port = &(instancePool[pool_index].velocityPort);

@@ -4,6 +4,8 @@
 
 #include "LineFollower.h"
 
+LinePosition globalCarPosition;
+
 void initLineFollower(){
     initMotorDriver();
     

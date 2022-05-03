@@ -4,26 +4,33 @@
 #include "I2cCustomLib.hpp"
 
 
-#include "MCC_powerTrainComponent.h"
 #include "MCC_driveControlComponent.h"
 #include "MCC_distanceSensorComponent.h"
+#include "MCC_powerTrainComponent.h"
+
+// Start of user code DEVICEINITINCLUDES
+/* TODO: if devices or libraries are used which need an initialization, include the headers here */
+// End of user code
 
 
 //variable for component Instances
-DriveControlComponent* atomic_c1;
-PowerTrainComponent* atomic_c2;
-DistanceSensorComponent* atomic_c3;
-DistanceSensorComponent* atomic_c4;
+DistanceSensorComponent* atomic_c1;
+DistanceSensorComponent* atomic_c2;
+PowerTrainComponent* atomic_c3;
+DriveControlComponent* atomic_c4;
 
 void setup(){
 	#ifdef DEBUG
 	Serial.begin(9600);
 	Serial.println("Initialization starting...");
 	#endif
-	atomic_c1= MCC_create_DriveControlComponent(CI_DRIVECONTROLFDRIVECONTROL);
-	atomic_c2= MCC_create_PowerTrainComponent(CI_POWERTRAINFPOWERTRAIN);
-	atomic_c3= MCC_create_DistanceSensorComponent(CI_FRONTDISTANCESENSORFDISTANCESENSOR);
-	atomic_c4= MCC_create_DistanceSensorComponent(CI_REARDISTANCESENSORFDISTANCESENSOR);
+	// Start of user code DEVICEINIT
+	/* TODO: if devices are used which need an initialization, call the functionse here */
+	// End of user code
+	atomic_c1= MCC_create_DistanceSensorComponent(CI_FRONTDISTANCESENSORFDISTANCESENSOR);
+	atomic_c2= MCC_create_DistanceSensorComponent(CI_REARDISTANCESENSORFDISTANCESENSOR);
+	atomic_c3= MCC_create_PowerTrainComponent(CI_POWERTRAINFPOWERTRAIN);
+	atomic_c4= MCC_create_DriveControlComponent(CI_DRIVECONTROLFDRIVECONTROL);
 	
 	i2cCommunication_setup(9);
 
@@ -35,10 +42,10 @@ void setup(){
 
 void loop(){
 
-	DriveControlComponent_processStep(atomic_c1);
-	PowerTrainComponent_processStep(atomic_c2);
-	DistanceSensorComponent_processStep(atomic_c3);
-	DistanceSensorComponent_processStep(atomic_c4);
+	DistanceSensorComponent_processStep(atomic_c1);
+	DistanceSensorComponent_processStep(atomic_c2);
+	PowerTrainComponent_processStep(atomic_c3);
+	DriveControlComponent_processStep(atomic_c4);
 }	
 
 

@@ -428,21 +428,21 @@ void MCC_CoordinatorComponent_overtakingAffiliate_send_OvertakingCoordinationMes
 		//call init after RTSC was created
 		CoordinatorComponent_initialize(&instancePool[pool_index]);
 		//For each port initialize it
-			if(b->COMMUNICATOR != PORT_DEACTIVATED) {
+		if(b->COMMUNICATOR != PORT_DEACTIVATED) {
 			instancePool[pool_index].communicatorPort.status = b->COMMUNICATOR;
 			instancePool[pool_index].communicatorPort.handle = (PortHandle*) malloc(sizeof(PortHandle));
  			instancePool[pool_index].communicatorPort.handle->port = &(instancePool[pool_index].communicatorPort);
 			b->createCOMMUNICATORHandle(b, (instancePool[pool_index].communicatorPort.handle));
 			//instancePool[pool_index].communicatorPort.handle->port = &(instancePool[pool_index].communicatorPort);
 		}
-			if(b->OVERTAKINGINITIATOR != PORT_DEACTIVATED) {
+		if(b->OVERTAKINGINITIATOR != PORT_DEACTIVATED) {
 			instancePool[pool_index].overtakingInitiatorPort.status = b->OVERTAKINGINITIATOR;
 			instancePool[pool_index].overtakingInitiatorPort.handle = (PortHandle*) malloc(sizeof(PortHandle));
  			instancePool[pool_index].overtakingInitiatorPort.handle->port = &(instancePool[pool_index].overtakingInitiatorPort);
 			b->createOVERTAKINGINITIATORHandle(b, (instancePool[pool_index].overtakingInitiatorPort.handle));
 			//instancePool[pool_index].overtakingInitiatorPort.handle->port = &(instancePool[pool_index].overtakingInitiatorPort);
 		}
-			if(b->OVERTAKINGAFFILIATE != PORT_DEACTIVATED) {
+		if(b->OVERTAKINGAFFILIATE != PORT_DEACTIVATED) {
 			instancePool[pool_index].overtakingAffiliatePort.status = b->OVERTAKINGAFFILIATE;
 			instancePool[pool_index].overtakingAffiliatePort.handle = (PortHandle*) malloc(sizeof(PortHandle));
  			instancePool[pool_index].overtakingAffiliatePort.handle->port = &(instancePool[pool_index].overtakingAffiliatePort);
@@ -464,12 +464,12 @@ static PortHandle* create_COMMUNICATORI2cHandle(coordinatorComponent_Builder* b,
 	I2cHandle* handle = (I2cHandle*) malloc(sizeof(I2cHandle)+2*sizeof(I2cReceiver));
 	handle->numOfReceivers = 2;
 	//register a receiver for every message type of the port
-	createAndRegisterI2cReceiver(&(handle->receivers[0]), 
+	initAndRegisterI2cReceiver(&(handle->receivers[0]), 
 								"OvertakingPermissionMessagesRequestPermission",
 								5,
 								sizeof(OvertakingPermissionMessagesRequestPermission_OvertakingPermissionMessages_Message),
 								 false );
-	createAndRegisterI2cReceiver(&(handle->receivers[1]), 
+	initAndRegisterI2cReceiver(&(handle->receivers[1]), 
 								"OvertakingPermissionMessagesExecutedOvertaking",
 								5,
 								sizeof(OvertakingPermissionMessagesExecutedOvertaking_OvertakingPermissionMessages_Message),
@@ -486,7 +486,7 @@ static PortHandle* create_OVERTAKINGINITIATORMqttHandle(coordinatorComponent_Bui
 	MqttHandle* handle = (MqttHandle*) malloc(sizeof(MqttHandle)+1*sizeof(MqttSubscriber));
 	handle->numOfSubs = 1;
 	//register a subscriber for every message type of the port
-	createAndRegisterMqttSubscriber(&(handle->subscribers[0]),
+	initAndRegisterMqttSubscriber(&(handle->subscribers[0]),
 									b->OVERTAKINGINITIATOR_op.mqtt_option.subscriptionTopic,
 									"OvertakingCoordinationMessagesAcceptOvertaking",
 									1,
@@ -504,13 +504,13 @@ static PortHandle* create_OVERTAKINGAFFILIATEMqttHandle(coordinatorComponent_Bui
 	MqttHandle* handle = (MqttHandle*) malloc(sizeof(MqttHandle)+2*sizeof(MqttSubscriber));
 	handle->numOfSubs = 2;
 	//register a subscriber for every message type of the port
-	createAndRegisterMqttSubscriber(&(handle->subscribers[0]),
+	initAndRegisterMqttSubscriber(&(handle->subscribers[0]),
 									b->OVERTAKINGAFFILIATE_op.mqtt_option.subscriptionTopic,
 									"OvertakingCoordinationMessagesRequestOvertaking",
 									5,
 									sizeof(OvertakingCoordinationMessagesRequestOvertaking_OvertakingCoordinationMessages_Message),
 									 false );	
-	createAndRegisterMqttSubscriber(&(handle->subscribers[1]),
+	initAndRegisterMqttSubscriber(&(handle->subscribers[1]),
 									b->OVERTAKINGAFFILIATE_op.mqtt_option.subscriptionTopic,
 									"OvertakingCoordinationMessagesFinishedOvertaking",
 									5,
@@ -536,6 +536,10 @@ CoordinatorComponent* MCC_create_CoordinatorComponent(uint8_T ID){
 	switch(ID){
 		case CI_COMMUNICATORFCOORDINATOR:
 			b.ID = ID;
+			b.COMMUNICATOR = PORT_ACTIVE;
+			b.createCOMMUNICATORHandle = &create_COMMUNICATORI2cHandle;
+			b.COMMUNICATOR_op.i2c_option.ownAddress = 1;
+			b.COMMUNICATOR_op.i2c_option.otherAddress = 9;
 			b.OVERTAKINGAFFILIATE = PORT_ACTIVE;
 			b.createOVERTAKINGAFFILIATEHandle = &create_OVERTAKINGAFFILIATEMqttHandle;
 			b.OVERTAKINGAFFILIATE_op.mqtt_option.publishingTopic = "fastCarCoordinatorECU/communicator.F/overtakingAffiliate1/";
@@ -544,10 +548,6 @@ CoordinatorComponent* MCC_create_CoordinatorComponent(uint8_T ID){
 			b.createOVERTAKINGINITIATORHandle = &create_OVERTAKINGINITIATORMqttHandle;
 			b.OVERTAKINGINITIATOR_op.mqtt_option.publishingTopic = "fastCarCoordinatorECU/communicator.F/overtakingInitiator1/";
 			b.OVERTAKINGINITIATOR_op.mqtt_option.subscriptionTopic = "slowCarCoordinatorECU/communicator.S/overtakingAffiliate1/";
-			b.COMMUNICATOR = PORT_ACTIVE;
-			b.createCOMMUNICATORHandle = &create_COMMUNICATORI2cHandle;
-			b.COMMUNICATOR_op.i2c_option.ownAddress = 1;
-			b.COMMUNICATOR_op.i2c_option.otherAddress = 9;
 		break;
 	default:
 		break;

@@ -10,6 +10,9 @@ static struct MqttConfig* mqttConfig;
 
 #include "MCC_coordinatorComponent.h"
 
+// Start of user code DEVICEINITINCLUDES
+#// End of user code
+
 
 //variable for component Instances
 CoordinatorComponent* atomic_c1;
@@ -19,6 +22,9 @@ void setup(){
 	Serial.begin(9600);
 	Serial.println("Initialization starting...");
 	#endif
+	// Start of user code DEVICEINIT
+	/* TODO: if devices are used which need an initialization, call the functionse here */
+	// End of user code
 	atomic_c1= MCC_create_CoordinatorComponent(CI_COMMUNICATORSCOORDINATOR);
 	
 	i2cCommunication_setup(2);

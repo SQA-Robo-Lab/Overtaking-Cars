@@ -3,6 +3,8 @@
  * @author badrobot
  * @brief This file specifies the MessageBuffer, which are contained at the Components
  * @details  The MessageBuffer are used at the Components to store  MiddlewareMessage%s
+ *
+ * copied from org.muml.c.adapter.container/resources/container_lib
  */
 #ifndef MESSAGEBUFFER_H_
 #define MESSAGEBUFFER_H_

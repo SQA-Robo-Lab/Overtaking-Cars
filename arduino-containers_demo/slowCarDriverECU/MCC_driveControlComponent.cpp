@@ -339,28 +339,28 @@ void MCC_DriveControlComponent_velocity_send_value(Port* port, int32_T* msg){
 		//call init after RTSC was created
 		DriveControlComponent_initialize(&instancePool[pool_index]);
 		//For each port initialize it
-			if(b->FRONTDISTANCE != PORT_DEACTIVATED) {
+		if(b->FRONTDISTANCE != PORT_DEACTIVATED) {
 			instancePool[pool_index].frontDistancePort.status = b->FRONTDISTANCE;
 			instancePool[pool_index].frontDistancePort.handle = (PortHandle*) malloc(sizeof(PortHandle));
  			instancePool[pool_index].frontDistancePort.handle->port = &(instancePool[pool_index].frontDistancePort);
 			b->createFRONTDISTANCEHandle(b, (instancePool[pool_index].frontDistancePort.handle));
 			//instancePool[pool_index].frontDistancePort.handle->port = &(instancePool[pool_index].frontDistancePort);
 		}
-			if(b->REARDISTANCE != PORT_DEACTIVATED) {
+		if(b->REARDISTANCE != PORT_DEACTIVATED) {
 			instancePool[pool_index].rearDistancePort.status = b->REARDISTANCE;
 			instancePool[pool_index].rearDistancePort.handle = (PortHandle*) malloc(sizeof(PortHandle));
  			instancePool[pool_index].rearDistancePort.handle->port = &(instancePool[pool_index].rearDistancePort);
 			b->createREARDISTANCEHandle(b, (instancePool[pool_index].rearDistancePort.handle));
 			//instancePool[pool_index].rearDistancePort.handle->port = &(instancePool[pool_index].rearDistancePort);
 		}
-			if(b->DRIVECONTROL != PORT_DEACTIVATED) {
+		if(b->DRIVECONTROL != PORT_DEACTIVATED) {
 			instancePool[pool_index].driveControlPort.status = b->DRIVECONTROL;
 			instancePool[pool_index].driveControlPort.handle = (PortHandle*) malloc(sizeof(PortHandle));
  			instancePool[pool_index].driveControlPort.handle->port = &(instancePool[pool_index].driveControlPort);
 			b->createDRIVECONTROLHandle(b, (instancePool[pool_index].driveControlPort.handle));
 			//instancePool[pool_index].driveControlPort.handle->port = &(instancePool[pool_index].driveControlPort);
 		}
-			if(b->VELOCITY != PORT_DEACTIVATED) {
+		if(b->VELOCITY != PORT_DEACTIVATED) {
 			instancePool[pool_index].velocityPort.status = b->VELOCITY;
 			instancePool[pool_index].velocityPort.handle = (PortHandle*) malloc(sizeof(PortHandle));
  			instancePool[pool_index].velocityPort.handle->port = &(instancePool[pool_index].velocityPort);
@@ -404,12 +404,12 @@ static PortHandle* create_DRIVECONTROLI2cHandle(driveControlComponent_Builder* b
 	I2cHandle* handle = (I2cHandle*) malloc(sizeof(I2cHandle)+2*sizeof(I2cReceiver));
 	handle->numOfReceivers = 2;
 	//register a receiver for every message type of the port
-	createAndRegisterI2cReceiver(&(handle->receivers[0]), 
+	initAndRegisterI2cReceiver(&(handle->receivers[0]), 
 								"OvertakingPermissionMessagesGrantPermission",
 								5,
 								sizeof(OvertakingPermissionMessagesGrantPermission_OvertakingPermissionMessages_Message),
 								 false );
-	createAndRegisterI2cReceiver(&(handle->receivers[1]), 
+	initAndRegisterI2cReceiver(&(handle->receivers[1]), 
 								"OvertakingPermissionMessagesDenyPermission",
 								5,
 								sizeof(OvertakingPermissionMessagesDenyPermission_OvertakingPermissionMessages_Message),
@@ -442,10 +442,10 @@ DriveControlComponent* MCC_create_DriveControlComponent(uint8_T ID){
 	switch(ID){
 		case CI_DRIVECONTROLSDRIVECONTROL:
 			b.ID = ID;
-			b.DRIVECONTROL = PORT_ACTIVE;
-			b.createDRIVECONTROLHandle = &create_DRIVECONTROLI2cHandle;
-			b.DRIVECONTROL_op.i2c_option.ownAddress = 10;
-			b.DRIVECONTROL_op.i2c_option.otherAddress = 2;
+			b.FRONTDISTANCE = PORT_ACTIVE;
+			b.createFRONTDISTANCEHandle = &create_FRONTDISTANCELocalHandle;
+			b.FRONTDISTANCE_op.local_option.pubID = 12012;
+			b.FRONTDISTANCE_op.local_option.subID = 3192;
 			b.VELOCITY = PORT_ACTIVE;
 			b.createVELOCITYHandle = &create_VELOCITYLocalHandle;
 			b.VELOCITY_op.local_option.pubID = 6450;
@@ -454,10 +454,10 @@ DriveControlComponent* MCC_create_DriveControlComponent(uint8_T ID){
 			b.createREARDISTANCEHandle = &create_REARDISTANCELocalHandle;
 			b.REARDISTANCE_op.local_option.pubID = 19917;
 			b.REARDISTANCE_op.local_option.subID = -30463;
-			b.FRONTDISTANCE = PORT_ACTIVE;
-			b.createFRONTDISTANCEHandle = &create_FRONTDISTANCELocalHandle;
-			b.FRONTDISTANCE_op.local_option.pubID = 12012;
-			b.FRONTDISTANCE_op.local_option.subID = 3192;
+			b.DRIVECONTROL = PORT_ACTIVE;
+			b.createDRIVECONTROLHandle = &create_DRIVECONTROLI2cHandle;
+			b.DRIVECONTROL_op.i2c_option.ownAddress = 10;
+			b.DRIVECONTROL_op.i2c_option.otherAddress = 2;
 		break;
 	default:
 		break;

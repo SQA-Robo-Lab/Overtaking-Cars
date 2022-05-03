@@ -56,10 +56,11 @@ void rightReverse(){
 /**
  * @brief Sets the speed of the right motors to the desired value.
  * 
- * @param speed specify the motor speed between 60 (slowest moving speed) and 255 (full speed), or 0 to deactivate the motors.
+ * @param speed specify the motor speed between 50 (slowest moving speed) and 255 (full speed), or 0 to deactivate the motors.
+ * Suggested fast speed value where turns are possible: 80
  * 
  * The operation controls the motors my sending PMW signals to the L298N motor controller. 
- * A value between 0-59 is not recommended, because the motors to not get enough power to move the car.
+ * A value between 0-49 is not recommended, because the motors to not get enough power to move the car around tight turns.
  */
 void rightSpeed(int speed){
     analogWrite(RIGHT_ENGINE_SPEED_PIN, speed);
@@ -90,10 +91,11 @@ void leftReverse(){
 /**
  * @brief Sets the speed of the left motors to the desired value.
  * 
- * @param speed specify the motor speed between 60 (slowest moving speed) and 255 (full speed), or 0 to deactivate the motors.
+ * @param speed specify the motor speed between 50 (slowest moving speed) and 255 (full speed), or 0 to deactivate the motors.
+ * Suggested fast speed value where turns are possible: 80
  * 
  * The operation controls the motors my sending PMW signals to the L298N motor controller. 
- * A value between 0-59 is not recommended, because the motors to not get enough power to move the car.
+ * A value between 0-49 is not recommended, because the motors to not get enough power to move the car around tight turns.
  */
 void leftSpeed(int speed){
     analogWrite(LEFT_ENGINE_SPEED_PIN, speed);
@@ -102,10 +104,10 @@ void leftSpeed(int speed){
 /**
  * @brief Sets the speed of all motors to the desired value.
  * 
- * @param speed specify the motor speed between 60 (slowest moving speed) and 255 (full speed), or 0 to deactivate the motors.
+ * @param speed specify the motor speed between 50 (slowest moving speed) and 255 (full speed), or 0 to deactivate the motors.
  * 
  * The operation controls the motors my sending PMW signals to the L298N motor controller. 
- * A value between 0-59 is not recommended, because the motors to not get enough power to move the car.
+ * A value between 0-49 is not recommended, because the motors to not get enough power to move the car around tight turns.
  */
 void setSpeed(int speed){
     leftSpeed(speed);

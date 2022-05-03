@@ -13,8 +13,6 @@
 #include "LineDetector.h"
 #include "MotorDriver.h"
 
-LinePosition globalCarPosition;
-
 /**
  * @brief Initializes the motor driver and line detector that are required for the LineFollower.
  * 
@@ -25,7 +23,9 @@ void initLineFollower();
 /**
  * @brief Makes the car follow a line with the given speed. MUST be called continuously in the loop method!
  * 
- * @param speed specify the motor speed between 60 (slowest moving speed) and 255 (full speed), or 0 to deactivate the motors.
+ * @param speed specify the motor speed between 50 (slowest moving speed) and 255 (full speed), or 0 to deactivate the motors.
+ * Suggested fast speed value where turns are possible: 80
+ * A value between 0-49 is not recommended, because the motors do not get enough power to move the car around tight turns.
  */
 void followLine(int speed);
 

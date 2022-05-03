@@ -7,6 +7,7 @@ extern "C"
 
 #include "standardTypes.h"
 #include "customTypes.h"
+#include "LineFollower.h"
 
 	/**
 	 * @brief Implementation stub of operation changeLaneLeft

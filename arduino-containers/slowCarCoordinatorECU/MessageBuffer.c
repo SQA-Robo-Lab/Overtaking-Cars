@@ -3,6 +3,8 @@
  *
  *  Created on: 13.03.2014
  *      Author: badrobot
+ *
+ * copied from org.muml.c.adapter.container/resources/container_lib
  */
 
 #include "MessageBuffer.h"

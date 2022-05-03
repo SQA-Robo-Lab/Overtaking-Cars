@@ -1,6 +1,8 @@
 {
     "files.associations": {
         "messagebuffer.h": "c",
-        "localbuffermanager.h": "c"
+        "localbuffermanager.h": "c",
+        "drivecontrolcomponent_interface.h": "c",
+        "linefollower.h": "c"
     }
 }

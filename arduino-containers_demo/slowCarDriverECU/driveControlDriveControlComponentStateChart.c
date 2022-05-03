@@ -34,16 +34,16 @@ void DriveControlDriveControlComponentStateChart_initialize(
 	// initialize clocks
 
 	// initialize variables of the root statechart
-	stateChart->distanceLimit = stateChart->distanceLimit = 0;
+	stateChart->distanceLimit = stateChart->distanceLimit = 10;
 	;
 
-	stateChart->desiredVelocity = stateChart->desiredVelocity = 0;
+	stateChart->desiredVelocity = stateChart->desiredVelocity = 50;
 	;
 
-	stateChart->slowVelocity = stateChart->slowVelocity = 0;
+	stateChart->slowVelocity = stateChart->slowVelocity = 50;
 	;
 
-	stateChart->laneDistance = stateChart->laneDistance = 0;
+	stateChart->laneDistance = stateChart->laneDistance = 10;
 	;
 
 	// initialize port variables of the root statechart
