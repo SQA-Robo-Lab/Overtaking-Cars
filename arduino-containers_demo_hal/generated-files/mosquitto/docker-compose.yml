@@ -1,0 +1,11 @@
+version: "3.5"
+
+services:
+  mqtt:
+    container_name: mqtt
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "1883:1883"

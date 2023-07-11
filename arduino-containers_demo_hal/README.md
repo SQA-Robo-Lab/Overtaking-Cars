@@ -1,6 +1,8 @@
 # ToDo
-* add functions in /robotCarPowerTrainOpRep.c
-* add generated code
+* code stubs (user code)
+    * add functions in /robotCarPowerTrainOpRep.c
+    * api mappings
+    * ino files of driver ecus
 * add hal (repo link?)
 * rework readme
 
