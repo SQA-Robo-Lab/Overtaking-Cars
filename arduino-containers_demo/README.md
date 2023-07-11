@@ -20,7 +20,7 @@ However, the component type code requires some adaptions at the moment to be bui
 * All files (except two, see next) were removed from their directories and collected in one main directory. Thus, all include paths were adjusted.
 * The files **not copied** from the component type code are: ```lib/standardTypes.h``` (```types/standardTypes.h``` is used instead) and ```lib/clock.h``` (the ```clock.h``` file from the container code generation is used instead)
 * In the ```...Component_Interface.h``` files: The ```clock.h``` file was pulled up to be outside of the ```extern "C" {...}``` part!
-* In the ```robotCarPowerTrainOpRep.h```, which contains the operation repository method stub definitions, the ```lineFollower.h``` robot car lib is inlcuded, and in the ```robotCarPowerTrainOpRep.h``` it is used to implement the method stubs.
+* In the ```robotCarPowerTrainOpRep.h```, which contains the operation repository method stub definitions, the ```lineFollower.h``` robot car lib is inlcuded, and in the ```robotCarPowerTrainOpRep.c``` it is used to implement the method stubs.
 
 ## mosquitto
 
