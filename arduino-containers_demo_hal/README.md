@@ -1,11 +1,3 @@
-# ToDo
-
-* add hal (repo link?)
-    * code stubs (user code)
-        * add functions in /robotCarPowerTrainOpRep.c
-        * api mappings
-        * init of libs in ino files of driver ecus
-
 # Arduino Containers Demo HAL
 
 The purpose of this directory is to demonstrate the implementation of a cooperative overtaking scenario using the MechatronicUML Tool Suite and the code generation features of the extended platform-modeling approach, using the new Hardware Abstraction Library (HAL).
