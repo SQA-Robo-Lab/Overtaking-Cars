@@ -36,16 +36,16 @@
 			//initialize clocks
 		
 			//initialize variables of the root statechart
-			stateChart->distanceLimit = stateChart->distanceLimit = distanceLimit;
+			stateChart->distanceLimit = stateChart->distanceLimit = 0;
 			;
 		
-			stateChart->desiredVelocity = stateChart->desiredVelocity = desiredVelocity;
+			stateChart->desiredVelocity = stateChart->desiredVelocity = 0;
 			;
 		
-			stateChart->slowVelocity = stateChart->slowVelocity = slowVelocity;
+			stateChart->slowVelocity = stateChart->slowVelocity = 0;
 			;
 		
-			stateChart->laneDistance = stateChart->laneDistance = laneDistance;
+			stateChart->laneDistance = stateChart->laneDistance = 0;
 			;
 		
 			//initialize port variables of the root statechart

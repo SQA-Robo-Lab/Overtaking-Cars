@@ -3,14 +3,15 @@
 
 #include "I2cCustomLib.hpp"
 #include <SimpleHardwareController.hpp>
+#include <SimpleHardwareController_Connector.h>
 #include "Config.hpp"
-#include "Functions.h"
 
 #include "MCC_distanceSensorComponent.h"
 #include "MCC_powerTrainComponent.h"
 #include "MCC_driveControlComponent.h"
 
 // Start of user code DEVICEINITINCLUDES
+SimpleHardwareController fastCarDriverController;
 // End of user code
 
 
@@ -26,6 +27,7 @@ void setup(){
 	Serial.println("Initialization starting...");
 	#endif
 	// Start of user code DEVICEINIT
+	initSofdcarHalConnectorFor(&fastCarDriverController);
 	fastCarDriverController.initializeCar(config, lineConfig);
 	// End of user code
 	atomic_c1= MCC_create_DistanceSensorComponent(CI_REARDISTANCESENSORFDISTANCESENSOR);

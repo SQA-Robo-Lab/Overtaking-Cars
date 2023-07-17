@@ -9,7 +9,6 @@
 		#define DRIVECONTROLCOMPONENT_Interface_H_
 
 #include "clock.h"
-#include "Functions.h"
 
 #ifdef __cplusplus
   extern "C" {

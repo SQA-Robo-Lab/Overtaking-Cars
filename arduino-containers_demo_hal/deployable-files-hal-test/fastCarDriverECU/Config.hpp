@@ -3,8 +3,6 @@
 
 #include <SimpleHardwareController.hpp>
 
-SimpleHardwareController fastCarDriverController;
-
 TurnSteeringCarConfig config = {
     {6, 7, 8},                // rearLeft
     {11, 12, 10},             // rearRight
@@ -26,6 +24,5 @@ LineSensorConfig lineConfig = {
     brightnessPins, // sensor pins
     thresholds      // sensor thretholds
 };
-
 
 #endif

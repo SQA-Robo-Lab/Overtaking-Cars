@@ -1,6 +1,5 @@
 #ifndef ROBOTCARPOWERTRAIN_H_
 #define ROBOTCARPOWERTRAIN_H_
-#include "Functions.h"
 #ifdef __cplusplus
   extern "C" {
 #endif

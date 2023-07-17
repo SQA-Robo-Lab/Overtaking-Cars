@@ -57,17 +57,22 @@ Additionally, the following changes to the generated code were made to integrate
 * Add the config file from [here](https://github.com/SQA-Robo-Lab/Sofdcar-HAL/blob/main/examples/SimpleHardwareController/Config.hpp) to both driver ECU directories.
     * Change the config to the desired parameter settings
 * Add the initialization of the HAL in the ```fastCarDriverECU.ino``` and the ```slowCarDriverECU.ino```, as described in https://github.com/SQA-Robo-Lab/Sofdcar-HAL/blob/main/examples/SimpleHardwareController/SimpleHardwareController.ino
-    * Leave out the second command in the setup method
-* Fill the method stubs in the API Mapping files:
-    * frontDistance: ```*distance = fastCarDriverController.getDistanceSensor(0)->getDistanceToClosestMm();```
-    * rearDistance: ```*distance = fastCarDriverController.getDistanceSensor(1)->getDistanceToClosestMm();```
-    * velocity: ```*velocity = fastCarDriverController.getDriveController()->getSpeed();```
+    * Include the following library files: `SimpleHardwareController.hpp` and `SimpleHardwareController_Connector.h`
+    * Add the global Variable `SimpleHardwareController fastCarDriverController;` in the `.ino`-File (name the var to taste)
+    * In the `setup()` function user code section of the `.ino` file add the following lines to initialize the HAL and provide it to the C-Connector:
+        * `initSofdcarHalConnectorFor(&fastCarDriverController);`
+        * `fastCarDriverController.initializeCar(config, lineConfig);`
+    * Call the loop funciton of the HAL in the `loop()` function of the sketch: `fastCarDriverController.loop();`
+* Fill the method stubs in the API Mapping files
+    * In every API-Mapping include: (recommended in the `.c` file, not the `.h` file to only have the import localy) `SimpleHardwareController_Connector.h`:
+    * frontDistance: ```*distance = SimpleHardwareController_DistanceSensor_GetDistanceToClosestMm(0);```
+    * rearDistance: ```*distance = SimpleHardwareController_DistanceSensor_GetDistanceToClosestMm(1);```
+    * velocity: ```*velocity = SimpleHardwareController_DriveController_GetSpeed();```
 * In the ```robotCarPowerTrainOpRep.c``` fill the method stubs in the following way:
-    * for changing to the left lane use ```fastCarDriverController.getLineFollower()->setLineToFollow(0);```
-    * for changing to the right lane use ```fastCarDriverController.getLineFollower()->setLineToFollow(1);```
-    * for start driving along the line use ```fastCarDriverController.getDriveController()->setSpeed(velocity);```
+    * Include `SimpleHardwareController_Connector.h` at the top of the file (also recommended in the `.c`, not the `.h`)
+    * for changing to the left lane use ```SimpleHardwareController_LineFollower_SetLineToFollow(0);```
+    * for changing to the right lane use ```SimpleHardwareController_LineFollower_SetLineToFollow(1);```
+    * for start driving along the line use ```SimpleHardwareController_DriveController_SetSpeed(velocity);```
 * the values for the ```desiredVelocity``` and ```slowVelocity``` can be set individually in the ```driveControlDriveControlComponentStateChart.c``` of the ```...DriverECU``` directories.
     * Also set distance and lanedistance
-    * include the Config.hpp
-    * set it to the variables specified in the config
 
